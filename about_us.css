@@ -1,0 +1,92 @@
+#photos{
+  display: grid;
+  grid-template-columns: 5% 30vw auto 10%;
+	grid-template-rows: 30vw 30vw 30vw 30vw;
+  grid-gap: 10px;
+  grid-row-gap: 20px;
+  padding-bottom: 1vw;
+}
+
+.julia_photo{
+  grid-column: 2;
+	grid-row: 1;
+  border: 10px solid rgb(150, 186, 143);
+}
+
+.julia_text{
+  grid-column: 3;
+	grid-row: 1;
+  height:100%;
+  width: 100%;
+}
+
+.isabel_photo{
+  grid-column: 2;
+	grid-row: 2;
+  border: 10px solid rgb(150, 186, 143);
+}
+
+.isabel_text{
+  grid-column: 3;
+	grid-row: 2;
+}
+
+.hannah_photo{
+  grid-column: 2;
+	grid-row: 3;
+  border: 10px solid rgb(150, 186, 143);
+}
+
+.hannah_text{
+  grid-column: 3;
+	grid-row: 3;
+}
+
+.dom_photo{
+  grid-column: 2;
+	grid-row: 4;
+  border: 10px solid rgb(150, 186, 143);
+}
+
+.dom_text{
+  grid-column: 3;
+	grid-row: 4;
+}
+
+.individualPhoto{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* border-color: rgb(150, 186, 143);
+  border-width: medium; */
+}
+
+.about_me_name{
+  margin-left: 2vw;
+  margin-top: 4vw;
+  margin-bottom: 2vw;
+  font-size: 2.3vw;
+}
+
+.about_me_text{
+ text-align: center;
+ margin-left: 10%;
+ margin-right: 10%;
+ font-size: 1.5vw;
+}
+
+.horizontal_dotted_line{
+  width: 100%;
+  display : flex;
+  font-size: 4vw;
+  color: rgb(150, 186, 143);
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+.dot {
+  flex: 1;
+  border-bottom: 5px dotted rgb(150, 186, 143);
+  height: 0.65em;
+}
