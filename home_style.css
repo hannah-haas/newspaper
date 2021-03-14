@@ -303,7 +303,7 @@ body{
   position: absolute;
   display: block;
   width: 80%;
-  margin-top: -12%;
+  margin-top: -14%;
   max-width: 90%;
   font-size: 3vw;
   font-family: Times, Rockwell, Serif;
@@ -329,7 +329,6 @@ body{
 }
 
 .main_article_text3 {
-
   display: block;
   margin-top: -15.5%;
   /* max-width: 610px; */
