@@ -63,9 +63,10 @@
 
 .about_me_name{
   margin-left: 2vw;
-  margin-top: 4vw;
+  margin-top: 1vw;
   margin-bottom: 2vw;
   font-size: 2.3vw;
+  color: rgb(56, 86, 35);
 }
 
 .about_me_text{
@@ -105,4 +106,9 @@
   flex: 1;
   border-bottom: 5px dotted rgb(56, 86, 35);
   height: 0.65em;
+}
+
+.intro{
+  margin-left: 10%;
+  margin-right: 10%;
 }

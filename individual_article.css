@@ -56,13 +56,13 @@
 
 hr {
     display: block;
-    width: 60%;
     height: 1px;
     border: 0;
     border-top: 1px solid rgb(5, 41, 14);
     margin: 1em 0;
     padding: 0;
 }
+
 
 .main_article_content{
   padding-left: 15%;

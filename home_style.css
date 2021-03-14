@@ -295,7 +295,7 @@ body{
   font-family: Times, Rockwell, Serif;
   font-weight: bold;
   color: #FFF;
-  text-shadow: 0 .125em .125em rgba(0, 0, 0, .5);
+  /* text-shadow: 0 .125em .125em rgba(0, 0, 0, .5); */
   padding: .6em 1em .6em 2.6em;
 }
 
@@ -309,7 +309,6 @@ body{
   font-family: Times, Rockwell, Serif;
   font-weight: bold;
   color: #FFF;
-  text-shadow: 0 .125em .125em rgba(0, 0, 0, .5);
   padding: .6em 1em .6em 1.7em;
 }
 
@@ -321,7 +320,7 @@ body{
   font-family: Times, Rockwell, Serif;
   font-weight: bold;
   color: #FFF;
-  text-shadow: 0 .125em .125em rgba(0, 0, 0, .5);
+  /* text-shadow: 0 .125em .125em rgba(0, 0, 0, .5); */
   padding: .6em .5em .6em 2.6em;
   float: left;
   flex: 30%;
@@ -336,7 +335,7 @@ body{
   font-family: Times, Rockwell, Serif;
   font-weight: bold;
   color: #FFF;
-  text-shadow: 0 .125em .125em rgba(0, 0, 0, .5);
+  /* text-shadow: 0 .125em .125em rgba(0, 0, 0, .5); */
   padding: .6em .6em 0em 0em;
   float: left;
   flex: 10%;
