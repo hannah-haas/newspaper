@@ -90,3 +90,19 @@
   border-bottom: 5px dotted rgb(150, 186, 143);
   height: 0.65em;
 }
+
+.horizontal_dotted_line_write{
+  width: 100%;
+  display : flex;
+  font-size: 4vw;
+  color: rgb(56, 86, 35);
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+.dot_write {
+  flex: 1;
+  border-bottom: 5px dotted rgb(56, 86, 35);
+  height: 0.65em;
+}
