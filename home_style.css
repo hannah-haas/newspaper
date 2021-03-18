@@ -325,9 +325,9 @@ body{
   z-index: 1;
 }
 
-.main_article_text3 {
+/* .main_article_text3 {
   display: block;
-  margin-top: -15.5%;
+  margin-top: -25.5%;
   font-size: 2vw;
   font-family: Times, Rockwell, Serif;
   font-weight: bold;
@@ -336,12 +336,27 @@ body{
   float: left;
   flex: 10%;
   z-index: 1;
+} */
+
+.main_article_text3 {
+  position: absolute;
+  display: block;
+  width: 80%;
+  margin-top: -16%;
+  max-width: 90%;
+  font-size: 2vw;
+  font-family: Times, Rockwell, Serif;
+  font-weight: bold;
+  color: #FFF;
+  padding: .6em .5em .6em 2.6em;
 }
 
 .main_article_overall{
   margin-left: 1vw;
   margin-right: 1vw;
   margin-top: 1vw;
+  margin-bottom: .5vw;
+
 }
 
 .main_article_overall:hover .hover_image{
@@ -405,8 +420,8 @@ body{
   font-size: 2vw;
   text-align: center;
   margin-top: 10px;
-  margin-right: 15%;
-  margin-left: 15%;
+  margin-right: 10%;
+  margin-left: 10%;
   margin-bottom: 25px;
 }
 
@@ -520,7 +535,7 @@ html {
 }
 
 .flex-container > div {
-  padding: 1vw;
+  padding-right: 1vw;
   font-size: 30px;
   width: 100%;
   height: 100%;

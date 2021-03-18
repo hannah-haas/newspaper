@@ -111,4 +111,6 @@
 .intro{
   margin-left: 10%;
   margin-right: 10%;
+  text-align: justify;
+  text-justify: inter-word;
 }
