@@ -1,16 +1,17 @@
 #photos{
   display: grid;
-  grid-template-columns: 5% 30vw auto 10%;
+  grid-template-columns: 0% 30vw auto 0%;
 	grid-template-rows: 30vw 30vw 30vw 30vw;
-  grid-gap: 10px;
-  grid-row-gap: 20px;
+  grid-row-gap: 30px;
   padding-bottom: 1vw;
+  margin-left: 10.5%;
+  margin-right: 10%;
 }
 
 .julia_photo{
   grid-column: 2;
 	grid-row: 1;
-  border: 10px solid rgb(150, 186, 143);
+  /* border: 10px solid rgb(150, 186, 143); */
 }
 
 .julia_text{
@@ -23,7 +24,7 @@
 .isabel_photo{
   grid-column: 2;
 	grid-row: 2;
-  border: 10px solid rgb(150, 186, 143);
+  /* border: 10px solid rgb(150, 186, 143); */
 }
 
 .isabel_text{
@@ -34,7 +35,7 @@
 .hannah_photo{
   grid-column: 2;
 	grid-row: 3;
-  border: 10px solid rgb(150, 186, 143);
+  /* border: 10px solid rgb(150, 186, 143); */
 }
 
 .hannah_text{
@@ -45,7 +46,8 @@
 .dom_photo{
   grid-column: 2;
 	grid-row: 4;
-  border: 10px solid rgb(150, 186, 143);
+  /* border: 5px solid white;
+  outline: 5px solid rgb(150, 186, 143); */
 }
 
 .dom_text{
@@ -57,6 +59,8 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border: 10px solid white;
+  outline: 5px solid rgb(150, 186, 143);
   /* border-color: rgb(150, 186, 143);
   border-width: medium; */
 }
@@ -64,15 +68,23 @@
 .about_me_name{
   margin-left: 2vw;
   margin-top: 1vw;
-  margin-bottom: 2vw;
+  /* margin-bottom: 2vw; */
   font-size: 2.3vw;
+  color: rgb(56, 86, 35);
+}
+
+.about_me_title {
+  margin-left: 2vw;
+  margin-top: .5vw;
+  margin-bottom: 2vw;
+  font-size: 2vw;
   color: rgb(56, 86, 35);
 }
 
 .about_me_text{
  text-align: center;
- margin-left: 10%;
- margin-right: 10%;
+ margin-left: 2vw;
+ margin-top: 2vw;
  font-size: 1.5vw;
 }
 
@@ -113,4 +125,16 @@
   margin-right: 10%;
   text-align: justify;
   text-justify: inter-word;
+}
+
+.bio {
+  margin-left: 10px;
+}
+
+.julia_photo:hover .individualPhoto{
+  opacity: 0.7;
+}
+
+.isabel_photo:hover .individualPhoto{
+  opacity: 0.7;
 }

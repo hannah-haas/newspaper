@@ -71,7 +71,7 @@ hr {
   font-family: "Times New Roman", Monaco,  Helvetica, sans-serif;
   font-style: normal;
   text-align: justify;
-  text-justify: inter-word; 
+  text-justify: inter-word;
 }
 
 .article_photos {
@@ -184,4 +184,8 @@ figcaption {
 .date {
   color:grey;
   padding-top: 10px;
+}
+
+.image_group:hover .article_author_photo{
+  opacity: 0.7;
 }

@@ -342,13 +342,13 @@ body{
   position: absolute;
   display: block;
   width: 80%;
-  margin-top: -16%;
+  margin-top: -15.5%;
   max-width: 90%;
-  font-size: 2vw;
+  font-size: 1.7vw;
   font-family: Times, Rockwell, Serif;
   font-weight: bold;
   color: #FFF;
-  padding: .6em .5em .6em 2.6em;
+  padding: .6em .5em .6em 3.1em;
 }
 
 .main_article_overall{
