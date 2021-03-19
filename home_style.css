@@ -363,6 +363,18 @@ body{
   opacity: 0.7;
 }
 
+.main_article_overall:hover .main_article_text3{
+  color: rgb(194, 134, 151);
+}
+
+.main_article_overall:hover .main_article_text2{
+  color: rgb(194, 134, 151);
+}
+
+.main_article_overall:hover .main_article_text{
+  color: rgb(194, 134, 151);
+}
+
 .social_media_icon {
   width: 90%;
   padding-left: 5%;
