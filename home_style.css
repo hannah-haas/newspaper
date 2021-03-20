@@ -211,6 +211,8 @@ body{
 
 #menu ul li:hover {
   color:  rgb(194, 134, 151);
+  background-color: rgb(150, 186, 143);
+
 }
 
 #menu>ul>li {
