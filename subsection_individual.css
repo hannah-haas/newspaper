@@ -12,13 +12,11 @@
   width: 100%;
   height: 21vw;
   object-fit: cover;
-  border-radius: 2.5vw;
 }
 
 .article_title{
   margin-left: 2vw;
   margin-top: 1vw;
-  /* margin-bottom: 2vw; */
   font-size: 2vw;
   color: rgb(56, 86, 35);
 }
@@ -34,7 +32,7 @@
 }
 
 .individual_article {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgb(150, 186, 143);
   height: 23vw;
   margin-top: 1.5vw;
 }
@@ -47,4 +45,5 @@
   font-size: 2vw;
   margin-left: 5%;
   margin-top: 1.5vw;
+  color: rgb(5, 41, 14);
 }

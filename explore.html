@@ -5,9 +5,13 @@
    <link href="home_style.css" rel="stylesheet"/>
    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
+   <!-- <link rel="stylesheet" type="text/css" href="cssmap-continents/cssmap-continents.css" media="screen" /> -->
 
     <meta name="viewport" content="width=device-width">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <script src="mapdata.js"></script>
+    <script src="worldmap.js"></script>
  </head>
 
  <div id="main">
@@ -27,7 +31,7 @@
        </li>
        <li><a href="environment/environment.html">Environment</a>
          <ul class="dropdown">
-           <li><a href="environment/oceans/oceans.html">Oceans > </a>
+           <li><a href="environment/oceans/oceans.html">Oceans </a>
              <ul class="dropdown" id="inner_dropdown">
                <img id="map" src="static_images/map.png">
                <li><a id="on_top" href="#">Atlantic</a></li>
@@ -38,7 +42,7 @@
                <li><a id="on_top" href="#">Arctic</a></li>
              </ul>
            </li>
-           <li><a href="environment/mountains/mountains.html">Mountains > </a>
+           <li><a href="environment/mountains/mountains.html">Mountains </a>
              <ul class="dropdown" id="inner_dropdown">
                <img id="map" src="static_images/map.png">
                <li><a id="on_top" href="#">Europe</a></li>
@@ -49,7 +53,7 @@
                <li><a id="on_top" href="#">Oceania</a></li>
              </ul>
            </li>
-           <li><a href="environment/forests/forests.html">Forests ></a>
+           <li><a href="environment/forests/forests.html">Forests</a>
              <ul class="dropdown" id="inner_dropdown">
                <img id="map" src="static_images/map.png">
                <li><a id="on_top" href="#">Europe</a></li>
@@ -60,7 +64,7 @@
                <li><a id="on_top" href="#">Oceania</a></li>
              </ul>
            </li>
-           <li><a href="environment/deserts/deserts.html">Deserts ></a>
+           <li><a href="environment/deserts/deserts.html">Deserts</a>
              <ul class="dropdown" id="inner_dropdown">
                <img id="map" src="static_images/map.png">
                <li><a id="on_top" href="#">North America</a></li>
@@ -71,7 +75,7 @@
                <li><a id="empty" href="#"> e </a></li>
              </ul>
            </li>
-           <li><a href="environment/grasslands/grasslands.html">Grasslands ></a>
+           <li><a href="environment/grasslands/grasslands.html">Grasslands</a>
              <ul class="dropdown" id="inner_dropdown">
                <img id="map" src="static_images/map.png">
                <li><a id="on_top" href="#">Europe</a></li>
@@ -82,7 +86,7 @@
                <li><a id="empty" href="#"> e </a></li>
              </ul>
            </li>
-           <li><a href="environment/tundra_poles/tundra_poles.html">Tundra and Poles ></a>
+           <li><a href="environment/tundra_poles/tundra_poles.html">Tundra and Poles</a>
              <ul class="dropdown" id="inner_dropdown">
                <img id="map" src="static_images/map.png">
                <li><a id="on_top" href="#">Europe</a></li>
@@ -95,10 +99,10 @@
            </li>
          </ul>
        </li>
-       <li><a href="#">Human Health</a>
+       <li><a href="human_health/human_health.html">Human Health</a>
          <ul class="dropdown">
-           <li><a href="#"> Environment </a></li>
-           <li><a href="#"> Communities </a></li>
+           <li><a href="human_health/environment/hh_environment.html"> Environment </a></li>
+           <li><a href="human_health/communities/communities.html"> Communities </a></li>
          </ul>
        </li>
        <li><a href="write_for_us.html">Write For Us</a></li>
@@ -129,18 +133,11 @@
 </br>
 </br>
 </br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+<div id="map"></div>
 
- <div id="bottomBar">
+</div>
+
+ <!-- <div id="bottomBar">
     <a href="explore.html" id="explore"> EXPLORE </a>
      <a href="mailto:hannah_haas@brown.edu"id="connect"> CONNECT </a>
      <a href="" id="legal"> LEGAL </a>
@@ -150,6 +147,23 @@
      <a href="https://www.instagram.com/" target="_blank"><img class="social_media_icon" id="four" src="static_images/instagram_white.png" ></a>
      <a href="https://www.linkedin.com/" target="_blank"><img class="social_media_icon" id="five" src="static_images/linkedin_white.png" ></a>
    </div>
-   </div>
+   </div> -->
+
+   <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+<!-- CSSMap SCRIPT -->
+<!-- <script type="text/javascript" src="https://cssmapsplugin.com/5/jquery.cssmap.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+// CSSMap;
+$("#map-continents").CSSMap({
+  "size": 1450
+});
+// END OF THE CSSMap;
+
+});
+</script> -->
  </body>
  </html>

@@ -59,8 +59,8 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border: 10px solid white;
-  outline: 5px solid rgb(150, 186, 143);
+  border: 5px solid white;
+  outline: 3px solid rgb(150, 186, 143);
   /* border-color: rgb(150, 186, 143);
   border-width: medium; */
 }
@@ -116,7 +116,7 @@
 
 .dot_write {
   flex: 1;
-  border-bottom: 5px dotted rgb(56, 86, 35);
+  border-bottom: 5px dotted rgb(150, 186, 143);
   height: 0.65em;
 }
 

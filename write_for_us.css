@@ -1,12 +1,21 @@
+
 .highlighted_info {
   font-weight: bold;
   color: rgb(56, 86, 35);
   font-size: 1.2em;
 }
 
+
+.highlighted_info_end {
+  font-weight: bold;
+  color: rgb(56, 86, 35);
+  font-size: 1.2em;
+  text-align: right;
+}
+
+
 .contact_button {
     font-size: 1.2em;
-    width: 240px;
     height: 45px;
     text-align: center;
     display: flex;
