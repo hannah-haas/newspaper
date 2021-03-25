@@ -1,61 +1,61 @@
-#photos{
+#photos {
   display: grid;
   grid-template-columns: 0% 30vw auto 0%;
-	grid-template-rows: 30vw 30vw 30vw 30vw;
+  grid-template-rows: 30vw 30vw 30vw 30vw;
   grid-row-gap: 30px;
   padding-bottom: 1vw;
   margin-left: 10.5%;
   margin-right: 10%;
 }
 
-.julia_photo{
+.julia_photo {
   grid-column: 2;
-	grid-row: 1;
+  grid-row: 1;
   /* border: 10px solid rgb(150, 186, 143); */
 }
 
-.julia_text{
+.julia_text {
   grid-column: 3;
-	grid-row: 1;
-  height:100%;
+  grid-row: 1;
+  height: 100%;
   width: 100%;
 }
 
-.isabel_photo{
+.isabel_photo {
   grid-column: 2;
-	grid-row: 2;
+  grid-row: 2;
   /* border: 10px solid rgb(150, 186, 143); */
 }
 
-.isabel_text{
+.isabel_text {
   grid-column: 3;
-	grid-row: 2;
+  grid-row: 2;
 }
 
-.hannah_photo{
+.hannah_photo {
   grid-column: 2;
-	grid-row: 3;
+  grid-row: 3;
   /* border: 10px solid rgb(150, 186, 143); */
 }
 
-.hannah_text{
+.hannah_text {
   grid-column: 3;
-	grid-row: 3;
+  grid-row: 3;
 }
 
-.dom_photo{
+.dom_photo {
   grid-column: 2;
-	grid-row: 4;
+  grid-row: 4;
   /* border: 5px solid white;
   outline: 5px solid rgb(150, 186, 143); */
 }
 
-.dom_text{
+.dom_text {
   grid-column: 3;
-	grid-row: 4;
+  grid-row: 4;
 }
 
-.individualPhoto{
+.individualPhoto {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -65,7 +65,7 @@
   border-width: medium; */
 }
 
-.about_me_name{
+.about_me_name {
   margin-left: 2vw;
   margin-top: 1vw;
   /* margin-bottom: 2vw; */
@@ -81,21 +81,20 @@
   color: rgb(56, 86, 35);
 }
 
-.about_me_text{
- text-align: center;
- margin-left: 2vw;
- margin-top: 2vw;
- font-size: 1.5vw;
+.about_me_text {
+  text-align: center;
+  margin-left: 2vw;
+  margin-top: 2vw;
+  font-size: 1.5vw;
 }
 
-.horizontal_dotted_line{
+.horizontal_dotted_line {
   width: 100%;
-  display : flex;
+  display: flex;
   font-size: 4vw;
   color: rgb(150, 186, 143);
   margin-top: 30px;
   margin-bottom: 30px;
-
 }
 
 .dot {
@@ -104,14 +103,13 @@
   height: 0.65em;
 }
 
-.horizontal_dotted_line_write{
+.horizontal_dotted_line_write {
   width: 100%;
-  display : flex;
+  display: flex;
   font-size: 4vw;
   color: rgb(56, 86, 35);
   margin-top: 30px;
   margin-bottom: 30px;
-
 }
 
 .dot_write {
@@ -120,7 +118,7 @@
   height: 0.65em;
 }
 
-.intro{
+.intro {
   margin-left: 10%;
   margin-right: 10%;
   text-align: justify;
@@ -131,10 +129,10 @@
   margin-left: 10px;
 }
 
-.julia_photo:hover .individualPhoto{
+.julia_photo:hover .individualPhoto {
   opacity: 0.7;
 }
 
-.isabel_photo:hover .individualPhoto{
+.isabel_photo:hover .individualPhoto {
   opacity: 0.7;
 }

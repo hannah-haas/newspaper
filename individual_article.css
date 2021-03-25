@@ -20,7 +20,6 @@
   color: #e2e2e2;
 }
 
-
 .center {
   display: flex;
   justify-content: center;
@@ -37,7 +36,7 @@
   width: 60%;
 }
 
-.flex-container > div {
+.flex-container>div {
   width: 30%;
   height: 6vh;
   margin-right: 10px;
@@ -49,26 +48,25 @@
   border: 1px solid rgb(5, 41, 14);
 }
 
-#last_div{
+#last_div {
   margin-right: 0px;
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid rgb(5, 41, 14);
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgb(5, 41, 14);
+  margin: 1em 0;
+  padding: 0;
 }
 
-
-.main_article_content{
+.main_article_content {
   padding-left: 15%;
   padding-right: 15%;
   padding-bottom: 2vh;
   font-size: 1.1em;
-  font-family: "Times New Roman", Monaco,  Helvetica, sans-serif;
+  font-family: "Times New Roman", Monaco, Helvetica, sans-serif;
   font-style: normal;
   text-align: justify;
   text-justify: inter-word;
@@ -78,7 +76,7 @@ hr {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width:80%;
+  width: 80%;
 }
 
 figcaption {
@@ -87,10 +85,10 @@ figcaption {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width:80%;
+  width: 80%;
 }
 
-.feature_image_text{
+.feature_image_text {
   color: grey;
   font-size: .9em;
   padding-bottom: 10px;
@@ -122,14 +120,13 @@ figcaption {
   padding: .6em 1em .6em 2.6em;
 }
 
-.article_cover{
-  width:100%;
+.article_cover {
+  width: 100%;
   height: 55vh;
   object-fit: cover;
 }
 
 .article_text2 {
-
   display: block;
   margin-top: -13%;
   font-size: 2vw;
@@ -142,14 +139,14 @@ figcaption {
   z-index: 1;
 }
 
-.article_author_photo{
+.article_author_photo {
   width: 20vw;
   height: 20vw;
   object-fit: cover;
   flex: 40%;
 }
 
-.article_author_name{
+.article_author_name {
   flex: 40%;
   margin-left: 2vw;
   margin-top: 2vw;
@@ -160,32 +157,32 @@ figcaption {
   width: 80%;
 }
 
-.related_article_flex_container > div {
+.related_article_flex_container>div {
   padding: 1vw;
   font-size: 30px;
   width: 100%;
   height: 100%;
 }
 
-.sub_article_text{
+.sub_article_text {
   font-size: 2vw;
 }
 
-.sub_article_text2{
+.sub_article_text2 {
   font-size: 1.5vw;
 }
 
-.author_name{
-  color:grey;
+.author_name {
+  color: grey;
   padding-bottom: 10px;
   border-bottom: 1px solid grey;
 }
 
 .date {
-  color:grey;
+  color: grey;
   padding-top: 10px;
 }
 
-.image_group:hover .article_author_photo{
+.image_group:hover .article_author_photo {
   opacity: 0.7;
 }
