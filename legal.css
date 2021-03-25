@@ -1,10 +1,8 @@
-
 .highlighted_info {
   font-weight: bold;
   color: rgb(56, 86, 35);
   font-size: 1em;
 }
-
 
 .highlighted_info_end {
   font-weight: bold;
@@ -13,13 +11,12 @@
   text-align: right;
 }
 
-
 .contact_button {
-    font-size: 1.2em;
-    height: 45px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(5, 41, 14);
+  font-size: 1.2em;
+  height: 45px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(5, 41, 14);
 }
