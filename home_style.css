@@ -9,6 +9,18 @@ body{
     position: relative;
 }
 
+#main {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
+}
+
+.content_wrap {
+  padding-bottom: 7vh;
+
+}
+
 .header {
   padding: 30px;
   text-align: center;
@@ -36,7 +48,9 @@ body{
   height: 7vh;
   font-size: 1.3vw;
   width: 100%;
-  /* position: absolute; */
+  bottom: 0;
+  position: absolute;
+  margin-top: 5%;
   /* bottom: 0px; */
 }
 
@@ -130,10 +144,7 @@ body{
   padding: 0px;
 }
 
-#main {
-  width: 100%;
-  margin: 0 auto;
-}
+
 
 #menu:after {
   content: "";
