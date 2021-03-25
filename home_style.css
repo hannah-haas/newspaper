@@ -4,9 +4,9 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-body{
-    min-height: 100vh;
-    position: relative;
+body {
+  min-height: 100vh;
+  position: relative;
 }
 
 #main {
@@ -28,15 +28,15 @@ body{
 }
 
 .footer {
-    background-color: rgb(11, 64, 20);
-    height: 5vh;
-    line-height: 55px;
-    width: 100%;
-    text-align: center;
-    color: white;
-    font-size: 14px;
-    position: relative;
-    bottom: 0;
+  background-color: rgb(11, 64, 20);
+  height: 5vh;
+  line-height: 55px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
 }
 
 #bottomBar {
@@ -53,13 +53,12 @@ body{
   /* bottom: 0px; */
 }
 
-
 .footer_text {
   text-decoration: none;
   color: white;
   padding-left: .5vw;
   padding-right: .5vw;
-  position:absolute;
+  position: absolute;
 }
 
 #explore {
@@ -124,7 +123,6 @@ body{
   grid-row: 1;
 }
 
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -142,8 +140,6 @@ body{
   margin: 0px;
   padding: 0px;
 }
-
-
 
 #menu:after {
   content: "";
@@ -182,7 +178,6 @@ body{
   display: block;
 }
 
-
 #menu .dropdown {
   display: none;
   position: absolute;
@@ -195,12 +190,11 @@ body{
   width: 200px;
   display: block;
   background-color: white;
-
   /* border-bottom: 1px solid black; */
 }
 
 /* drop down text */
-#menu .dropdown > li > a {
+#menu .dropdown>li>a {
   padding: 5px;
   color: black;
   font-family: FFMarkStdBook;
@@ -211,18 +205,16 @@ body{
   top: 0;
   left: 100%;
   height: 100%;
-
 }
 
-#menu ul li:hover > .dropdown {
+#menu ul li:hover>.dropdown {
   color: rgb(194, 134, 151);
   display: block;
 }
 
 #menu ul li:hover {
-  color:  rgb(194, 134, 151);
+  color: rgb(194, 134, 151);
   background-color: rgb(150, 186, 143);
-
 }
 
 #menu>ul>li {
@@ -253,7 +245,6 @@ body{
   text-transform: uppercase;
   font-weight: normal;
 } */
-
 .logo {
   /* width: 13vw; */
   height: 24vh;
@@ -269,29 +260,29 @@ body{
 }
 
 #inner_dropdown {
-  height:100%;
+  height: 100%;
   width: 100%;
   border-left: 2px solid rgb(5, 41, 14);
 }
 
 #map {
-  height:100%;
+  height: 100%;
   width: 100%;
   position: absolute;
   z-index: 0;
 }
 
-#on_top{
-  position:relative;
+#on_top {
+  position: relative;
   z-index: 3;
 }
 
-#empty{
+#empty {
   visibility: hidden;
 }
 
 #main_article {
-  height:100%;
+  height: 100%;
   width: 100%;
   padding-top: 1vh;
 }
@@ -324,7 +315,6 @@ body{
 }
 
 .main_article_text2 {
-
   display: block;
   margin-top: -15.5%;
   font-size: 2vw;
@@ -349,7 +339,6 @@ body{
   flex: 10%;
   z-index: 1;
 } */
-
 .main_article_text3 {
   position: absolute;
   display: block;
@@ -363,15 +352,14 @@ body{
   padding: .6em .5em .6em 3.1em;
 }
 
-.main_article_overall{
+.main_article_overall {
   margin-left: 1vw;
   margin-right: 1vw;
   margin-top: 1vw;
   margin-bottom: .5vw;
-
 }
 
-.main_article_overall:hover .hover_image{
+.main_article_overall:hover .hover_image {
   opacity: 0.7;
 }
 
@@ -382,8 +370,8 @@ body{
   padding-top: 1.1vh;
 }
 
-.sub_article{
-  height:100%;
+.sub_article {
+  height: 100%;
   width: 100%;
 }
 
@@ -406,18 +394,18 @@ body{
   color: rgb(5, 41, 14);
 }
 
-.main_divider{
+.main_divider {
   display: block;
   width: 100%;
   border: solid 1px rgb(5, 41, 14);
-  border-bottom:5px solid rgb(5, 41, 14);
+  border-bottom: 5px solid rgb(5, 41, 14);
   margin-bottom: 1.4em;
   margin-top: 10px;
 }
 
-.horizontal_dotted_line{
+.horizontal_dotted_line {
   width: 100%;
-  display : flex;
+  display: flex;
   font-size: 4vw;
   color: rgb(150, 186, 143);
 }
@@ -428,7 +416,7 @@ body{
   height: 0.65em;
 }
 
-.mission_text{
+.mission_text {
   font-size: 2vw;
   text-align: center;
   margin-top: 10px;
@@ -442,7 +430,6 @@ body{
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 } */
-
 /* in-out;
 	transition: .3s ease-in-out;
 }
@@ -541,12 +528,11 @@ html {
     box-shadow: 0 0 24px 0 #3b5998
 
 } */
-
 .flex-container {
   display: flex;
 }
 
-.flex-container > div {
+.flex-container>div {
   padding-right: 1vw;
   font-size: 30px;
   width: 100%;
@@ -554,70 +540,70 @@ html {
 }
 
 /* circle around magnifying glass */
-form{
-    position: relative;
-    top: 50%;
-    transition: all 1s;
-    width: 50px;
-    height: 50px;
-    background: white;
-    box-sizing: border-box;
-    border-radius: 25px;
-    border: 4px solid white;
-    padding: 5px;
-    /* border-color: rgb(150, 186, 143); */
+form {
+  position: relative;
+  top: 50%;
+  transition: all 1s;
+  width: 50px;
+  height: 50px;
+  background: white;
+  box-sizing: border-box;
+  border-radius: 25px;
+  border: 4px solid white;
+  padding: 5px;
+  /* border-color: rgb(150, 186, 143); */
 }
 
 /* expanded search - input box */
-input{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 40.5px;
-    line-height: 30px;
-    outline: 0;
-    border: 0;
-    display: none;
-    font-size: 1em;
-    border-radius: 20px;
-    padding: 0 20px;
+input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40.5px;
+  line-height: 30px;
+  outline: 0;
+  border: 0;
+  display: none;
+  font-size: 1em;
+  border-radius: 20px;
+  padding: 0 20px;
 }
 
 /* magnifying glass before hover */
-.fa{
-    box-sizing: border-box;
-    padding: 11px;
-    width: 40.5px;
-    height: 40.5px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-radius: 50%;
-    color: rgb(5, 41, 14);
-    text-align: center;
-    font-size: 1.2em;
-    transition: all 1s;
+.fa {
+  box-sizing: border-box;
+  padding: 11px;
+  width: 40.5px;
+  height: 40.5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  color: rgb(5, 41, 14);
+  text-align: center;
+  font-size: 1.2em;
+  transition: all 1s;
 }
 
 /* border on hover */
-form:hover{
-    width: 15vw;
-    cursor: pointer;
-    border-color: rgb(5, 41, 14);
-    border-width: medium;
+form:hover {
+  width: 15vw;
+  cursor: pointer;
+  border-color: rgb(5, 41, 14);
+  border-width: medium;
 }
 
-form:hover input{
-    display: block;
+form:hover input {
+  display: block;
 }
 
 /* circle on hover */
-form:hover .fa{
-    height: 40px;
-    width: 40px;
-    margin-top: 2px;
-    margin-right: 2px;
-    background: rgb(5, 41, 14);
-    color: white;
+form:hover .fa {
+  height: 40px;
+  width: 40px;
+  margin-top: 2px;
+  margin-right: 2px;
+  background: rgb(5, 41, 14);
+  color: white;
 }
