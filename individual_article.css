@@ -120,10 +120,23 @@ figcaption {
   padding: .6em 1em .6em 2.6em;
 }
 
-.article_cover {
-  width: 100%;
-  height: 55vh;
+.parallax {
+  min-height: 55vh;
   object-fit: cover;
+
+
+ /* Create the parallax scrolling effect */
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media (max-width: 600px) {
+  .parallax {
+    background-attachment: scroll;
+  }
 }
 
 .article_text2 {
