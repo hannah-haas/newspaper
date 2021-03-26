@@ -206,16 +206,28 @@ request.send();
 var random_article_list = []
 
 request.onload = function() {
-  const articles = request.response;
-  console.log(articles)
-  for (let i = 0; i < articles.length; i++) {
-    console.log(articles.length)
-  }
+  var articles = request.response;
+  var articles2 = JSON.parse(request)
+  console.log(articles2)
+  // articles2.forEach(el => {
+  //   console.log(el);
+  // });
+  //   group = articles[i]
+  //   console.log(group)
+  //   for (let j = 0; j < group.length; j++){
+  //     console.log(group[j])
+  //     random_article_list.push(group[j])
+  //   }
+  // }
+  // console.log(random_article_list)
+  // random_num = Math.floor(Math.random() * Math.floor(random_article_list.length));
+  // random_article = random_article_list[random_num]
+  // console.log(random_article)
 }
 
-random_num = Math.floor(Math.random() * Math.floor(random_article_list.length));
 
-random_article = random_article_list[random_num]
-document.location.href = random_article
+
+
+// document.location.href = random_article
 
 </script>
