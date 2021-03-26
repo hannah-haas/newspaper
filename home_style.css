@@ -69,6 +69,7 @@ body {
   text-align: center;
   padding-top: 2.1vh;
   font-size: 2.3vh;
+  cursor: pointer;
 }
 
 #connect {
