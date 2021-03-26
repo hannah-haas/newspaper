@@ -192,23 +192,27 @@
 </html>
 
 
-<script>
+<script type="text/javascript" src="article_list.json">
+
 
 console.log("HERE")
 
+var my_data = JSON.parse(article_list)
+console.log(my_data)
+
 // getting list of articles
-let requestURL = "https://hannah-haas.github.io/newspaper/article_list.json"
-let request = new XMLHttpRequest();
-request.open('GET', requestURL);
-request.responseType = 'json';
-request.send();
-
-var random_article_list = []
-
-request.onload = function() {
-  var articles = request.response;
-  var articles2 = JSON.parse(request)
-  console.log(articles2)
+// let requestURL = "https://hannah-haas.github.io/newspaper/article_list.json"
+// let request = new XMLHttpRequest();
+// request.open('GET', requestURL);
+// request.responseType = 'json';
+// request.send();
+//
+// var random_article_list = []
+//
+// request.onload = function() {
+//   var articles = request.response;
+//   var articles2 = JSON.parse(request)
+//   console.log(articles2)
   // articles2.forEach(el => {
   //   console.log(el);
   // });
@@ -223,7 +227,7 @@ request.onload = function() {
   // random_num = Math.floor(Math.random() * Math.floor(random_article_list.length));
   // random_article = random_article_list[random_num]
   // console.log(random_article)
-}
+// }
 
 
 
