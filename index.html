@@ -6,6 +6,17 @@
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <meta name="viewport" content="width=device-width">
+    <script src="article_list.json"></script>
+    <script>
+    console.log("HERE")
+    var local_data = article_list.json;
+
+    var my_data = JSON.parse(local_data)
+
+    console.log(my_data)
+    </script>
+
+
  </head>
 
  <body>
@@ -189,15 +200,14 @@
 </div>
 </div>
 </body>
-</html>
 
 
-<script type="text/javascript" src="article_list.json">
-
-
+<script>
 console.log("HERE")
+var local_data = article_list.json;
 
-var my_data = JSON.parse(article_list)
+var my_data = JSON.parse(local_data)
+
 console.log(my_data)
 
 // getting list of articles
@@ -229,9 +239,7 @@ console.log(my_data)
   // console.log(random_article)
 // }
 
-
-
-
-// document.location.href = random_article
+// document.location.href = "google.com"
 
 </script>
+</html>

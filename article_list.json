@@ -1,15 +1,15 @@
-{
-  europe: ["environment/forests/europe/swiss-wolves.html"],
-  north_america: [],
-  south_america: [],
-  africa: [],
-  oceania: ["environment/oceans/oceania/maui_dolphins.html"],
-  asia: [],
-  atlantic: [],
-  pacific: ["environment/oceans/oceania/maui_dolphins.html"],
-  indian: [],
-  mediterranean: [],
-  baltic: [],
-  arctic: [],
-  other: ["human_health/environment/children_health_fossil_fuels.html"]
-}
+[{
+  "europe": ["environment/forests/europe/swiss-wolves.html"],
+  "north_america": [],
+  "south_america": [],
+  "africa": [],
+  "oceania": ["environment/oceans/oceania/maui_dolphins.html"],
+  "asia": [],
+  "atlantic": [],
+  "pacific": ["environment/oceans/oceania/maui_dolphins.html"],
+  "indian": [],
+  "mediterranean": [],
+  "baltic": [],
+  "arctic": [],
+  "other": ["human_health/environment/children_health_fossil_fuels.html"],
+}]
