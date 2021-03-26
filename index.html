@@ -196,14 +196,26 @@
 
 console.log("HERE")
 
-let requestURL = "article_list.json"
+// getting list of articles
+let requestURL = "https://hannah-haas.github.io/newspaper/article_list.json"
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
+
+var random_article_list = []
+
 request.onload = function() {
-  const superHeroes = request.response;
-  console.log(superHeroes)
+  const articles = request.response;
+  console.log(articles)
+  for (let i = 0; i < articles.length; i++) {
+    console.log(articles.length)
+  }
 }
+
+random_num = Math.floor(Math.random() * Math.floor(random_article_list.length));
+
+random_article = random_article_list[random_num]
+document.location.href = random_article
 
 </script>
