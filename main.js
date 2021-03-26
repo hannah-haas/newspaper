@@ -21,6 +21,6 @@ async function fetchData() {
     random_num = Math.floor(Math.random() * Math.floor(random_article_list.length));
     random_article = random_article_list[random_num]
     console.log(random_article)
-    // document.location.href = random_article
+    document.location.href = random_article
 
 }

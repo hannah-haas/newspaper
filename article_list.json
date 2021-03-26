@@ -1,24 +1,60 @@
 [{
   "europe": [
-    {"environment/forests/europe/swiss-wolves.html": ["test", "test1"]},
-    {"environment/forests/europe/swiss-wolves.html": ["test3", "test4"]}
+    {"environment/forests/europe/swiss-wolves.html":
+      [
+        "Should wolves be protected on Swiss soil? A referendum that divides a neutral country.",
+        "On the 27 November 2020, 51.9 per cent of Swiss voters voted ‘No’ in a referendum revising the Swiss Hunting Act of 1986. In Switzerland, wolves will continue to be a nationally protected species.",
+        "Forests | Europe",
+        "March 1, 2021",
+        "MaiMoeslund_Unsplash_Flickr.jpg",
+        "wolf, switzerland, forest"
+      ]
+    }
   ],
   "north_america": [],
   "south_america": [],
   "africa": [],
-  "oceania": [
-    {"environment/oceans/oceania/maui_dolphins.html": ["test", "test1"]}
+  "oceania":
+  [
+    {"environment/oceans/oceania/maui_dolphins.html":
+      [
+        "A status report on the critically endangered Māui dolphin.",
+        "Two of the world’s smallest dolphins have been listed as endangered and critically endangered by the International Union for Conservation of Nature (IUCN). The populations of Hector’s and Māui dolphins are dwindling, with only around 10,000 Hector’s and a mere 63 Māui dolphins, respectively.",
+        "Oceans | Oceania",
+        "March 18, 2021",
+        "MaiMoeslund_Unsplash_Flickr.jpg",
+        "dolphin, new zealand, Maui, fishing, ocean"
+      ]
+    }
   ],
   "asia": [],
   "atlantic": [],
   "pacific": [
-    {"environment/oceans/oceania/maui_dolphins.html": ["test", "test1"]}
+    {"environment/oceans/oceania/maui_dolphins.html":
+      [
+        "A status report on the critically endangered Māui dolphin.",
+        "Two of the world’s smallest dolphins have been listed as endangered and critically endangered by the International Union for Conservation of Nature (IUCN). The populations of Hector’s and Māui dolphins are dwindling, with only around 10,000 Hector’s and a mere 63 Māui dolphins, respectively.",
+        "Oceans | Oceania",
+        "March 18, 2021",
+        "MaiMoeslund_Unsplash_Flickr.jpg",
+        "dolphin, new zealand, Maui, fishing, ocean"
+      ]
+    }
   ],
   "indian": [],
   "mediterranean": [],
   "baltic": [],
   "arctic": [],
   "other": [
-    {"human_health/environment/children_health_fossil_fuels.html": ["test", "test1"]}
+    {"human_health/environment/children_health_fossil_fuels.html":
+      [
+        "Children’s health is increasingly at risk due to fossil fuel combustion.",
+        "Children are increasingly at risk of prematurely dying from respiratory infections. A recent study from the University of Birmingham, University of Leicester and Harvard University estimated that 7.2% of respiratory deaths in children under the age of 5 can be attributed to PM2.5-related fossil fuel burning. Children's brain, lungs and immune systems are very susceptible during their early development and can become impaired by exposure to air pollutants.",
+        "Human Health | Environment",
+        "March 18, 2021",
+        "Power Plant Girl. Ron Wolf, Flickr _ m anamul rezwan, pixabay.jpg",
+        "pollution, lung, air"
+      ]
+    }
   ]
 }]
