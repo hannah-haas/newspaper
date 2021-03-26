@@ -6,13 +6,19 @@
   "north_america": [],
   "south_america": [],
   "africa": [],
-  "oceania": ["environment/oceans/oceania/maui_dolphins.html"],
+  "oceania": [
+    {"environment/oceans/oceania/maui_dolphins.html": ["test", "test1"]}
+  ],
   "asia": [],
   "atlantic": [],
-  "pacific": ["environment/oceans/oceania/maui_dolphins.html"],
+  "pacific": [
+    {"environment/oceans/oceania/maui_dolphins.html": ["test", "test1"]}
+  ],
   "indian": [],
   "mediterranean": [],
   "baltic": [],
   "arctic": [],
-  "other": ["human_health/environment/children_health_fossil_fuels.html"]
+  "other": [
+    {"human_health/environment/children_health_fossil_fuels.html": ["test", "test1"]}
+  ]
 }]
