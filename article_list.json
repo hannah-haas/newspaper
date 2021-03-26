@@ -1,7 +1,8 @@
 [{
-  "europe": [{
-    "environment/forests/europe/swiss-wolves.html": ["test", "test1"]
-  }],
+  "europe": [
+    {"environment/forests/europe/swiss-wolves.html": ["test", "test1"]},
+    {"environment/forests/europe/swiss-wolves.html": ["test3", "test4"]},
+  ],
   "north_america": [],
   "south_america": [],
   "africa": [],

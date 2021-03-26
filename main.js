@@ -10,14 +10,14 @@ async function fetchData() {
     data.forEach(obj => {
         Object.entries(obj).forEach(([key, values]) => {
 
-            console.log(values);
+            console.log(values.keys());
             if (values.length != 0){
               random_article_list = random_article_list.concat(values)
             }
 
         });
     });
-
+    console.log(random_article_list)
     random_num = Math.floor(Math.random() * Math.floor(random_article_list.length));
     random_article = random_article_list[random_num]
     console.log(random_article)
