@@ -7,8 +7,22 @@
   <link href="../../../individual_article.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width">
-  <meta name="twitter:card" content="summary">
+
+  <!-- for facebook -->
   <link rel="image_src" href="images/MaiMoeslund_Unsplash_Flickr.jpg"/>
+
+  <!-- for twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Two of the world’s smallest dolphins have been listed as endangered and
+    critically endangered by the International Union for Conservation of
+    Nature (IUCN). The populations of Hector’s and Māui dolphins are dwindling,
+    with only around 10,000 Hector’s and a mere 63 Māui dolphins, respectively." />
+  <meta name="twitter:image" content="https://hannah-haas.github.io/newspaper/environment/oceans/oceania/images/MaiMoeslund_Unsplash_Flickr.jpg">
+  <meta name="twitter:url" content="encodeURIComponent(document.URL)" />
+
+  <!-- for linkedin -->
+  <meta name="image" property="og:image" content="https://hannah-haas.github.io/newspaper/environment/oceans/oceania/images/MaiMoeslund_Unsplash_Flickr.jpg">
+  <meta property='og:title' content='A status report on the critically endangered Māui dolphin.'/>
 
   </meta>
 </head>
@@ -502,40 +516,24 @@
         <div class="flex-container">
           <div>
             <img src="../../../static_images/twitter.png" style="height:2.5vh;">
-            <!-- <a href="https://twitter.com/share?url=<URL>&text=<TEXT>via=<USERNAME>" class="share-btn">
-          Tweet
-        </a> -->
             <a class="share-btn" href="https://twitter.com/intent/tweet?" target="_blank" title="Tweet"
-              onclick="window.open('https://twitter.com/intent/tweet?text=Check%20out%20this%20article: ' + encodeURIComponent(document.title) + ':%20 ' + encodeURIComponent(document.URL)); return false;"> Tweet </a>
+              onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + '%20 ' + encodeURIComponent(document.URL)); return false;"> Tweet</a>
           </div>
 
           <div class="center">
             <img src="../../../static_images/facebook.png" style="height:2.5vh;">
-            <!-- <a href="https://www.facebook.com/sharer/sharer.php?u=<URL>" class="share-btn">
-            Share
-        </a> -->
             <a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u=&t=" target="_blank" title="Share"
               onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;">Share </a>
-
           </div>
 
           <div class="center">
             <img src="../../../static_images/linkedin.png" style="height:2.5vh;">
-            <!-- <a href="https://www.linkedin.com/shareArticle?url=<URL>&title=<TITLE>&summary=<SUMMARY>&source=<SOURCE_URL>" class="share-btn">
-            Post
-        </a> -->
-
             <a class="share-btn" href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source=" target="_blank" title="Post"
-              onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' + encodeURIComponent(document.title)); return false;">Post</a>
+              onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' + encodeURIComponent(document.title)) ; return false;">Post</a>
           </div>
           <div class="center" id="last_div">
             <img src="../../../static_images/mail.png" style="height:2.5vh;">
-            <!-- <a href="mailto:?subject=<SUBJECT>&body=<BODY>" class="share-btn">
-            Email
-        </a> -->
-
-            <a class="share-btn" href="mailto:?subject=&body=:%20" target="_blank" title="Email"
-              onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' + encodeURIComponent(document.URL)) + '&img=' + 'https://hannah-haas.github.io/newspaper/static_images/julia_riopelle.jpg'; return false;">Email</a>
+            <a class="share-btn" href="mailto:?subject=&body=:%20" target="_blank" title="Email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' + encodeURIComponent(document.URL)); return false;">Email</a>
           </div>
         </div>
         <hr>

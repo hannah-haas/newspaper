@@ -7,7 +7,25 @@
   <link href="../../individual_article.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width">
+
+  <!-- for facebook -->
   <link rel="image_src" href="images/Power Plant Girl. Ron Wolf, Flickr _ m anamul rezwan, pixabay.jpg"/>
+
+  <!-- for twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Children are increasingly at risk of prematurely dying from respiratory
+  infections. A recent study from the University of Birmingham, University
+  of Leicester and Harvard University estimated that 7.2% of respiratory
+  deaths in children under the age of 5 can be attributed to PM2.5-related
+  fossil fuel burning. Children's brain, lungs and immune systems are very
+  susceptible during their early development and can become impaired by
+  exposure to air pollutants." />
+  <meta name="twitter:image" content="https://hannah-haas.github.io/newspaper/human_health/environment/images/Power Plant Girl. Ron Wolf, Flickr _ m anamul rezwan, pixabay.jpg">
+  <meta name="twitter:url" content="encodeURIComponent(document.URL)" />
+
+  <!-- for linkedin -->
+  <meta name="image" property="og:image" content="https://hannah-haas.github.io/newspaper/human_health/environment/images/Power Plant Girl. Ron Wolf, Flickr _ m anamul rezwan, pixabay.jpg">
+  <meta property='og:title' content='Children’s health is increasingly at risk due to fossil fuel combustion.'/>
 
 </head>
 
@@ -240,44 +258,27 @@
             Res. 195, 110754 (2021). </p>
         </div>
 
-        <!-- <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>. -->
-
         <hr>
         <div class="flex-container">
           <div>
-            <img src="../../static_images/twitter.png" style="height:2.5vh;">
-            <!-- <a href="https://twitter.com/share?url=<URL>&text=<TEXT>via=<USERNAME>" class="share-btn">
-        Tweet
-      </a> -->
+            <img src="../../../static_images/twitter.png" style="height:2.5vh;">
             <a class="share-btn" href="https://twitter.com/intent/tweet?" target="_blank" title="Tweet"
-              onclick="window.open('https://twitter.com/intent/tweet?text=Check%20out%20this%20article:%20' + encodeURIComponent(document.title) + '%20 ' + encodeURIComponent(document.URL)); return false;"> Tweet</a>
+              onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + '%20 ' + encodeURIComponent(document.URL)); return false;"> Tweet</a>
           </div>
 
           <div class="center">
-            <img src="../../static_images/facebook.png" style="height:2.5vh;">
-            <!-- <a href="https://www.facebook.com/sharer/sharer.php?u=<URL>" class="share-btn">
-          Share
-      </a> -->
+            <img src="../../../static_images/facebook.png" style="height:2.5vh;">
             <a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u=&t=" target="_blank" title="Share"
               onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;">Share </a>
-
           </div>
 
           <div class="center">
-            <img src="../../static_images/linkedin.png" style="height:2.5vh;">
-            <!-- <a href="https://www.linkedin.com/shareArticle?url=<URL>&title=<TITLE>&summary=<SUMMARY>&source=<SOURCE_URL>" class="share-btn">
-          Post
-      </a> -->
-
+            <img src="../../../static_images/linkedin.png" style="height:2.5vh;">
             <a class="share-btn" href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source=" target="_blank" title="Post"
-              onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' + encodeURIComponent(document.title)); return false;">Post</a>
+              onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' + encodeURIComponent(document.title)) ; return false;">Post</a>
           </div>
           <div class="center" id="last_div">
-            <img src="../../static_images/mail.png" style="height:2.5vh;">
-            <!-- <a href="mailto:?subject=<SUBJECT>&body=<BODY>" class="share-btn">
-          Email
-      </a> -->
-
+            <img src="../../../static_images/mail.png" style="height:2.5vh;">
             <a class="share-btn" href="mailto:?subject=&body=:%20" target="_blank" title="Email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' + encodeURIComponent(document.URL)); return false;">Email</a>
           </div>
         </div>
