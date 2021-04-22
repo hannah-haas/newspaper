@@ -24,7 +24,7 @@
 .article_sub_title_left {
   margin-left: 2vw;
   margin-top: 1%;
-  font-size: 1.8vw;
+  font-size: 1.3vw;
   color: rgb(56, 86, 35);
 }
 
@@ -48,7 +48,7 @@
 
 .article_sub_title_right {
   margin-top: 1%;
-  font-size: 1.8vw;
+  font-size: 1.4vw;
   color: rgb(56, 86, 35);
 }
 
@@ -64,8 +64,23 @@
 
 .individual_article {
   border-bottom: 1px solid rgb(150, 186, 143);
-  height: 25vw;
-  margin-top: 1.5vw;
+  height: 26vw;
+  position: relative;
+
+}
+
+.testing{
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-55%);
+  transform: translateY(-55%);
+  float: left;
+  width: 60%;
+}
+
+.article_hover{
+  margin-top: 1.3vw;
 }
 
 .article_hover:hover .individualPhoto {

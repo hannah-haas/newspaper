@@ -17,8 +17,8 @@
 .julia_text {
   grid-column: 3;
   grid-row: 1;
-  height: 100%;
-  width: 100%;
+  margin-top: 2%;
+
 }
 
 .isabel_photo {
@@ -30,6 +30,7 @@
 .isabel_text {
   grid-column: 3;
   grid-row: 2;
+  margin-top: 4%;
 }
 
 .hannah_photo {
@@ -41,6 +42,8 @@
 .hannah_text {
   grid-column: 3;
   grid-row: 3;
+  margin-top: 4%;
+
 }
 
 .dom_photo {
@@ -53,6 +56,8 @@
 .dom_text {
   grid-column: 3;
   grid-row: 4;
+  margin-top: 4%;
+
 }
 
 .individualPhoto {
@@ -71,6 +76,7 @@
   /* margin-bottom: 2vw; */
   font-size: 2.3vw;
   color: rgb(56, 86, 35);
+  font-family: "Bembo", "sans-serif"
 }
 
 .about_me_title {
@@ -85,7 +91,8 @@
   text-align: center;
   margin-left: 2vw;
   margin-top: 2vw;
-  font-size: 1.5vw;
+  font-size: 1.4vw;
+  font-family: "Spectral", "sans-serif";
 }
 
 .horizontal_dotted_line {
@@ -123,6 +130,8 @@
   margin-right: 10%;
   text-align: justify;
   text-justify: inter-word;
+  font-family: "Spectral", "sans-serif" ;
+  font-size: 1.2em;
 }
 
 .bio {

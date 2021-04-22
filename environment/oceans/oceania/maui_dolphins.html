@@ -484,6 +484,18 @@
         </br>
         </br>
         <p class="feature_image_text"> Feature Image: Mai Moeslund / Unsplash </p>
+
+        <button type="button" class="collapsible">References</button>
+        <div class="content">
+            <p class="reference_item"> Doc.govt.nz. 2021. Facts about Māui dolphin. [online] Available at: <https://www.doc.govt.nz/nature/native-animals/marine-mammals/dolphins/maui-dolphin/facts/> [Accessed 22 March 2021]. </p>
+            <p class="reference_item"> Stats.govt.nz. 2021. Bycatch of protected species: Hector’s and Māui dolphins | Stats NZ. [online] Available at: <https://www.stats.govt.nz/indicators/bycatch-of-protected-species-hectors-and-maui-dolphins> [Accessed 22 March 2021]. </p>
+            <p class="reference_item"> 2020. Recreational Fishing Rules: Central. [ebook] New Zealand Government. Available at: <https://www.mpi.govt.nz/dmsdocument/7281-Central-Recreational-Fishing-Rules-printer-friendly> [Accessed 22 March 2021]. </p>
+            <p class="reference_item"> Mpi.govt.nz. 2020. Central Area Fishing Rules. [online] Available at: <https://www.mpi.govt.nz/fishing-aquaculture/recreational-fishing/fishing-rules/central-area-fishing-rules/> [Accessed 22 March 2021]. </p>
+            <p class="reference_item"> Mpi.govt.nz. 2020. Auckland and Kermadec area fishing rules. [online] Available at: <https://www.mpi.govt.nz/fishing-aquaculture/recreational-fishing/fishing-rules/auckland-kermadec-fishing-rules/> [Accessed 22 March 2021]. </p>
+            <p class="reference_item"> New Zealand Government, 2021. Hectors and Māui Dolphin Threat Management Plan Review – Fisheries Measures. Office of the Minister of Fisheries. <https://www.mpi.govt.nz/dmsdocument/41109-Hectors-and-Maui-Dolphin-Threat-Management-Plan-Review-Cabinet-paper> [Accessed 22 March 2021]. </p>
+            <p class="reference_item"> Te Ohu Kaimoana. 2021. Responses to Government. [online] Available at: <https://teohu.maori.nz/governance-reporting/submissions/> [Accessed 22 March 2021]. </p>
+        </div>
+
         <hr>
         <div class="flex-container">
           <div>
@@ -581,3 +593,21 @@
 </body>
 
 </html>
+
+<script>
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
