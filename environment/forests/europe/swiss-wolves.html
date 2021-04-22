@@ -11,12 +11,11 @@
   <link rel="image_src" href="images/Ralf Κλενγελ_cover.jpg"/>
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@example" />
   <meta name="twitter:title" content="Should wolves be protected on Swiss soil? A referendum that divides a neutral country." />
   <meta name="twitter:description" content="On the 27 November 2020, 51.9 per cent of Swiss voters voted ‘No’ in a
   referendum revising the Swiss Hunting Act of 1986. In Switzerland, wolves will continue to be a
   nationally protected species." />
-  <meta name="twitter:image" content="https://pbs.twimg.com/card_img/1384502275872223232/-Qm8db1s?format=jpg&name=medium">
+  <meta name="twitter:image" content="http://www.programcafe.in/card-large-image.png">
   <meta name="twitter:url" content="encodeURIComponent(document.URL)" />
 
 </div>
@@ -296,9 +295,13 @@
           Tweet
         </a> -->
 
-            <a class="share-btn" href="https://twitter.com/intent/tweet?" target="_blank" title="Tweet"
+            <!-- <a class="share-btn" href="https://twitter.com/intent/tweet?" target="_blank" title="Tweet"
               onclick="window.open('https://twitter.com/intent/tweet?text=Check%20out%20this%20article:%20' + encodeURIComponent(document.title) + '%20 ' + encodeURIComponent(document.URL)); return false;"> Tweet</a>
-          </div>
+          </div> -->
+          <a class="share-btn"
+           href="https://twitter.com/intent/tweet?via=ProgramCafe">
+            Tweet
+        </a>
 
           <div class="center">
             <img src="../../../static_images/facebook.png" style="height:2.5vh;">
@@ -404,3 +407,21 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
+
+<script>
+       window.twttr = (function (d, s, id) {
+           var js, fjs = d.getElementsByTagName(s)[0],
+             t = window.twttr || {};
+           if (d.getElementById(id)) return t;
+           js = d.createElement(s);
+           js.id = id;
+           js.src = "https://platform.twitter.com/widgets.js";
+           fjs.parentNode.insertBefore(js, fjs);
+
+           t._e = [];
+           t.ready = function (f) {
+               t._e.push(f);
+           };
+
+           return t;
+       }(document, "script", "twitter-wjs"));</script>  
