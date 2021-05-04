@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
- <head>
-   <title> My Website </title>
-   <link href="home_style.css" rel="stylesheet"/>
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-    <meta name="viewport" content="width=device-width">
-    <!-- <script type="text/javascript" src="article_list.js"></script>
+<head>
+  <title> My Website </title>
+  <link href="home_style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <meta name="viewport" content="width=device-width">
+  <!-- <script type="text/javascript" src="article_list.js"></script>
     <script type="text/javascript" src="myscript.js"></script> -->
-    <!-- console.log("HERE")
+  <!-- console.log("HERE")
     var local_data = article_list.json;
 
     var my_data = JSON.parse(local_data)
@@ -17,189 +18,193 @@
     </script> -->
 
 
- </head>
+</head>
 
- <body>
+<body>
 
-<div id="main">
-  <!-- <img class="logo" src="bird.png" > -->
+  <div id="main">
+    <!-- <img class="logo" src="bird.png" > -->
 
-  <div class="header">
-    <p style="font-size:60px;"> Amazonas Writes </p>
-    <p class="mission_statement"> To educate and advise companies, institutions and cities in the UK to become more environmentally friendly! </p>
-  </div>
-<hr>
-  <div id="menu">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">Sustainable Cities</a>
-        <ul class="dropdown">
-          <li><a href="#">Bristol</a></li>
-        </ul>
-      </li>
-      <li><a href="environment/environment.html">Environment</a>
-        <ul class="dropdown">
-          <li><a href="environment/oceans/oceans.html">Oceans  </a>
-            <ul class="dropdown" id="inner_dropdown">
-              <img id="map" src="static_images/map.png">
-              <li><a id="on_top" href="#">Atlantic</a></li>
-              <li><a id="on_top" href="#">Pacific</a></li>
-              <li><a id="on_top" href="#">Mediterranean</a></li>
-              <li><a id="on_top" href="#">Indian</a></li>
-              <li><a id="on_top" href="#">Baltic</a></li>
-              <li><a id="on_top" href="#">Arctic</a></li>
-            </ul>
-          </li>
-          <li><a href="environment/mountains/mountains.html">Mountains </a>
-            <ul class="dropdown" id="inner_dropdown">
-              <img id="map" src="static_images/map.png">
-              <li><a id="on_top" href="#">Europe</a></li>
-              <li><a id="on_top" href="#">North America</a></li>
-              <li><a id="on_top" href="#">South America</a></li>
-              <li><a id="on_top" href="#">Africa</a></li>
-              <li><a id="on_top" href="#">Asia</a></li>
-              <li><a id="on_top" href="#">Oceania</a></li>
-            </ul>
-          </li>
-          <li><a href="environment/forests/forests.html">Forests </a>
-            <ul class="dropdown" id="inner_dropdown">
-              <img id="map" src="static_images/map.png">
-              <li><a id="on_top" href="#">Europe</a></li>
-              <li><a id="on_top" href="#">North America</a></li>
-              <li><a id="on_top" href="#">South America</a></li>
-              <li><a id="on_top" href="#">Africa</a></li>
-              <li><a id="on_top" href="#">Asia</a></li>
-              <li><a id="on_top" href="#">Oceania</a></li>
-            </ul>
-          </li>
-          <li><a href="environment/deserts/deserts.html">Deserts </a>
-            <ul class="dropdown" id="inner_dropdown">
-              <img id="map" src="static_images/map.png">
-              <li><a id="on_top" href="#">North America</a></li>
-              <li><a id="on_top" href="#">South America</a></li>
-              <li><a id="on_top" href="#">Africa</a></li>
-              <li><a id="on_top" href="#">Asia</a></li>
-              <li><a id="on_top" href="#">Oceania</a></li>
-              <li><a id="empty" href="#"> e </a></li>
-            </ul>
-          </li>
-          <li><a href="environment/grasslands/grasslands.html">Grasslands </a>
-            <ul class="dropdown" id="inner_dropdown">
-              <img id="map" src="static_images/map.png">
-              <li><a id="on_top" href="#">Europe</a></li>
-              <li><a id="on_top" href="#">North America</a></li>
-              <li><a id="on_top" href="#">South America</a></li>
-              <li><a id="on_top" href="#">Africa</a></li>
-              <li><a id="on_top" href="#">Asia</a></li>
-              <li><a id="empty" href="#"> e </a></li>
-            </ul>
-          </li>
-          <li><a href="environment/tundra_poles/tundra_poles.html">Tundra and Poles </a>
-            <ul class="dropdown" id="inner_dropdown">
-              <img id="map" src="static_images/map.png">
-              <li><a id="on_top" href="#">Europe</a></li>
-              <li><a id="on_top" href="#">North America</a></li>
-              <li><a id="on_top" href="#">Asia</a></li>
-              <li><a id="on_top" href="#">Oceania</a></li>
-              <li><a id="empty" href="#"> e </a></li>
-              <li><a id="empty" href="#"> e </a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li><a href="human_health/human_health.html">Human Health</a>
-        <ul class="dropdown">
-          <li><a href="human_health/environment/hh_environment.html"> Environment </a></li>
-          <li><a href="human_health/communities/communities.html"> Communities </a></li>
-        </ul>
-      </li>
-      <li><a href="write_for_us.html">Write For Us</a></li>
-      <li><a href="about_us.html">About Us</a></li>
-      <li>
-        <div class="search_bar">
-          <form action="">
-            <input placeholder="Search..." type="search">
-            <i class="fa fa-search"></i>
-          </form>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <hr>
-  <div class="content_wrap">
-    <div class="main_article_overall">
-      <a href="./environment/forests/europe/swiss-wolves.html">
-      <img class="hover_image" id="main_article" src="./environment/forests/europe/images/Ralf Κλενγελ_cover.jpg">
-      <p class="main_article_text3"> March 1, 2021 </p>
-      <p class="main_article_text">Should wolves be protected on Swiss soil? A referendum that divides a neutral country. </p>
-      <div style="display: flex; width: 40%;">
-        <p class="main_article_text2"> Forests | Europe </p>
-      </div>
-      </a>
+    <div class="header">
+      <p style="font-size:60px;"> Amazonas Writes </p>
+      <p class="mission_statement"> To educate and advise companies, institutions and cities in the UK to become more environmentally friendly! </p>
     </div>
-
-    <div class="flex-container">
-      <div class="sub_article" >
-        <a href="./environment/oceans/oceania/maui_dolphins.html" style="text-decoration:none;">
-          <img class="sub_article_img" src="./environment/oceans/oceania/images/MaiMoeslund_Unsplash_Flickr.jpg">
-          <p class="sub_article_text"> A status report on the critically endangered Māui dolphin. </p>
-          <p class="sub_article_text2"> Environment | Oceans </p>
+    <hr>
+    <div id="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Sustainable Cities</a>
+          <ul class="dropdown">
+            <li><a href="#">Bristol</a></li>
+          </ul>
+        </li>
+        <li><a href="environment/environment.html">Environment</a>
+          <ul class="dropdown">
+            <li><a href="environment/oceans/oceans.html">Oceans </a>
+              <ul class="dropdown" id="inner_dropdown">
+                <img id="map" src="static_images/map.png">
+                <li><a id="on_top" href="#">Atlantic</a></li>
+                <li><a id="on_top" href="#">Pacific</a></li>
+                <li><a id="on_top" href="#">Mediterranean</a></li>
+                <li><a id="on_top" href="#">Indian</a></li>
+                <li><a id="on_top" href="#">Baltic</a></li>
+                <li><a id="on_top" href="#">Arctic</a></li>
+              </ul>
+            </li>
+            <li><a href="environment/mountains/mountains.html">Mountains </a>
+              <ul class="dropdown" id="inner_dropdown">
+                <img id="map" src="static_images/map.png">
+                <li><a id="on_top" href="#">Europe</a></li>
+                <li><a id="on_top" href="#">North America</a></li>
+                <li><a id="on_top" href="#">South America</a></li>
+                <li><a id="on_top" href="#">Africa</a></li>
+                <li><a id="on_top" href="#">Asia</a></li>
+                <li><a id="on_top" href="#">Oceania</a></li>
+              </ul>
+            </li>
+            <li><a href="environment/forests/forests.html">Forests </a>
+              <ul class="dropdown" id="inner_dropdown">
+                <img id="map" src="static_images/map.png">
+                <li><a id="on_top" href="#">Europe</a></li>
+                <li><a id="on_top" href="#">North America</a></li>
+                <li><a id="on_top" href="#">South America</a></li>
+                <li><a id="on_top" href="#">Africa</a></li>
+                <li><a id="on_top" href="#">Asia</a></li>
+                <li><a id="on_top" href="#">Oceania</a></li>
+              </ul>
+            </li>
+            <li><a href="environment/deserts/deserts.html">Deserts </a>
+              <ul class="dropdown" id="inner_dropdown">
+                <img id="map" src="static_images/map.png">
+                <li><a id="on_top" href="#">North America</a></li>
+                <li><a id="on_top" href="#">South America</a></li>
+                <li><a id="on_top" href="#">Africa</a></li>
+                <li><a id="on_top" href="#">Asia</a></li>
+                <li><a id="on_top" href="#">Oceania</a></li>
+                <li><a id="empty" href="#"> e </a></li>
+              </ul>
+            </li>
+            <li><a href="environment/grasslands/grasslands.html">Grasslands </a>
+              <ul class="dropdown" id="inner_dropdown">
+                <img id="map" src="static_images/map.png">
+                <li><a id="on_top" href="#">Europe</a></li>
+                <li><a id="on_top" href="#">North America</a></li>
+                <li><a id="on_top" href="#">South America</a></li>
+                <li><a id="on_top" href="#">Africa</a></li>
+                <li><a id="on_top" href="#">Asia</a></li>
+                <li><a id="empty" href="#"> e </a></li>
+              </ul>
+            </li>
+            <li><a href="environment/tundra_poles/tundra_poles.html">Tundra and Poles </a>
+              <ul class="dropdown" id="inner_dropdown">
+                <img id="map" src="static_images/map.png">
+                <li><a id="on_top" href="#">Europe</a></li>
+                <li><a id="on_top" href="#">North America</a></li>
+                <li><a id="on_top" href="#">Asia</a></li>
+                <li><a id="on_top" href="#">Oceania</a></li>
+                <li><a id="empty" href="#"> e </a></li>
+                <li><a id="empty" href="#"> e </a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="human_health/human_health.html">Human Health</a>
+          <ul class="dropdown">
+            <li><a href="human_health/environment/hh_environment.html"> Environment </a></li>
+            <li><a href="human_health/communities/communities.html"> Communities </a></li>
+          </ul>
+        </li>
+        <li><a href="write_for_us.html">Write For Us</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li style="background-color: white;">
+          <div class="search_bar">
+            <form action="">
+              <input placeholder="Search..." type="search">
+              <i class="fa fa-search"></i>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <hr>
+    <div class="content_wrap">
+      <div class="main_article_overall">
+        <a href="./environment/forests/europe/swiss-wolves.html">
+          <img class="hover_image" id="main_article" src="./environment/forests/europe/images/Ralf Κλενγελ_cover.jpg">
+          <p class="main_article_text3"> March 1, 2021 </p>
+          <p class="main_article_text">Should wolves be protected on Swiss soil? A referendum that divides a neutral country. </p>
+          <div style="display: flex; width: 40%;">
+            <p class="main_article_text2"> Forests | Europe </p>
+          </div>
         </a>
       </div>
-      <div>
+
+      <div class="flex-container">
         <div class="sub_article">
-          <a href="./human_health/environment/children_health_fossil_fuels.html" style="text-decoration:none;">
-            <img class="sub_article_img" src="./human_health/environment/images/Power Plant Girl. Ron Wolf, Flickr _ m anamul rezwan, pixabay.jpg">
-            <p class="sub_article_text"> Children’s health are increasingly at risk due to fossil fuel combustion. </p>
-            <p class="sub_article_text2"> Human Health | Environment </p>
+          <a href="./environment/oceans/oceania/maui_dolphins.html" style="text-decoration:none;">
+            <img class="sub_article_img" src="./environment/oceans/oceania/images/MaiMoeslund_Unsplash_Flickr.jpg">
+            <p class="sub_article_text"> A status report on the critically endangered Māui dolphin. </p>
+            <p class="sub_article_text2"> Environment | Oceans </p>
           </a>
         </div>
+        <div>
+          <div class="sub_article">
+            <a href="./human_health/environment/children_health_fossil_fuels.html" style="text-decoration:none;">
+              <img class="sub_article_img" src="./human_health/environment/images/Power Plant Girl. Ron Wolf, Flickr _ m anamul rezwan, pixabay.jpg">
+              <p class="sub_article_text"> Children’s health are increasingly at risk due to fossil fuel combustion. </p>
+              <p class="sub_article_text2"> Human Health | Environment </p>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="sub_article">
+            <a href="./environment/forests/europe/swiss-wolves.html" style="text-decoration:none;">
+              <img class="sub_article_img" src="example_article.jpg">
+              <p class="sub_article_text"> Should wolves be protected on Swiss soil? </p>
+              <p class="sub_article_text2"> Environment | Grasslands </p>
+            </a>
+          </div>
+        </div>
       </div>
-      <div>
-        <div class="sub_article">
-          <a href="./environment/forests/europe/swiss-wolves.html" style="text-decoration:none;">
-            <img class="sub_article_img" src="example_article.jpg">
-            <p class="sub_article_text"> Should wolves be protected on Swiss soil? </p>
-            <p class="sub_article_text2"> Environment | Grasslands </p>
-          </a>
+      <div style="height: 5vw"> </div>
+
+      <!-- <hr class="main_divider"> -->
+      <div class="horizontal_dotted_line"> <span class="dot"></span>
+        <p style="padding-left: 1vw;padding-right: 1vw; color:rgb(56, 86, 35)"> Our Mission </p> <span class="dot"></span>
+      </div>
+      <div style="height: 3vw"> </div>
+
+      <p class="mission_text">
+        The intent of this magazine is to inform readers about how complex
+        environmental issues actually are and bridge the communication gap between
+        scientists and policymakers. Environmental conservation is much more than
+        what appears on the surface – behind every issue is a cohort of interconnected,
+        deep-routed social, political and economic concerns as well. Our goal is to
+        highlight these factors and have its readers consider things they may have
+        not before.
+      </p>
+      <p class="mission_text">
+        Aside from the everyday reader, we hope that our articles provide insight
+        and are able to possibly advise companies, institutions and cities to become
+        more environmentally friendly.
+      </p>
+
+      <div id="bottomBar">
+        <div id="explore"> EXPLORE </div>
+        <a href="mailto:hannah_haas@brown.edu" id="connect"> CONNECT </a>
+        <a href="legal.html" id="legal"> LEGAL </a>
+        <div id="empty2"> </div>
+        <div id="follow_us">
+          <p id="ugh"> FOLLOW US: </p>
+          <a href="https://www.facebook.com/" target="_blank"><img class="social_media_icon" id="three" src="static_images/facebook_white.png"></a>
+          <a href="https://www.instagram.com/" target="_blank"><img class="social_media_icon" id="four" src="static_images/instagram_white.png"></a>
+          <a href="https://www.linkedin.com/" target="_blank"><img class="social_media_icon" id="five" src="static_images/linkedin_white.png"></a>
         </div>
       </div>
     </div>
-  <div style="height: 5vw"> </div>
+  </div>
 
-  <!-- <hr class="main_divider"> -->
-  <div class="horizontal_dotted_line"> <span class="dot"></span> <p style="padding-left: 1vw;padding-right: 1vw; color:rgb(56, 86, 35)"> Our Mission </p> <span class="dot"></span></div>
-  <div style="height: 3vw"> </div>
-
-    <p class="mission_text">
-      The intent of this magazine is to inform readers about how complex
-      environmental issues actually are and bridge the communication gap between
-      scientists and policymakers. Environmental conservation is much more than
-      what appears on the surface – behind every issue is a cohort of interconnected,
-      deep-routed social, political and economic concerns as well. Our goal is to
-      highlight these factors and have its readers consider things they may have
-      not before.
-    </p>
-    <p class="mission_text">
-      Aside from the everyday reader, we hope that our articles provide insight
-      and are able to possibly advise companies, institutions and cities to become
-      more environmentally friendly.
-    </p>
-
-    <div id="bottomBar">
-     <div id="explore"> EXPLORE </div>
-      <a href="mailto:hannah_haas@brown.edu"id="connect"> CONNECT </a>
-      <a href="legal.html" id="legal"> LEGAL </a>
-      <div id="empty2"> </div>
-      <div id="follow_us"> FOLLOW US:</div>
-      <a href="https://www.facebook.com/" target="_blank"><img class="social_media_icon" id="three" src="static_images/facebook_white.png" ></a>
-      <a href="https://www.instagram.com/" target="_blank"><img class="social_media_icon" id="four" src="static_images/instagram_white.png" ></a>
-      <a href="https://www.linkedin.com/" target="_blank"><img class="social_media_icon" id="five" src="static_images/linkedin_white.png" ></a>
-    </div>
-</div>
-</div>
-
-<script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
