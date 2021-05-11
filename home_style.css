@@ -208,7 +208,7 @@ body {
 
 #menu ul li:hover {
   color: rgb(194, 134, 151);
-  background-color: rgb(150, 186, 143);
+  /* background-color: purple; */
 }
 
 #menu>ul>li {
@@ -231,6 +231,10 @@ body {
   display: inline-block;
   text-align: center;
   align-items: flex-start;
+}
+
+#menu ul li:hover a {
+  color: rgb(194, 134, 151);
 }
 
 /* #menu>ul>li>ul b {
