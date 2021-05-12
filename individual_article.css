@@ -86,6 +86,13 @@ hr {
   width: 80%;
 }
 
+.highlighted_info_right {
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: right;
+  font-family: "Spectral";
+}
+
 figcaption {
   color: grey;
   padding: 2px;
