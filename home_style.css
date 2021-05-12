@@ -2,6 +2,7 @@ html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  /* max-height: 100vh */
 }
 
 body {
@@ -14,7 +15,6 @@ body {
   margin: 0 auto;
   min-height: 100vh;
   position: relative;
-  margin-top: 5vh;
 }
 
 .content_wrap {
@@ -50,7 +50,6 @@ body {
   width: 100%;
   bottom: 0;
   position: absolute;
-  margin-top: 5%;
   /* bottom: 0px; */
 }
 
@@ -506,7 +505,6 @@ form:hover .fa {
     width: 100%;
     bottom: 0;
     position: absolute;
-    margin-top: 5%;
     /* bottom: 0px; */
   }
 
@@ -532,7 +530,6 @@ form:hover .fa {
     width: 100%;
     bottom: 0;
     position: absolute;
-    margin-top: 5%;
     /* bottom: 0px; */
   }
 }
@@ -580,7 +577,6 @@ form:hover .fa {
     width: 100%;
     bottom: 0;
     position: absolute;
-    margin-top: 5%;
     padding-left: 3vw;
     /* bottom: 0px; */
   }

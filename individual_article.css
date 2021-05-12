@@ -14,6 +14,10 @@ p {
   font-family: "Spectral";
 }
 
+figcaption {
+  font-family: "Spectral";
+}
+
 .share-btn:focus,
 .share-btn:hover {
   text-decoration: none;
