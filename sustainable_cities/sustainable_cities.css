@@ -31,6 +31,7 @@
   margin-left: 6vw;
   margin-top: 1.5vw;
   color: rgb(5, 41, 14);
+  font-family: 'Glacial Indifference';
 }
 
 .middle {
@@ -50,6 +51,7 @@
   font-size: 16px;
   padding: 16px 32px;
   opacity: 0;
+  font-family: 'Spectral';
 }
 
 .image_hover {

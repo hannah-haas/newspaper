@@ -2,6 +2,14 @@
   font-weight: bold;
   color: rgb(56, 86, 35);
   font-size: 1.2em;
+  font-family: 'Bembo';
+}
+
+.write_for_us_text {
+  padding-left: 1vw;
+  padding-right: 1vw;
+  color: rgb(56, 86, 35);
+  font-family: 'Glacial Indifference';
 }
 
 .highlighted_info_end {
@@ -9,6 +17,7 @@
   color: rgb(56, 86, 35);
   font-size: 1.2em;
   text-align: right;
+  font-family: "sans-serif";
 }
 
 .contact_button {
@@ -19,4 +28,8 @@
   justify-content: center;
   align-items: center;
   border: 1px solid rgb(5, 41, 14);
+}
+
+#font {
+  font-family: "Spectral", "sans-serif";
 }

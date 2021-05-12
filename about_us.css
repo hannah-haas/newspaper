@@ -8,6 +8,13 @@
   margin-right: 10%;
 }
 
+.about_us_text {
+  padding-left: 1vw;
+  padding-right: 1vw;
+  color: rgb(56, 86, 35);
+  font-family: 'Glacial Indifference';
+}
+
 .julia_photo {
   grid-column: 2;
   grid-row: 1;
@@ -18,7 +25,6 @@
   grid-column: 3;
   grid-row: 1;
   margin-top: 2%;
-
 }
 
 .isabel_photo {
@@ -43,7 +49,6 @@
   grid-column: 3;
   grid-row: 3;
   margin-top: 2%;
-
 }
 
 .dom_photo {
@@ -57,7 +62,6 @@
   grid-column: 3;
   grid-row: 4;
   /* margin-top: 1%; */
-
 }
 
 .individualPhoto {
@@ -76,7 +80,7 @@
   /* margin-bottom: 2vw; */
   font-size: 2.3vw;
   color: rgb(56, 86, 35);
-  font-family: "Bembo", "sans-serif"
+  font-family: "sans-serif"
 }
 
 .about_me_title {
@@ -130,7 +134,7 @@
   margin-right: 10%;
   text-align: justify;
   text-justify: inter-word;
-  font-family: "Spectral", "sans-serif" ;
+  font-family: "Spectral", "sans-serif";
   font-size: 1.2em;
 }
 

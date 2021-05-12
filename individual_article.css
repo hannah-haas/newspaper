@@ -10,6 +10,10 @@
   text-decoration: none;
 }
 
+p {
+  font-family: "Spectral";
+}
+
 .share-btn:focus,
 .share-btn:hover {
   text-decoration: none;
@@ -66,7 +70,6 @@ hr {
   padding-right: 15%;
   padding-bottom: 2vh;
   font-size: 1.1em;
-  font-family: "Times New Roman", Monaco, Helvetica, sans-serif;
   font-style: normal;
   text-align: justify;
   text-justify: inter-word;
@@ -101,35 +104,19 @@ figcaption {
   margin-top: -14%;
   max-width: 90%;
   font-size: 3vw;
-  font-family: Times, Rockwell, Serif;
-  font-weight: bold;
+  font-family: "Glacial Indifference";
   color: #FFF;
   padding: .6em 1em .6em 1.7em;
-}
-
-.cover_text2 {
-  position: absolute;
-  display: block;
-  width: 80%;
-  margin-top: -7%;
-  max-width: 610px;
-  font-size: 2vw;
-  font-family: Times, Rockwell, Serif;
-  font-weight: bold;
-  color: #FFF;
-  padding: .6em 1em .6em 2.6em;
 }
 
 .parallax {
   min-height: 55vh;
   object-fit: cover;
-
-
- /* Create the parallax scrolling effect */
- background-attachment: fixed;
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
@@ -143,8 +130,7 @@ figcaption {
   display: block;
   margin-top: -13%;
   font-size: 2vw;
-  font-family: Times, Rockwell, Serif;
-  font-weight: bold;
+  font-family: "Glacial Indifference";
   color: #FFF;
   padding: .6em .5em .6em 2.6em;
   float: left;
@@ -163,6 +149,7 @@ figcaption {
   flex: 40%;
   margin-left: 2vw;
   margin-top: 2vw;
+  font-family: "Spectral";
 }
 
 .related_article_flex_container {
@@ -179,21 +166,25 @@ figcaption {
 
 .sub_article_text {
   font-size: 2vw;
+  font-family: "sans-serif";
 }
 
 .sub_article_text2 {
   font-size: 1.5vw;
+  font-family: "sans-serif";
 }
 
 .author_name {
   color: grey;
   padding-bottom: 10px;
   border-bottom: 1px solid grey;
+  font-family: "sans-serif";
 }
 
 .date {
   color: grey;
   padding-top: 10px;
+  font-family: "sans-serif";
 }
 
 .image_group:hover .article_author_photo {
@@ -211,6 +202,7 @@ figcaption {
   text-align: left;
   outline: none;
   font-size: 15px;
+  font-family: "sans-serif"
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -228,7 +220,8 @@ figcaption {
 }
 
 .collapsible:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
   font-size: 13px;
   color: white;
   float: right;
@@ -236,7 +229,8 @@ figcaption {
 }
 
 .active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
 }
 
 .reference_item {
