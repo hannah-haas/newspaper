@@ -12,7 +12,18 @@
     }
   ],
   "north_america": [],
-  "south_america": [],
+  "south_america": [
+    {"environment/forests/south_america/amazon_rainforest.html":
+      [
+        "The Bolsonaro Administration is not taking enough action to conserve Earth’s shrinking lungs.",
+        "The Amazonian rainforest is vital to mitigating the impacts of climate change. However, findings suggest that, due to ongoing human disturbances, deforested areas of the world’s largest rainforest are not recovering at a fast-enough rate.",
+        "Forests | South America",
+        "May 12, 2021",
+        "COVERIMAGE_EduardoZmievski_Unsplash.jpg",
+        "environment, rainforest, Brazil, Bolsonaro, Netzero, amazon, deforestation"
+      ]
+    }
+  ],
   "africa": [],
   "oceania":
   [
