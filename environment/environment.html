@@ -15,27 +15,37 @@
 </head>
 
 <body>
-
   <div id="main">
-    <!-- <img class="logo" src="bird.png" > -->
+    <div class="container">
+      <div class="logo">
+        <a href="#"><img src="../static_images/logo.jpg" alt="logo"></a>
+      </div>
+      <div class="navbar">
 
-    <div id="menu" style="z-index:1">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../sustainable_cities/sustainable_cities.html">Sustainable Cities</a></li>
-        <li><a href="environment.html">Environment</a></li>
-        <li><a href="../human_health/human_health.html">Human Health</a></li>
-        <li><a href="../write_for_us.html">Write For Us</a></li>
-        <li><a href="../about_us.html">About Us</a></li>
-        <li style="background-color: white;">
-          <div class="search_bar">
+        <div class="icon-bar" onclick="Show()">
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+
+        <ul id="nav-lists">
+          <li class="close"><span onclick="Hide()">×</span></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../sustainable_cities/sustainable_cities.html">Sustainable Cities</a></li>
+          <li><a href="environment.html" class='active-page'>Environment</a></li>
+          <li><a href="../human_health/human_health.html">Human Health</a></li>
+          <li><a href="../write_for_us.html">Write For Us</a></li>
+          <li><a href="../about_us.html">About Us</a></li>
+
+          <li>
             <form action="">
               <input placeholder="Search..." type="search">
               <i class="fa fa-search"></i>
             </form>
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+
+      </div>
     </div>
     <div class="content_wrap">
       <p class="section_text"> | Environment </p>

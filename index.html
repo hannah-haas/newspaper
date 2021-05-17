@@ -12,28 +12,39 @@
 
 <body>
 
-  <div id="main">
-    <div id="menu">
-      <img class="logo" src="static_images/Kingfisher.jpg">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="sustainable_cities/sustainable_cities.html">Sustainable Cities</a> </li>
-        <li><a href="environment/environment.html">Environment</a> </li>
-        <li><a href="human_health/human_health.html">Human Health</a> </li>
+  <div class="container">
+    <div class="logo">
+      <a href="#"><img src="static_images/logo.jpg" alt="logo"></a>
+    </div>
+    <div class="navbar">
 
+      <div class="icon-bar" onclick="Show()">
+        <i></i>
+        <i></i>
+        <i></i>
+      </div>
+
+      <ul id="nav-lists">
+        <li class="close"><span onclick="Hide()">×</span></li>
+        <li><a href="#" class='active-page'>Home</a></li>
+        <li><a href="sustainable_cities/sustainable_cities.html">Sustainable Cities</a></li>
+        <li><a href="environment/environment.html">Environment</a></li>
+        <li><a href="human_health/human_health.html">Human Health</a></li>
         <li><a href="write_for_us.html">Write For Us</a></li>
         <li><a href="about_us.html">About Us</a></li>
-        <li style="background-color: white;">
-          <div class="search_bar">
-            <form action="">
-              <input placeholder="Search..." type="search">
-              <i class="fa fa-search"></i>
-            </form>
-          </div>
+
+        <li>
+          <form action="">
+            <input placeholder="Search..." type="search">
+            <i class="fa fa-search"></i>
+          </form>
         </li>
       </ul>
+
     </div>
-    <hr>
+  </div>
+  <div id="main">
+
     <div class="content_wrap">
       <div class="main_article_overall">
         <a href="./environment/forests/europe/swiss-wolves.html">
@@ -111,7 +122,17 @@
     </div>
   </div>
 
-  <script src="main.js"></script>
+  <script>
+    var navList = document.getElementById("nav-lists");
+
+    function Show() {
+      navList.classList.add("_Menus-show");
+    }
+
+    function Hide() {
+      navList.classList.remove("_Menus-show");
+    }
+  </script>
 </body>
 
 </html>
