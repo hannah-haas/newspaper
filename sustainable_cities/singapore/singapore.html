@@ -7,36 +7,44 @@
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="../../subsection_individual.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
+  <link href='https://fonts.googleapis.com/css?family=Spectral' rel='stylesheet'>
+  <link href="http://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
   <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
 
   <div id="main">
-    <!-- <img class="logo" src="bird.png" > -->
+    <div class="container">
+      <div class="logo">
+        <a href="#"><img src="../../static_images/logo.jpg" alt="logo"></a>
+      </div>
+      <div class="navbar">
 
-    <div class="header">
-      <p style="font-size:60px;"> Amazonas Writes </p>
-      <p class="mission_statement"> To educate and advise companies, institutions and cities in the UK to become more environmentally friendly! </p>
-    </div>
-    <div id="menu">
-      <ul>
-        <li><a href="../../index.html">Home</a></li>
-        <li><a href="../sustainable_cities.html">Sustainable Cities</a></li>
-        <li><a href="../../environment/environment.html">Environment</a></li>
-        <li><a href="../../human_health/human_health.html">Human Health</a></li>
-        <li><a href="../../write_for_us.html">Write For Us</a></li>
-        <li><a href="../../about_us.html">About Us</a></li>
-        <li style="background-color: white;">
-          <div class="search_bar">
+        <div class="icon-bar" onclick="Show()">
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+
+        <ul id="nav-lists">
+          <li class="close"><span onclick="Hide()">×</span></li>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../sustainable_cities/sustainable_cities.html">Sustainable Cities</a></li>
+          <li><a href="../../environment/environment.html">Environment</a></li>
+          <li><a href="../../human_health/human_health.html">Human Health</a></li>
+          <li><a href="../../write_for_us.html">Write For Us</a></li>
+          <li><a href="../../about_us.html">About Us</a></li>
+
+          <li>
             <form action="">
               <input placeholder="Search..." type="search">
               <i class="fa fa-search"></i>
             </form>
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+
+      </div>
     </div>
 
     <div class="content_wrap">
