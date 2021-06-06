@@ -331,6 +331,7 @@ body {
   flex: 30%;
   z-index: 1;
   font-family: "Glacial Indifference";
+  text-decoration: none;
 }
 
 .main_article_text3 {
