@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 5vw 1fr 1fr 5vw;
   grid-template-rows: 30vw;
-  grid-row-gap: 10px;
+  /* grid-row-gap: 10px; */
   grid-column-gap: 10px;
   padding-bottom: 1vw;
   z-index: -1:
@@ -27,11 +27,14 @@
 }
 
 .section_text {
-  font-size: 1.3em;
+  font-size: 1.5em;
   margin-left: 6vw;
-  margin-top: 1.5vw;
+  margin-top: 5vw;
+  margin-bottom: 1vw;
+  width: 160px;
   color: rgb(5, 41, 14);
-  font-family: 'Glacial Indifference';
+  font-family: 'Spectral';
+  border-bottom: 1px solid rgb(5, 41, 14);
 }
 
 .middle {

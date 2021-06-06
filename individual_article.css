@@ -176,26 +176,26 @@ figcaption {
 }
 
 .sub_article_text {
-  font-size: 2vw;
-  font-family: "sans-serif";
+  font-size: 1.8vw;
+  font-family: "Glacial Indifference";
 }
 
 .sub_article_text2 {
-  font-size: 1.5vw;
-  font-family: "sans-serif";
+  font-size: 1.3vw;
+  font-family: "Glacial Indifference";
 }
 
 .author_name {
   color: grey;
   padding-bottom: 10px;
   border-bottom: 1px solid grey;
-  font-family: "sans-serif";
+  font-family: "Spectral";
 }
 
 .date {
   color: grey;
   padding-top: 10px;
-  font-family: "sans-serif";
+  font-family: "Spectral";
 }
 
 .image_group:hover .article_author_photo {
