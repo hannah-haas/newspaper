@@ -16,6 +16,7 @@ p {
 
 figcaption {
   font-family: "Spectral";
+  font-size: .9em;
 }
 
 .share-btn:focus,
@@ -26,6 +27,10 @@ figcaption {
 
 .share-btn:active {
   color: #e2e2e2;
+}
+
+.related_articles_and_author {
+  font-family: 'Spectral';
 }
 
 .center {
