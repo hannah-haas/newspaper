@@ -100,33 +100,22 @@
 }
 
 .horizontal_dotted_line {
-  width: 100%;
-  display: flex;
   font-size: 4vw;
-  color: rgb(150, 186, 143);
-  margin-top: 30px;
-  margin-bottom: 30px;
+  width: 96%;
+  text-align: center;
+  border-bottom: 2px solid rgb(150, 186, 143);
+  line-height: 0.1em;
+  margin: 50px 2% 50px 2%;
 }
 
 .dot {
-  flex: 1;
-  border-bottom: 5px dotted rgb(150, 186, 143);
-  height: 0.65em;
-}
-
-.horizontal_dotted_line_write {
-  width: 100%;
-  display: flex;
-  font-size: 4vw;
+  background: #fff;
+  padding: 0 10px;
+  padding-left: 1vw;
+  padding-right: 1vw;
   color: rgb(56, 86, 35);
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.dot_write {
-  flex: 1;
-  border-bottom: 5px dotted rgb(150, 186, 143);
-  height: 0.65em;
+  font-family: 'Spectral';
+  text-align: center;
 }
 
 .intro {

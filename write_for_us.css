@@ -5,11 +5,23 @@
   font-family: 'Spectral';
 }
 
-.write_for_us_text {
+.horizontal_dotted_line {
+  font-size: 4vw;
+  width: 96%;
+  text-align: center;
+  border-bottom: 2px solid rgb(150, 186, 143);
+  line-height: 0.1em;
+  margin: 50px 2% 50px 2%;
+}
+
+.dot {
+  background: #fff;
+  padding: 0 10px;
   padding-left: 1vw;
   padding-right: 1vw;
   color: rgb(56, 86, 35);
-  font-family: 'Glacial Indifference';
+  font-family: 'Spectral';
+  text-align: center;
 }
 
 .highlighted_info_end {

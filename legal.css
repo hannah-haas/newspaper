@@ -4,19 +4,21 @@
   font-size: 1em;
 }
 
-.highlighted_info_end {
-  font-weight: bold;
-  color: rgb(56, 86, 35);
-  font-size: 1.2em;
-  text-align: right;
+.horizontal_dotted_line {
+  font-size: 4vw;
+  width: 96%;
+  text-align: center;
+  border-bottom: 2px solid rgb(150, 186, 143);
+  line-height: 0.1em;
+  margin: 50px 2% 50px 2%;
 }
 
-.contact_button {
-  font-size: 1.2em;
-  height: 45px;
+.dot {
+  background: #fff;
+  padding: 0 10px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  color: rgb(56, 86, 35);
+  font-family: 'Spectral';
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid rgb(5, 41, 14);
 }
