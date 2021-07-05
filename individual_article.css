@@ -10,6 +10,11 @@
   text-decoration: none;
 }
 
+.content_wrap {
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+}
+
 p {
   font-family: "Spectral";
 }
