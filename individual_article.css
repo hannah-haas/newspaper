@@ -257,6 +257,10 @@ figcaption {
   color: grey;
 }
 
+.reference_link {
+  color: grey;
+}
+
 /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
 @media (max-width: 600px) {
   .parallax {
