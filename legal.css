@@ -54,6 +54,17 @@
   background-size: cover;
 }
 
+.quote {
+  font-weight: bold;
+  color: rgb(56, 86, 35);
+  font-size: 1.2em;
+  font-family: 'Spectral';
+  margin-top: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+
 @media (max-width: 700px) {
   .horizontal_line {
     margin-top: 8%;
