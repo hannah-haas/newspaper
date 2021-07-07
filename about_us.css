@@ -1,11 +1,10 @@
 #photos {
   display: grid;
-  grid-template-columns: 0% 30vw auto 0%;
-  grid-template-rows: 30vw 30vw 30vw 30vw;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 100vh 100vh;
   grid-row-gap: 30px;
+  grid-column-gap: 10px;
   padding-bottom: 1vw;
-  margin-left: 10.5%;
-  margin-right: 10%;
 }
 
 .about_us_text {
@@ -15,97 +14,33 @@
   font-family: 'Glacial Indifference';
 }
 
-.julia_photo {
+.julia {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.isabel {
   grid-column: 2;
   grid-row: 1;
-  /* border: 10px solid rgb(150, 186, 143); */
 }
 
-.julia_text {
+.hannah {
   grid-column: 3;
   grid-row: 1;
-  margin-top: 2%;
 }
 
-.isabel_photo {
-  grid-column: 2;
+.dom {
+  grid-column: 1;
   grid-row: 2;
-  /* border: 10px solid rgb(150, 186, 143); */
-}
-
-.isabel_text {
-  grid-column: 3;
-  grid-row: 2;
-  margin-top: 4%;
-}
-
-.hannah_photo {
-  grid-column: 2;
-  grid-row: 3;
-  /* border: 10px solid rgb(150, 186, 143); */
-}
-
-.hannah_text {
-  grid-column: 3;
-  grid-row: 3;
-  margin-top: 2%;
-}
-
-.dom_photo {
-  grid-column: 2;
-  grid-row: 4;
-  /* border: 5px solid white;
-  outline: 5px solid rgb(150, 186, 143); */
-}
-
-.dom_text {
-  grid-column: 3;
-  grid-row: 4;
-  /* margin-top: 1%; */
-}
-
-.individualPhoto {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border: 5px solid white;
-  outline: 3px solid rgb(150, 186, 143);
-  /* border-color: rgb(150, 186, 143);
-  border-width: medium; */
-}
-
-.about_me_name {
-  margin-left: 2vw;
-  margin-top: 1vw;
-  /* margin-bottom: 2vw; */
-  font-size: 2.2vw;
-  color: rgb(56, 86, 35);
-  font-family: "Spectral"
-}
-
-.about_me_title {
-  margin-left: 2vw;
-  margin-top: .5vw;
-  margin-bottom: 2vw;
-  font-size: 2vw;
-  color: rgb(56, 86, 35);
-}
-
-.about_me_text {
-  text-align: center;
-  margin-left: 2vw;
-  margin-top: 2vw;
-  font-size: 1.3vw;
-  font-family: "Spectral", "sans-serif";
 }
 
 .horizontal_dotted_line {
   font-size: 4vw;
-  width: 96%;
+  width: 100%;
   text-align: center;
-  border-bottom: 2px solid rgb(150, 186, 143);
+  border-bottom: 2px solid rgb(56, 86, 35);
   line-height: 0.1em;
-  margin: 50px 2% 50px 2%;
+  margin: 50px 2% 50px 0%;
 }
 
 .dot {
@@ -119,22 +54,239 @@
 }
 
 .intro {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 0%;
+  margin-right: 0%;
   text-align: justify;
   text-justify: inter-word;
   font-family: "Spectral", "sans-serif";
   font-size: 1.2em;
 }
 
-.bio {
-  margin-left: 10px;
-}
-
-.julia_photo:hover .individualPhoto {
+#has_page:hover {
   opacity: 0.7;
 }
 
-.isabel_photo:hover .individualPhoto {
-  opacity: 0.7;
+.parallax {
+  min-height: 60vh;
+  margin-top: 20px;
+  object-fit: cover;
+  margin-left: 1%;
+  margin-right: 1%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.highlighted_info {
+  font-weight: bold;
+  color: rgb(56, 86, 35);
+  font-size: 1.2em;
+  font-family: 'Spectral';
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.content_wrap {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 1vh;
+}
+
+.title {
+  color: rgb(56, 86, 35);
+  font-family: "Spectral";
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.job-title {
+  color: rgb(56, 86, 35);
+  font-size: 18px;
+  weight: 100;
+  font-family: "Spectral";
+}
+
+.desc {
+  font-size: 1.1vw;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: rgb(56, 86, 35);
+  text-align: center;
+  font-family: "Spectral";
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  display: center;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.top {
+  margin-top: 16px;
+}
+
+.connect_individual_icon {
+  height: 90%;
+  width: auto;
+}
+
+.container2 {
+  width: 60%;
+  height: 5vh;
+  display: flex;
+  margin-left: 20%;
+  margin-right: 20%;
+  justify-content: center;
+}
+
+.item {
+  margin: 5px;
+  height: 100%;
+}
+
+.card {
+  border-radius: 6px;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 12px 13px rgba(0, 0, 0, 0.16), 0 12px 13px rgba(0, 0, 0, 0.16);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  background: rgb(227, 237, 221);
+  text-align: center;
+}
+
+.header {
+  background: linear-gradient(to bottom right, #F762D2, #FF51A0);
+  height: 250px;
+}
+
+.profile {
+  border-radius: 100%;
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+@media (max-width: 1100px) {
+  .desc {
+    font-size: 1.2vw;
+  }
+}
+
+@media (max-width: 850px) {
+  .desc {
+    font-size: 1.5vw;
+  }
+
+  #photos {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 90vh 90vh;
+    grid-row-gap: 30px;
+    grid-column-gap: 10px;
+    padding-bottom: 1vw;
+  }
+
+  .julia {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .isabel {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .hannah {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .dom {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media (max-width: 600px) {
+  .desc {
+    font-size: 1.7vw;
+  }
+
+  .parallax {
+    background-attachment: scroll;
+    min-height: 40vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .desc {
+    font-size: 2.7vw;
+  }
+
+  #photos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80vh 80vh 80vh 80vh;
+    grid-row-gap: 30px;
+    grid-column-gap: 10px;
+    padding-bottom: 1vw;
+  }
+
+  .julia {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .isabel {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .hannah {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .dom {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .profile {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+@media (max-width: 400px) {
+  .desc {
+    font-size: 2.9vw;
+  }
+
+  .profile {
+    width: 150px;
+    height: 150px;
+  }
 }

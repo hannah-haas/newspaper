@@ -83,21 +83,21 @@
 }
 
 .article_list_text {
-  font-size: 2vw;
+  font-size: 20px;
   margin-left: 5%;
   margin-top: 1.5vw;
   color: rgb(5, 41, 14);
-  font-family: 'Glacial Indifference';
+  font-family: 'Spectral';
 }
 
-#article_pic_left {
+#article_pic {
   float: left;
   width: 40%;
   height: 25vw;
 }
 
-#article_pic_right {
-  float: left;
-  width: 40%;
-  height: 25vw;
+@media (max-width: 600px) {
+  .article_list_text {
+    font-size: 15px;
+  }
 }

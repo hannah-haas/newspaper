@@ -261,6 +261,7 @@ figcaption {
 @media (max-width: 600px) {
   .parallax {
     background-attachment: scroll;
+    min-height: 40vh;
   }
 
   .social-container {
