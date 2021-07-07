@@ -4,13 +4,17 @@
   font-size: 1em;
 }
 
+p {
+  font-family: 'Spectral';
+}
+
 .horizontal_dotted_line {
   font-size: 4vw;
   width: 96%;
   text-align: center;
   border-bottom: 2px solid rgb(56, 86, 35);
   line-height: 0.1em;
-  margin: 50px 2% 50px 2%;
+  margin: 5% 2% 5% 2%;
 }
 
 .dot {
@@ -18,9 +22,15 @@
   padding: 0 10px;
   padding-left: 1vw;
   padding-right: 1vw;
+  font-size: 40px;
   color: rgb(56, 86, 35);
   font-family: 'Spectral';
   text-align: center;
+}
+
+.content_wrap {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .parallax {
@@ -41,5 +51,34 @@
   .parallax {
     background-attachment: scroll;
     min-height: 40vh;
+  }
+
+  .dot {
+    font-size: 30px;
+  }
+
+  .horizontal_dotted_line {
+    margin: 10% 2% 8% 2%;
+  }
+}
+
+@media (max-width: 500px) {
+  .parallax {
+    background-attachment: scroll;
+    min-height: 40vh;
+  }
+
+  .dot {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 350px) {
+  .dot {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 15px;
   }
 }
