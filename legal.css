@@ -8,7 +8,7 @@
   font-size: 4vw;
   width: 96%;
   text-align: center;
-  border-bottom: 2px solid rgb(150, 186, 143);
+  border-bottom: 2px solid rgb(56, 86, 35);
   line-height: 0.1em;
   margin: 50px 2% 50px 2%;
 }
@@ -21,4 +21,25 @@
   color: rgb(56, 86, 35);
   font-family: 'Spectral';
   text-align: center;
+}
+
+.parallax {
+  min-height: 60vh;
+  margin-top: 20px;
+  object-fit: cover;
+  margin-left: 1%;
+  margin-right: 1%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media (max-width: 600px) {
+  .parallax {
+    background-attachment: scroll;
+    min-height: 40vh;
+  }
 }
