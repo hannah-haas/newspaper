@@ -36,11 +36,11 @@
 
 .horizontal_dotted_line {
   font-size: 4vw;
-  width: 100%;
+  width: 96%;
   text-align: center;
   border-bottom: 2px solid rgb(56, 86, 35);
   line-height: 0.1em;
-  margin: 50px 2% 50px 0%;
+  margin: 5% 2% 5% 2%;
 }
 
 .dot {
@@ -48,6 +48,7 @@
   padding: 0 10px;
   padding-left: 1vw;
   padding-right: 1vw;
+  font-size: 40px;
   color: rgb(56, 86, 35);
   font-family: 'Spectral';
   text-align: center;
@@ -84,8 +85,8 @@
   color: rgb(56, 86, 35);
   font-size: 1.2em;
   font-family: 'Spectral';
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .content_wrap {
@@ -238,6 +239,10 @@ ul {
     background-attachment: scroll;
     min-height: 40vh;
   }
+
+  .horizontal_dotted_line {
+    margin: 10% 2% 10% 2%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -288,5 +293,17 @@ ul {
   .profile {
     width: 150px;
     height: 150px;
+  }
+
+  .dot {
+    font-size: 30px;
+  }
+
+  .intro {
+    font-size: 1em;
+  }
+
+  .highlighted_info {
+    font-size: 1em;
   }
 }

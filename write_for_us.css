@@ -5,6 +5,10 @@
   font-family: 'Spectral';
 }
 
+p {
+  font-family: 'Spectral';
+}
+
 .horizontal_dotted_line {
   font-size: 4vw;
   width: 96%;
@@ -12,6 +16,12 @@
   border-bottom: 2px solid rgb(56, 86, 35);
   line-height: 0.1em;
   margin: 5% 2% 5% 2%;
+}
+
+.content_wrap {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 1vh;
 }
 
 .dot {
@@ -41,6 +51,7 @@
   justify-content: center;
   align-items: center;
   border: 1px solid rgb(5, 41, 14);
+  font-style: normal;
 }
 
 #font {
@@ -89,5 +100,9 @@
 
   .indented_list {
     margin-left: 20px;
+  }
+
+  .horizontal_dotted_line {
+    margin: 10% 2% 10% 2%;
   }
 }
