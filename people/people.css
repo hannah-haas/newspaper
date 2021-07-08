@@ -93,7 +93,6 @@
   font-family: 'Spectral';
   text-align: center;
   position: relative;
-  z-index: 1;
   overflow: hidden;
   text-align: center;
 }
