@@ -261,6 +261,10 @@ figcaption {
   color: grey;
 }
 
+#bath_title_special {
+  margin-top: -11%;
+}
+
 /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
 @media (max-width: 600px) {
   .parallax {
@@ -360,6 +364,10 @@ figcaption {
   }
 
   #maui_title_special {
+    margin-top: -25%;
+  }
+
+  #bath_title_special {
     margin-top: -25%;
   }
 
