@@ -4,6 +4,10 @@
 <head>
   <title> My Website </title>
   <link href="../home_style.css" rel="stylesheet" />
+  <link href="../subsection_individual.css" rel="stylesheet" />
+  <link href="../author_individual.css" rel="stylesheet" />
+
+
   <link href="environment.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
@@ -46,84 +50,293 @@
 
       </div>
     </div>
-    <div class="content_wrap">
-      <p class="section_text"> | Environment </p>
-      </br>
-      <div id="photos">
-        <div class="photo1">
-          <div class="image_hover">
-            <a href="oceans/oceans.html">
-              <img class="individualPhoto" src="images/oceans.jpg">
-              <div class="middle">
-                <div class="text">Oceans</div>
-              </div>
 
+    <div class="parallax" style="background-image: url('../static_images/environment.jpg');"></div>
+    <div class="title_text_box">
+      <div class="line_text"> Environment</div>
+    </div>
+
+    <div class="container2">
+      <div class="item" id="oceans_button">
+        Oceans
+      </div>
+      <div class="item" id="forests_button">
+        Forests
+      </div>
+      <div class="item" id="mountains_button">
+        Mountains
+      </div>
+      <div class="item" id="grasslands_button">
+        Grasslands
+      </div>
+      <div class="item" id="deserts_button">
+        Deserts
+      </div>
+      <div class="item" id="tundras_poles_button">
+        Tundras and Poles
+      </div>
+    </div>
+
+    <div class="content_wrap">
+
+      <!-- OCEANS -->
+      <div class="articles" id="oceans_screen">
+        <div class="individual_article" style=" order: 0;">
+          <div class="article_hover" id="article_pic">
+            <a href="oceans/oceania/sulu_sulawesi.html">
+              <img class="individualPhoto" src="oceans/oceania/images/CoverImage_SuluSulawesi_DorotheaOldani_Unsplash.jpg">
             </a>
           </div>
-        </div>
-        <div class="photo2">
-          <div class="image_hover">
-            <a href="mountains/mountains.html">
-              <img class="individualPhoto" src="images/mountain1.JPG">
-              <div class="middle">
-                <div class="text">Mountains</div>
-              </div>
+          <div class="div_for_aligning">
+            <a style="text-decoration: none; color: rgb(56, 86, 35);" href="oceans/oceania/sulu_sulawesi.html">
+              <p class="article_title_left"> Sulu Sulawesi: a seascape approach to funding a blue economy </p>
             </a>
+            <p class="article_sub_title_left"> Oceans | Oceania, June 22nd, 2021 </p>
+            <p class="about_article_text_left">
+              Currently 5% of our oceans are actively protected, by 2030
+              Conservation International hopes that 30% of marine areas will be
+              under protection. The establishment of seascapes may just help
+              shift current marine economies into sustainable ‘blue’ economies.
+            </p>
           </div>
         </div>
-        <div class="photo3">
-          <div class="image_hover">
-            <a href="forests/forests.html">
-              <img class="individualPhoto" src="images/Forest_16.JPG">
-              <div class="middle">
-                <div class="text">Forests</div>
-              </div>
+        <div class="individual_article" style=" order: 1;">
+          <div class="article_hover" style="float: left; width: 40%;">
+            <a href="oceans/oceania/maui_dolphins.html">
+              <img class="individualPhoto" src="oceans/oceania/images/MaiMoeslund_Unsplash_Flickr.jpg">
             </a>
           </div>
-        </div>
-        <div class="photo4">
-          <div class="image_hover">
-            <a href="deserts/deserts.html">
-              <img class="individualPhoto" src="images/deserts.png">
-              <div class="middle">
-                <div class="text">Deserts</div>
-              </div>
+          <div class="div_for_aligning">
+            <a style="text-decoration: none; color: rgb(56, 86, 35);" href="oceans/oceania/maui_dolphins.html">
+              <p class="article_title_left"> A status report on the critically endangered Māui dolphin </p>
             </a>
+            <p class="article_sub_title_left"> Oceans | Oceania, March 18th, 2021 </p>
+            <p class="about_article_text_left">
+              Two of the world’s smallest dolphins have been listed as endangered
+              and critically endangered by the International Union for Conservation
+              of Nature (IUCN). The populations of Hector’s and Māui dolphins
+              are dwindling, with only around 10,000 Hector’s and a mere 63
+              Māui dolphins, respectively.
+            </p>
           </div>
         </div>
-        <div class="photo5">
-          <div class="image_hover">
-            <a href="grasslands/grasslands.html">
-              <img class="individualPhoto" src="images/grasslands2.jpg">
-              <div class="middle">
-                <div class="text">Grasslands</div>
-              </div>
+
+      </div>
+
+      <div id="oceans_phone">
+        <div class="sub_article">
+          <a href="oceans/oceania/sulu_sulawesi.html" style="text-decoration:none;">
+            <img class="sub_article_img" src="oceans/oceania/images/CoverImage_SuluSulawesi_DorotheaOldani_Unsplash.jpg">
+            <p class="sub_article_text"> Sulu Sulawesi: a seascape approach to funding a blue economy </p>
+            <p class="sub_article_text2"> Oceans | Oceania </p>
+          </a>
+        </div>
+
+        <div class="sub_article">
+          <a href="oceans/oceania/maui_dolphins.html" style="text-decoration:none;">
+            <img class="sub_article_img" src="oceans/oceania/images/MaiMoeslund_Unsplash_Flickr.jpg">
+            <p class="sub_article_text"> A status report on the critically endangered Māui dolphin </p>
+            <p class="sub_article_text2"> Oceans | Oceania </p>
+          </a>
+        </div>
+      </div>
+
+      <!-- FORESTS -->
+      <div class="articles" id="forests_screen">
+        <div class="individual_article" style=" order: 0;">
+          <div class="article_hover" style="float: left; width: 40%;">
+            <a href="forests/south_america/amazon_rainforest.html">
+              <img class="individualPhoto" src="forests/south_america/images/COVERIMAGE_EduardoZmievski_Unsplash.jpg">
             </a>
           </div>
-        </div>
-        <div class="photo6">
-          <div class="image_hover">
-            <a href="tundra_poles/tundra_poles.html">
-              <img class="individualPhoto" src="images/tundra_poles.jpg">
-              <div class="middle">
-                <div class="text">Tundra & Poles</div>
-              </div>
+          <div class="div_for_aligning">
+            <a style="text-decoration: none; color: rgb(56, 86, 35);" href="forests/south_america/amazon_rainforest.html">
+              <p class="article_title_left"> The Bolsonaro Administration is not taking enough action to conserve Earth’s shrinking lungs. </p>
             </a>
+            <p class="article_sub_title_left"> Forests | South America, May 12th, 2021 </p>
+            <p class="about_article_text_left">
+              The Amazonian rainforest is vital to mitigating the impacts of
+              climate change. However, findings suggest that, due to ongoing
+              human disturbances, deforested areas of the world’s largest
+              rainforest are not recovering at a fast-enough rate.
+            </p>
+          </div>
+        </div>
+
+        <div class="individual_article" style=" order: 2;">
+          <div class="article_hover" style="float: left; width: 40%;">
+            <a href="forests/europe/swiss-wolves.html">
+              <img class="individualPhoto" src="forests/europe/images/Ralf_Κλενγελ_cover.jpg">
+            </a>
+          </div>
+          <div class="div_for_aligning">
+            <a style="text-decoration: none; color: rgb(56, 86, 35);" href="forests/europe/swiss-wolves.html">
+              <p class="article_title_left"> Should wolves be protected on Swiss soil? A referendum that divides a neutral country. </p>
+            </a>
+            <p class="article_sub_title_left"> Forests | Europe, March 1st, 2021 </p>
+            <p class="about_article_text_left">
+              On the 27 November 2020, 51.9 per cent of Swiss voters voted ‘No’
+              in a referendum revising the Swiss Hunting Act of 1986. In
+              Switzerland, wolves will continue to be a nationally protected species.
+            </p>
           </div>
         </div>
       </div>
 
-      <div id="bottomBar">
-        <div id="explore"> EXPLORE </div>
-        <a href="mailto:hannah_haas@brown.edu" id="connect"> CONNECT </a>
-        <a href="../legal.html" id="legal"> LEGAL </a>
-        <div id="empty2"> </div>
-        <div id="follow_us">
-          <p id="ugh"> FOLLOW US: </p>
-          <a href="https://www.facebook.com/" target="_blank"><img class="social_media_icon" id="three" src="../static_images/facebook_white.png"></a>
-          <a href="https://www.instagram.com/" target="_blank"><img class="social_media_icon" id="four" src="../static_images/instagram_white.png"></a>
-          <a href="https://www.linkedin.com/company/the-kingfisher-newspaper/" target="_blank"><img class="social_media_icon" id="five" src="../static_images/linkedin_white.png"></a>
+      <div id="forests_phone">
+        <div class="sub_article">
+          <a href="forests/south_america/amazon_rainforest.html" style="text-decoration:none;">
+            <img class="sub_article_img" src="forests/south_america/images/COVERIMAGE_EduardoZmievski_Unsplash.jpg">
+            <p class="sub_article_text"> The Bolsonaro Administration is not taking enough action to conserve Earth’s shrinking lungs. </p>
+            <p class="sub_article_text2"> Forests | South America </p>
+          </a>
         </div>
+        <div class="sub_article">
+          <a href="forests/europe/swiss-wolves.html" style="text-decoration:none;">
+            <img class="sub_article_img" src="forests/europe/images/Ralf_Κλενγελ_cover.jpg">
+            <p class="sub_article_text"> Should wolves be protected on Swiss soil? A referendum that divides a neutral country. </p>
+            <p class="sub_article_text2"> Forests | Europe </p>
+          </a>
+        </div>
+      </div>
+
+
+      <!-- mountains -->
+      <div class="articles" id="mountains_screen">
+        <div class="individual_article" style=" order: 0;">
+          <div class="article_hover" style="float: left; width: 40%;">
+            <a href="human_health/children_health_fossil_fuels.html">
+              <img class="individualPhoto" src="">
+            </a>
+          </div>
+
+          <div class="div_for_aligning">
+            <a style="text-decoration: none; color: rgb(56, 86, 35);" href="forests/europe/swiss-wolves.html">
+              <p class="article_title_left"> MOUNTAIN ARTICLE TODO </p>
+            </a>
+            <p class="article_sub_title_left"> Mountains | ?, March 1st, 2021 </p>
+            <p class="about_article_text_left">
+              Description todo
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="mountains_phone">
+        <div class="sub_article">
+          <a href="human_health/children_health_fossil_fuels.html" style="text-decoration:none;">
+            <img class="sub_article_img" src="">
+            <p class="sub_article_text"> MOUNTAIN ARTICLE TODO </p>
+            <p class="sub_article_text2"> TODO </p>
+          </a>
+        </div>
+      </div>
+
+      <!-- GRASSLANDS -->
+      <div class="articles" id="grasslands_screen">
+        <div class="individual_article" style=" order: 0;">
+          <div class="article_hover" style="float: left; width: 40%;">
+            <a href="grasslands/africa/elephant_human_conflict.html">
+              <img class="individualPhoto" src="grasslands/africa/images/CoverImage_LarryLi.jpg">
+            </a>
+          </div>
+          <div class="div_for_aligning">
+            <a style="text-decoration: none; color: rgb(56, 86, 35);" href="grasslands/africa/elephant_human_conflict.html">
+              <p class="article_title_left"> Gabon and Kenya call for international support in the fight against human-elephant conflict. </p>
+            </a>
+            <p class="article_sub_title_left"> Grasslands | Africa, May 8th, 2021 </p>
+            <p class="about_article_text_left">
+              Two countries, opposite coasts, both calling for international
+              aid in mitigating the never-ending clashes between wild elephants
+              and rural communities.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="grasslands_phone">
+        <div class="sub_article">
+          <a href="grasslands/africa/elephant_human_conflict.html" style="text-decoration:none;">
+            <img class="sub_article_img" src="grasslands/africa/images/CoverImage_LarryLi.jpg">
+            <p class="sub_article_text"> Gabon and Kenya call for international support in the fight against human-elephant conflict. </p>
+            <p class="sub_article_text2"> Grasslands | Africa </p>
+          </a>
+        </div>
+      </div>
+
+      <!-- DESERTS -->
+      <div class="articles" id="deserts_screen">
+        <div class="individual_article" style=" order: 0;">
+          <div class="article_hover" style="float: left; width: 40%;">
+            <a href="human_health/children_health_fossil_fuels.html">
+              <img class="individualPhoto" src="">
+            </a>
+          </div>
+          <div class="div_for_aligning">
+            <a style="text-decoration: none; color: rgb(56, 86, 35);" href="grasslands/africa/elephant_human_conflict.html">
+              <p class="article_title_left"> DESERTS TODO ARTICLE</p>
+            </a>
+            <p class="article_sub_title_left"> Deserts | ?, May 8th, 2021 </p>
+            <p class="about_article_text_left">
+              todo
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="deserts_phone">
+        <div class="sub_article">
+          <a href="human_health/children_health_fossil_fuels.html" style="text-decoration:none;">
+            <img class="sub_article_img" src="">
+            <p class="sub_article_text"> DESERTS TODO ARTICLE </p>
+            <p class="sub_article_text2"> TODO </p>
+          </a>
+        </div>
+      </div>
+
+      <!-- TUNDRAS AND POLES -->
+      <div class="articles" id="tundras_poles_screen">
+        <div class="individual_article" style=" order: 0;">
+          <div class="article_hover" style="float: left; width: 40%;">
+            <a href="tundra_poles/greenland_mercury.html">
+              <img class="individualPhoto" src="tundra_poles/images/GreenlandIceSheet_CoverImage_EuropeanSpaceAgency.jpg">
+            </a>
+          </div>
+          <div class="div_for_aligning">
+            <a style="text-decoration: none; color: rgb(56, 86, 35);" href="tundra_poles/greenland_mercury.html">
+              <p class="article_title_left"> Melting of the Greenland Ice Sheet: much more than just rising sea levels. </p>
+            </a>
+            <p class="article_sub_title_left"> Tundras and Poles | Greenland, June 16th, 2021 </p>
+            <p class="about_article_text_left">
+              An international collaborative study found that mercury levels
+              in Greenland glacial meltwater compare to levels measured in
+              industrial China.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="tundras_poles_phone">
+        <div class="sub_article">
+          <a href="tundra_poles/greenland_mercury.html" style="text-decoration:none;">
+            <img class="sub_article_img" src="tundra_poles/images/GreenlandIceSheet_CoverImage_EuropeanSpaceAgency.jpg">
+            <p class="sub_article_text"> Melting of the Greenland Ice Sheet: much more than just rising sea levels. </p>
+            <p class="sub_article_text2"> Tundras and Poles | Greenland </p>
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <div id="bottomBar">
+      <div id="explore"> EXPLORE </div>
+      <a href="mailto:hannah_haas@brown.edu" id="connect"> CONNECT </a>
+      <a href="../legal.html" id="legal"> LEGAL </a>
+      <div id="empty2"> </div>
+      <div id="follow_us">
+        <p id="ugh"> FOLLOW US: </p>
+        <a href="https://www.facebook.com/" target="_blank"><img class="social_media_icon" id="three" src="../static_images/facebook_white.png"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img class="social_media_icon" id="four" src="../static_images/instagram_white.png"></a>
+        <a href="https://www.linkedin.com/company/the-kingfisher-newspaper/" target="_blank"><img class="social_media_icon" id="five" src="../static_images/linkedin_white.png"></a>
       </div>
     </div>
   </div>
@@ -132,6 +345,18 @@
 </html>
 
 <script>
+  const width = document.documentElement.clientWidth
+  document.getElementById("oceans_button").classList.add("active")
+
+  if (width <= 400) {
+    document.getElementById("oceans_phone").style.display = "block"
+    document.getElementById("oceans_screen").style.display = "none"
+  } else {
+    document.getElementById("oceans_phone").style.display = "none"
+    document.getElementById("oceans_screen").style.display = "flex"
+  }
+
+
   var navList = document.getElementById("nav-lists");
 
   function Show() {
@@ -141,4 +366,282 @@
   function Hide() {
     navList.classList.remove("_Menus-show");
   }
+
+  window.addEventListener('resize', function(event) {
+    var newWidth = window.innerWidth;
+    var newHeight = window.innerHeight;
+
+    const oceans_active = document.getElementById("oceans_button").classList[1]
+    const forests_active = document.getElementById("forests_button").classList[1]
+    const mountains_active = document.getElementById("mountains_button").classList[1]
+    const grasslands_active = document.getElementById("grasslands_button").classList[1]
+    const deserts_active = document.getElementById("deserts_button").classList[1]
+    const tundras_poles_active = document.getElementById("tundras_poles_button").classList[1]
+
+    if (oceans_active === "active") {
+      if (newWidth <= 400) {
+        document.getElementById("oceans_screen").style.display = "none"
+        document.getElementById("oceans_phone").style.display = "block"
+      } else {
+        document.getElementById("oceans_screen").style.display = "flex"
+        document.getElementById("oceans_phone").style.display = "none"
+      }
+    }
+
+    if (forests_active === "active") {
+      if (newWidth <= 400) {
+        document.getElementById("forests_screen").style.display = "none"
+        document.getElementById("forests_phone").style.display = "block"
+      } else {
+        document.getElementById("forests_screen").style.display = "flex"
+        document.getElementById("forests_phone").style.display = "none"
+      }
+    }
+
+    if (mountains_active === "active") {
+      if (newWidth <= 400) {
+        document.getElementById("mountains_screen").style.display = "none"
+        document.getElementById("mountains_phone").style.display = "block"
+      } else {
+        document.getElementById("mountains_screen").style.display = "flex"
+        document.getElementById("mountains_phone").style.display = "none"
+      }
+    }
+    if (grasslands_active === "active") {
+      if (newWidth <= 400) {
+        document.getElementById("grasslands_screen").style.display = "none"
+        document.getElementById("grasslands_phone").style.display = "block"
+      } else {
+        document.getElementById("grasslands_screen").style.display = "flex"
+        document.getElementById("grasslands_phone").style.display = "none"
+      }
+    }
+    if (deserts_active === "active") {
+      if (newWidth <= 400) {
+        document.getElementById("deserts_screen").style.display = "none"
+        document.getElementById("deserts_phone").style.display = "block"
+      } else {
+        document.getElementById("deserts_screen").style.display = "flex"
+        document.getElementById("deserts_phone").style.display = "none"
+      }
+    }
+
+    if (tundras_poles_active === "active") {
+      if (newWidth <= 400) {
+        document.getElementById("tundras_poles_screen").style.display = "none"
+        document.getElementById("tundras_poles_phone").style.display = "block"
+      } else {
+        document.getElementById("tundras_poles_screen").style.display = "flex"
+        document.getElementById("tundras_poles_phone").style.display = "none"
+      }
+    }
+  });
+
+
+  document.getElementById("oceans_button").addEventListener("click", function() {
+    document.getElementById("oceans_button").classList.add("active")
+    document.getElementById("forests_button").classList.remove("active")
+    document.getElementById("mountains_button").classList.remove("active")
+    document.getElementById("grasslands_button").classList.remove("active")
+    document.getElementById("deserts_button").classList.remove("active")
+    document.getElementById("tundras_poles_button").classList.remove("active")
+
+    const width = document.documentElement.clientWidth
+
+    document.getElementById("forests_screen").style.display = "none"
+    document.getElementById("forests_phone").style.display = "none"
+
+    document.getElementById("mountains_screen").style.display = "none"
+    document.getElementById("mountains_phone").style.display = "none"
+
+    document.getElementById("grasslands_screen").style.display = "none"
+    document.getElementById("grasslands_phone").style.display = "none"
+
+    document.getElementById("deserts_screen").style.display = "none"
+    document.getElementById("deserts_phone").style.display = "none"
+
+    document.getElementById("tundras_poles_screen").style.display = "none"
+    document.getElementById("tundras_poles_phone").style.display = "none"
+
+    if (width < 400) {
+      document.getElementById("oceans_phone").style.display = "block"
+      document.getElementById("oceans_screen").style.display = "none"
+    } else {
+      document.getElementById("oceans_screen").style.display = "flex"
+      document.getElementById("oceans_phone").style.display = "none"
+    }
+  });
+
+  document.getElementById("forests_button").addEventListener("click", function() {
+    document.getElementById("oceans_button").classList.remove("active")
+    document.getElementById("forests_button").classList.add("active")
+    document.getElementById("mountains_button").classList.remove("active")
+    document.getElementById("grasslands_button").classList.remove("active")
+    document.getElementById("deserts_button").classList.remove("active")
+    document.getElementById("tundras_poles_button").classList.remove("active")
+
+    const width = document.documentElement.clientWidth
+
+    document.getElementById("oceans_screen").style.display = "none"
+    document.getElementById("oceans_phone").style.display = "none"
+
+    document.getElementById("mountains_screen").style.display = "none"
+    document.getElementById("mountains_phone").style.display = "none"
+
+    document.getElementById("grasslands_screen").style.display = "none"
+    document.getElementById("grasslands_phone").style.display = "none"
+
+    document.getElementById("deserts_screen").style.display = "none"
+    document.getElementById("deserts_phone").style.display = "none"
+
+    document.getElementById("tundras_poles_screen").style.display = "none"
+    document.getElementById("tundras_poles_phone").style.display = "none"
+
+    if (width < 400) {
+      document.getElementById("forests_screen").style.display = "none"
+      document.getElementById("forests_phone").style.display = "block"
+    } else {
+      document.getElementById("forests_screen").style.display = "flex"
+      document.getElementById("forests_phone").style.display = "none"
+    }
+
+  });
+
+  document.getElementById("mountains_button").addEventListener("click", function() {
+    document.getElementById("oceans_button").classList.remove("active")
+    document.getElementById("forests_button").classList.remove("active")
+    document.getElementById("mountains_button").classList.add("active")
+    document.getElementById("grasslands_button").classList.remove("active")
+    document.getElementById("deserts_button").classList.remove("active")
+    document.getElementById("tundras_poles_button").classList.remove("active")
+
+    const width = document.documentElement.clientWidth
+
+    document.getElementById("oceans_screen").style.display = "none"
+    document.getElementById("oceans_phone").style.display = "none"
+
+    document.getElementById("forests_screen").style.display = "none"
+    document.getElementById("forests_phone").style.display = "none"
+
+    document.getElementById("grasslands_screen").style.display = "none"
+    document.getElementById("grasslands_phone").style.display = "none"
+
+    document.getElementById("deserts_screen").style.display = "none"
+    document.getElementById("deserts_phone").style.display = "none"
+
+    document.getElementById("tundras_poles_screen").style.display = "none"
+    document.getElementById("tundras_poles_phone").style.display = "none"
+
+    if (width < 400) {
+      document.getElementById("mountains_screen").style.display = "none"
+      document.getElementById("mountains_phone").style.display = "block"
+    } else {
+      document.getElementById("mountains_screen").style.display = "flex"
+      document.getElementById("mountains_phone").style.display = "none"
+    }
+  });
+
+  document.getElementById("grasslands_button").addEventListener("click", function() {
+    document.getElementById("oceans_button").classList.remove("active")
+    document.getElementById("forests_button").classList.remove("active")
+    document.getElementById("mountains_button").classList.remove("active")
+    document.getElementById("grasslands_button").classList.add("active")
+    document.getElementById("deserts_button").classList.remove("active")
+    document.getElementById("tundras_poles_button").classList.remove("active")
+
+    const width = document.documentElement.clientWidth
+
+    document.getElementById("oceans_screen").style.display = "none"
+    document.getElementById("oceans_phone").style.display = "none"
+
+    document.getElementById("forests_screen").style.display = "none"
+    document.getElementById("forests_phone").style.display = "none"
+
+    document.getElementById("mountains_screen").style.display = "none"
+    document.getElementById("mountains_phone").style.display = "none"
+
+    document.getElementById("deserts_screen").style.display = "none"
+    document.getElementById("deserts_phone").style.display = "none"
+
+    document.getElementById("tundras_poles_screen").style.display = "none"
+    document.getElementById("tundras_poles_phone").style.display = "none"
+
+    if (width < 400) {
+      document.getElementById("grasslands_screen").style.display = "none"
+      document.getElementById("grasslands_phone").style.display = "block"
+    } else {
+      document.getElementById("grasslands_screen").style.display = "flex"
+      document.getElementById("grasslands_phone").style.display = "none"
+    }
+  });
+
+  document.getElementById("deserts_button").addEventListener("click", function() {
+    document.getElementById("oceans_button").classList.remove("active")
+    document.getElementById("forests_button").classList.remove("active")
+    document.getElementById("mountains_button").classList.remove("active")
+    document.getElementById("grasslands_button").classList.remove("active")
+    document.getElementById("deserts_button").classList.add("active")
+    document.getElementById("tundras_poles_button").classList.remove("active")
+
+    const width = document.documentElement.clientWidth
+
+    document.getElementById("oceans_screen").style.display = "none"
+    document.getElementById("oceans_phone").style.display = "none"
+
+    document.getElementById("forests_screen").style.display = "none"
+    document.getElementById("forests_phone").style.display = "none"
+
+    document.getElementById("mountains_screen").style.display = "none"
+    document.getElementById("mountains_phone").style.display = "none"
+
+    document.getElementById("grasslands_screen").style.display = "none"
+    document.getElementById("grasslands_phone").style.display = "none"
+
+    document.getElementById("tundras_poles_screen").style.display = "none"
+    document.getElementById("tundras_poles_phone").style.display = "none"
+
+    if (width < 400) {
+      document.getElementById("deserts_screen").style.display = "none"
+      document.getElementById("deserts_phone").style.display = "block"
+    } else {
+      document.getElementById("deserts_screen").style.display = "flex"
+      document.getElementById("deserts_phone").style.display = "none"
+    }
+  });
+
+
+  document.getElementById("tundras_poles_button").addEventListener("click", function() {
+    document.getElementById("oceans_button").classList.remove("active")
+    document.getElementById("forests_button").classList.remove("active")
+    document.getElementById("mountains_button").classList.remove("active")
+    document.getElementById("grasslands_button").classList.remove("active")
+    document.getElementById("deserts_button").classList.remove("active")
+    document.getElementById("tundras_poles_button").classList.add("active")
+
+    const width = document.documentElement.clientWidth
+
+    document.getElementById("oceans_screen").style.display = "none"
+    document.getElementById("oceans_phone").style.display = "none"
+
+    document.getElementById("forests_screen").style.display = "none"
+    document.getElementById("forests_phone").style.display = "none"
+
+    document.getElementById("mountains_screen").style.display = "none"
+    document.getElementById("mountains_phone").style.display = "none"
+
+    document.getElementById("grasslands_screen").style.display = "none"
+    document.getElementById("grasslands_phone").style.display = "none"
+
+    document.getElementById("deserts_screen").style.display = "none"
+    document.getElementById("deserts_phone").style.display = "none"
+
+
+    if (width < 400) {
+      document.getElementById("tundras_poles_screen").style.display = "none"
+      document.getElementById("tundras_poles_phone").style.display = "block"
+    } else {
+      document.getElementById("tundras_poles_screen").style.display = "flex"
+      document.getElementById("tundras_poles_phone").style.display = "none"
+    }
+  });
 </script>
