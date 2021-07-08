@@ -116,7 +116,7 @@
         <div class="sub_article">
           <a href="human_health/children_health_fossil_fuels.html" style="text-decoration:none;">
             <img class="sub_article_img" src="human_health/images/Power_Plant_Girl.jpg">
-            <p class="sub_article_text"> Zoonoviruses: you may be buying more at the market than you bargained for </p>
+            <p class="sub_article_text"> Children’s health are increasingly at risk due to fossil fuel combustion. </p>
             <p class="sub_article_text2"> People | Human Health </p>
           </a>
         </div>
@@ -124,7 +124,7 @@
         <div class="sub_article">
           <a href="human_health/zoonoviruses_markets.html" style="text-decoration:none;">
             <img class="sub_article_img" src="human_health/images/CoverImage_WildlifeTrade_DeniseChan.jpg">
-            <p class="sub_article_text"> Children’s health are increasingly at risk due to fossil fuel combustion. </p>
+            <p class="sub_article_text"> Zoonoviruses: you may be buying more at the market than you bargained for </p>
             <p class="sub_article_text2"> People | Human Health </p>
           </a>
         </div>
@@ -182,7 +182,6 @@
 
 <script>
   const width = document.documentElement.clientWidth
-  console.log(document.documentElement.clientWidth)
   document.getElementById("human_health_button").classList.add("active")
 
   if (width <= 400) {
@@ -207,14 +206,11 @@
   window.addEventListener('resize', function(event) {
     var newWidth = window.innerWidth;
     var newHeight = window.innerHeight;
-    console.log("IN RESIZE")
-    console.log(newWidth)
 
     const communities_active = document.getElementById("communities_button").classList[1]
     const human_health_active = document.getElementById("human_health_button").classList[1]
 
     if (communities_active === "active") {
-      console.log("C ACTIVE")
       if (newWidth <= 400) {
         document.getElementById("human_health_articles_phone").style.display = "none"
         document.getElementById("human_health_articles_screen").style.display = "none"
@@ -229,7 +225,6 @@
     }
 
     if (human_health_active === "active") {
-      console.log("HH ACTIVE")
       if (newWidth <= 400) {
         document.getElementById("human_health_articles_phone").style.display = "block"
         document.getElementById("human_health_articles_screen").style.display = "none"
@@ -242,14 +237,12 @@
         document.getElementById("communities_articles_phone").style.display = "none"
       }
     }
-
   });
 
 
 
   document.getElementById("human_health_button").addEventListener("click", function() {
     const width = document.documentElement.clientWidth
-    console.log(document.documentElement.clientWidth)
 
     document.getElementById("communities_articles_screen").style.display = "none"
     document.getElementById("communities_articles_phone").style.display = "none"
@@ -268,7 +261,6 @@
 
   document.getElementById("communities_button").addEventListener("click", function() {
     const width = document.documentElement.clientWidth
-    console.log(document.documentElement.clientWidth)
 
     document.getElementById("human_health_articles_screen").style.display = "none"
     document.getElementById("human_health_articles_phone").style.display = "none"
