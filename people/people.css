@@ -41,6 +41,7 @@
 .item {
   /* margin: 3.7vw; */
   height: 100%;
+  font-family: "Spectral"
 }
 
 .item:hover {
