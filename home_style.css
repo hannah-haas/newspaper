@@ -420,7 +420,7 @@ body {
 }
 
 /* circle around magnifying glass */
-form {
+.form_class {
   position: relative;
   top: 8%;
   transition: all 1s;
@@ -435,7 +435,7 @@ form {
 }
 
 /* expanded search - input box */
-input {
+.input_class {
   position: absolute;
   top: 0;
   left: 0;
@@ -467,19 +467,19 @@ input {
 }
 
 /* border on hover */
-form:hover {
+.form_class:hover {
   width: 150px;
   cursor: pointer;
   border-color: rgb(5, 41, 14);
   border-width: medium;
 }
 
-form:hover input {
+.form_class:hover input {
   display: block;
 }
 
 /* circle on hover */
-form:hover .fa {
+.form_class:hover .fa {
   height: 40px;
   width: 40px;
   margin-top: 2px;
