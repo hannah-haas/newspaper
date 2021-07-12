@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Bethan Henderson</title>
+  <link href="../home_style.css" rel="stylesheet" />
+  <link href="../author_individual.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <link href='https://fonts.googleapis.com/css?family=Spectral' rel='stylesheet'>
+  <link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
+  <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+  <div id="main">
+    <div class="container">
+      <div class="logo">
+        <a href="../index.html"><img src="../static_images/logo.jpg" alt="logo"></a>
+      </div>
+      <div class="navbar">
+
+        <div class="icon-bar" onclick="Show()">
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+
+        <ul id="nav-lists">
+          <li class="close"><span onclick="Hide()">×</span></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../sustainable_cities/sustainable_cities.html">Sustainable Cities</a></li>
+          <li><a href="../environment/environment.html">Environment</a></li>
+          <li><a href="../people/people.html">People</a></li>
+          <li><a href="../write_for_us.html">Write For Us</a></li>
+          <li><a href="../about_us.html">About Us</a></li>
+
+          <li>
+            <form class="form_class" action="">
+              <input class="input_class" style="font-family: 'Spectral;'" placeholder="Search..." type="search">
+              <i class="fa fa-search"></i>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content_wrap">
+      <p class="article_list_text"> Articles Written by Bethan Henderson</p>
+
+      <div id="articles">
+        <div class="individual_article" style=" order: 0; ">
+          <div class="article_hover" id="article_pic">
+            <a href="../sustainable_cities/europe/city_pollinators.html">
+              <img class="individualPhoto" src="../sustainable_cities/europe/images/CoverImage_UrbanGreenSpace_HectorArgüelloCanals.jpg">
+            </a>
+          </div>
+
+          <div class="div_for_aligning">
+            <a style="text-decoration: none; color: rgb(56, 86, 35);" href="../sustainable_cities/europe/city_pollinators.html">
+              <p class="article_title_left" style="margin-top:1.5vw;"> The buzz for green cities: urban spaces for people and pollinators </p>
+            </a>
+            <p class="article_sub_title_left"> Cities, July 11th, 2021</p>
+            <p class="about_article_text_left">
+              The Covid-19 pandemic has shown many city-dwellers tucked away
+              indoors the enormous mental health benefits of spending time in
+              nature. And as urbanisation takes over the world—with 5.2 billion
+              people estimated to live on 1.9 million km2 of urban land by
+              2030—it is increasingly important to design city spaces to
+              accommodate for the health of their inhabitants, both human and animal.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="bottomBar">
+        <div id="explore"> EXPLORE </div>
+        <a href="../connect.html" id="connect"> CONNECT </a>
+        <a href="../legal.html" id="legal"> LEGAL </a>
+        <div id="empty2"> </div>
+        <div id="follow_us">
+          <p id="ugh"> FOLLOW US: </p>
+          <a href="https://www.facebook.com/" target="_blank"><img class="social_media_icon" id="three" src="../static_images/facebook_white.png"></a>
+          <a href="https://www.instagram.com/" target="_blank"><img class="social_media_icon" id="four" src="../static_images/instagram_white.png"></a>
+          <a href="https://www.linkedin.com/company/the-kingfisher-newspaper/" target="_blank"><img class="social_media_icon" id="five" src="../static_images/linkedin_white.png"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script>
+  var navList = document.getElementById("nav-lists");
+
+  function Show() {
+    navList.classList.add("_Menus-show");
+  }
+
+  function Hide() {
+    navList.classList.remove("_Menus-show");
+  }
+</script>
