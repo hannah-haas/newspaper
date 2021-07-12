@@ -10,6 +10,8 @@
   <link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
 
   <meta name="viewport" content="width=device-width">
+
+
 </head>
 
 <body>
@@ -54,13 +56,16 @@
       <div id="top_row">
         <div class="get_in_touch">
           <h1 class="title"> <i> Get in Touch! </i></h1>
-          <p class="sub_title">Please contact us for any inquiries! </p>
-          <div class="desc top">
-            <p>
+
+          <div id="text-wrapper">
+            <div class="contact_us"> Please contact us for any inquiries! </div>
+
+            <div>
               Whether you would like to contribute as a freelance writer, connect
               for a potential work collaboration, advertising, have a query or
               even just to say hello!
-            </p>
+            </div>
+
           </div>
           <hr>
           <div class="container2">
@@ -97,7 +102,7 @@
         <div class="email_form">
 
           <div class="desc">
-            <p>
+            <p class="contact_form_info">
               Contact The Kingfisher team using the box below or email us at
               info@thekingfisher.com
             </p>
@@ -106,7 +111,6 @@
 
             <div id="fcf-form">
               <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-
                 <div class="fcf-form-group">
                   <div class="fcf-input-group">
                     <input type="text" id="Name" placeholder="Name*" name="Name" class="fcf-form-control" required>
@@ -128,35 +132,30 @@
                 <div class="fcf-form-group">
                   <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
                 </div>
-
               </form>
             </div>
-
           </div>
-
         </div>
       </div>
       <hr class="second_divider">
       <hr class="second_divider">
       <div id="bottom_row">
-
         <div class="additional_services">
           <h1 class="title"> <i>Additional Services! </i></h1>
 
+          <div id="text-wrapper">
+            <div class="contact_us"> Like the look of our website and need
+              someone to code your own? Do you require a translation,
+              post-translation editing, or proofreading job?
+            </div>
 
-          <div class="desc top">
-            <p>
-              Like the look of our website and need someone to code your own?
-              Do you require a translation, post-translation editing, or
-              proofreading job?
-            </p>
-          </div>
-          <div class="desc top">
-            <p>
+            <div>
               Feel free to reach out to specific members of our team for their
               services outside of <strong> The Kingfisher! </strong>
-            </p>
+            </div>
+
           </div>
+
         </div>
 
         <div class="dom_and_hannah">
@@ -186,11 +185,15 @@
     </div>
   </div>
   </div>
+
+
 </body>
 
 </html>
 
+
 <script>
+  console.log("other script")
   var navList = document.getElementById("nav-lists");
 
   function Show() {
