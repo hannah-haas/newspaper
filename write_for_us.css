@@ -166,6 +166,12 @@ p {
   }
 }
 
+@media (max-width: 400px) {
+  #guide {
+    font-size: 4vw;
+  }
+}
+
 @media (max-width: 350px) {
   .line_text {
     font-size: 20px;
