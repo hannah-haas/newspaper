@@ -143,16 +143,6 @@ hr {
   font-family: "Spectral";
 }
 
-#text-wrapper2 {
-  width: 100%;
-  height: 165px;
-  /* border: 1px solid black; */
-  /* overflow: hidden; */
-  font-size: 1.7vw;
-  color: rgb(56, 86, 35);
-  font-family: "Spectral";
-}
-
 .contact_form_info {
   width: 100%;
   height: 60px;
@@ -421,12 +411,6 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   }
 }
 
-@media (max-width:850px) {
-  #text-wrapper2 {
-    font-size: 2vw;
-  }
-}
-
 @media (max-width: 800px) {
   #top_row {
     display: grid;
@@ -479,10 +463,6 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   }
 
   #text-wrapper {
-    font-size: 3vw;
-  }
-
-  #text-wrapper2 {
     font-size: 3vw;
   }
 
@@ -543,10 +523,6 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     font-size: 3.6vw;
   }
 
-  #text-wrapper2 {
-    font-size: 3.6vw;
-  }
-
   #bottom_row {
     display: grid;
     grid-template-columns: 100%;
@@ -556,10 +532,6 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 
 @media (max-width: 500px) {
   #text-wrapper {
-    font-size: 3.8vw;
-  }
-
-  #text-wrapper2 {
     font-size: 3.8vw;
   }
 
