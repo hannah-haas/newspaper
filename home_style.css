@@ -737,6 +737,9 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
   flex: 2;
   flex-direction: row-reverse;
   padding-right: 3vw;
+}
+
+#nav-lists {
   padding-top: 12px;
 }
 
@@ -804,6 +807,7 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
   -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
+  margin-top: 12px;
 }
 
 .container .navbar .icon-bar i {
