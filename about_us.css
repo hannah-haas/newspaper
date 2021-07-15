@@ -96,6 +96,12 @@
   font-size: 1.2em;
 }
 
+.mission_reference_right {
+  text-align: right;
+  font-family: "Spectral", "sans-serif";
+  font-size: .8em;
+}
+
 #has_page:hover {
   opacity: 0.7;
 }
