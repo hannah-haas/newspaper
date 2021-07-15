@@ -17,9 +17,9 @@
 .article_title_left {
   margin-left: 2vw;
   margin-top: 1%;
-  font-size: 2vw;
+  font-size: 1.8vw;
   color: rgb(56, 86, 35);
-  font-family: "sans-serif";
+  font-family: "Spectral";
 }
 
 .article_sub_title_left {
@@ -27,22 +27,22 @@
   margin-top: 1%;
   font-size: 1.3vw;
   color: rgb(56, 86, 35);
-  font-family: "sans-serif";
+  font-family: "Spectral";
 }
 
 .about_article_text_left {
   margin-left: 2vw;
   margin-top: 1vw;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   font-family: "Spectral";
 }
 
 .article_title_right {
   margin-top: 1%;
   margin-right: 2vw;
-  font-size: 2vw;
+  font-size: 1.8vw;
   color: rgb(56, 86, 35);
-  font-family: "sans-serif";
+  font-family: "Spectral";
 }
 
 .article_sub_title_right {
@@ -50,13 +50,13 @@
   margin-right: 2vw;
   font-size: 1.4vw;
   color: rgb(56, 86, 35);
-  font-family: "sans-serif";
+  font-family: "Spectral";
 }
 
 .about_article_text_right {
   margin-top: 1vw;
   margin-right: 2vw;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   font-family: "Spectral";
 }
 

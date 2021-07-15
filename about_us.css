@@ -69,10 +69,29 @@
   text-align: center;
 }
 
+.quote_mission {
+  font-weight: bold;
+  color: rgb(56, 86, 35);
+  font-size: 1.2em;
+  font-family: 'Spectral';
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+}
+
 .intro {
   margin-left: 10%;
   margin-right: 10%;
   text-align: justify;
+  font-family: "Spectral", "sans-serif";
+  font-size: 1.2em;
+}
+
+.mission_paragraph {
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
   font-family: "Spectral", "sans-serif";
   font-size: 1.2em;
 }
@@ -265,6 +284,10 @@ ul {
     margin-top: 8%;
   }
 
+  .quote_mission {
+    margin-top: 8%;
+  }
+
   .profile {
     width: 150px;
     height: 150px;
@@ -335,6 +358,10 @@ ul {
   }
 
   .intro {
+    font-size: 1em;
+  }
+
+  .mission_paragraph {
     font-size: 1em;
   }
 
