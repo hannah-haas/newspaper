@@ -44,7 +44,18 @@
       ]
     }
   ],
-  "africa": [],
+  "africa": [
+    {"sustainable_cities/africa/oceania/namibia_biotrade.html":
+      [
+        "The Namibia bio-trade initiative increases the value of biodiversity-derived products",
+        "Under the guidance of the BioTrade Initiative, the Eudafano Women’s Cooperative, a community organization in Namibia, has provided a secure economic income for 2500 women and their indigenous communities.",
+        "Sustainable Cities | Ondangwa, Namibia",
+        "July 12, 2021",
+        "NamibiaBioTrade_CoverImage_PhilipSchuler.jpg",
+        "africa, namibia, biotrade, green economy, trade, biotrade"
+      ]
+    }
+  ],
   "oceania":
   [
     {"environment/oceans/oceania/maui_dolphins.html":
