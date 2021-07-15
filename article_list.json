@@ -19,9 +19,40 @@
         "CoverImage_CleanAir_AlexAtudosie.jpg",
         "cities, sustainable cities, air zone, bath, england"
       ]
+    },
+    {"sustainable_cities/europe/city_pollinators.html":
+      [
+        "The buzz for green cities: urban spaces for people and pollinators ",
+        "The Covid-19 pandemic has shown many city-dwellers tucked away indoors the enormous mental health benefits of spending time in nature. And as urbanisation takes over the world—with 5.2 billion people estimated to live on 1.9 million km2 of urban land by 2030—it is increasingly important to design city spaces to accommodate for the health of their inhabitants, both human and animal.",
+        "Cities",
+        "July 11, 2021",
+        "CoverImage_UrbanGreenSpace_HectorArguelloCanals.jpg",
+        "cities, sustainable cities, green cities, mental health, pollinator, insect, europe"
+      ]
     }
   ],
-  "north_america": [],
+  "north_america": [
+    {"sustainable_cities/north_america/mackinac_line5.html":
+      [
+        "Enbridge ignores Michigan’s shutdown deadline and continues to transport propane across Line 5",
+        "In November 2020, Governor Whitmer of Michigan ordered Enbridge to shut down their operations of the Line 5 pipelines by 12 May 2021. Now in June 2021, Enbridge has defied the order and continues to transport 23 million gallons of oil daily across the Straits of Mackinac.",
+        "Cities | Mackinac, Michigan",
+        "June 2, 2021",
+        "Line5_CoverPhoto_Aaron_Burden_Unsplash.jpg",
+        "michigan, sustainable cities, cities, north america, line 5, pipelines, propane"
+      ]
+    },
+    {"environment/tundra_poles/greenland_mercury.html":
+      [
+        "Melting of the Greenland Ice Sheet: much more than just rising sea levels",
+        "An international collaborative study found that mercury levels in Greenland glacial meltwater compare to levels measured in industrial China.",
+        "Environment | Tundras and Poles",
+        "June 16, 2021",
+        "GreenlandIceSheet_CoverImage_EuropeanSpaceAgency.jpg",
+        "greenland, tundras, poles, ice, sea levels, arctic, north america"
+      ]
+    }
+  ],
   "south_america": [
     {"environment/forests/south_america/amazon_rainforest.html":
       [
@@ -54,6 +85,16 @@
         "NamibiaBioTrade_CoverImage_PhilipSchuler.jpg",
         "africa, namibia, biotrade, green economy, trade, biotrade"
       ]
+    },
+    {"environment/grasslands/africa/elephant_human_conflict.html":
+      [
+        "Gabon and Kenya call for international support in the fight against human-elephant conflict",
+        "Two countries, opposite coasts, both calling for international aid in mitigating the never-ending clashes between wild elephants and rural communities.",
+        "Environment | Grasslands",
+        "May 8, 2021",
+        "CoverImage_LarryLi.jpg",
+        "africa, gabon, kenya, elephant, grassland"
+      ]
     }
   ],
   "oceania":
@@ -66,6 +107,16 @@
         "March 18, 2021",
         "MaiMoeslund_Unsplash_Flickr.jpg",
         "dolphin, new zealand, maui, fishing, ocean, endangered, marine"
+      ]
+    },
+    {"environment/oceans/oceania/sulu_sulawesi.html":
+      [
+        "Sulu Sulawesi: a seascape approach to funding a blue economy",
+        "Currently 5% of our oceans are actively protected, by 2030 Conservation International hopes that 30% of marine areas will be under protection. The establishment of seascapes may just help shift current marine economies into sustainable ‘blue’ economies.",
+        "Environment | Oceans",
+        "June 22, 2021",
+        "CoverImage_SuluSulawesi_DorotheaOldani_Unsplash.jpg",
+        "coral, coral triangle, ocean, oceania, marine"
       ]
     }
   ],
@@ -94,8 +145,18 @@
         "Children are increasingly at risk of prematurely dying from respiratory infections. A recent study from the University of Birmingham, University of Leicester and Harvard University estimated that 7.2% of respiratory deaths in children under the age of 5 can be attributed to PM2.5-related fossil fuel burning. Children's brain, lungs and immune systems are very susceptible during their early development and can become impaired by exposure to air pollutants.",
         "Human Health | Environment",
         "March 18, 2021",
-        "Power Plant Girl. Ron Wolf, Flickr _ m anamul rezwan, pixabay.jpg",
+        "Power_Plant_Girl.jpg",
         "pollution, lung, air"
+      ]
+    },
+    {"people/human_health/zoonoviruses_markets.html":
+      [
+        "Zoonoviruses: you may be buying more at the market than you bargained for",
+        "Survey-based data collection has suggested that negative public perception towards wildlife trade, exotic wildlife consumption and bats has significantly increased. 46% of participants believe that disease transmission due to close contact between humans and exotic wildlife will continue to cause future pandemics.",
+        "People | Human Health",
+        "June 28, 2021",
+        "CoverImage_WildlifeTrade_DeniseChan.jpg",
+        "covid, coronavirus, covid-19, zoonoviruses, market, china, diseases"
       ]
     }
   ]
