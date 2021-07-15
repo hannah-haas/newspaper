@@ -9,6 +9,16 @@
         "MaiMoeslund_Unsplash_Flickr.jpg",
         "wolf, switzerland, forest, europe, hunting, farming"
       ]
+    },
+    {"sustainable_cities/europe/bath_clean_air.html":
+      [
+        "How effective is Bath’s Clean Air Zone strategy?",
+        "Since 15 March 2021, Bath, United Kingdom, has begun to fine highly polluting vehicles driving within their ‘Clean Air Zone’ in an effort to bring the city’s atmospheric nitrogen dioxide levels below the legal limit.",
+        "Cities | Bath, Englande",
+        "July 3, 2021",
+        "CoverImage_CleanAir_AlexAtudosie.jpg",
+        "cities, sustainable cities, air zone, bath, england"
+      ]
     }
   ],
   "north_america": [],
@@ -21,6 +31,16 @@
         "May 12, 2021",
         "COVERIMAGE_EduardoZmievski_Unsplash.jpg",
         "environment, rainforest, Brazil, Bolsonaro, Netzero, amazon, deforestation"
+      ]
+    },
+    {"sustainable_cities/south_america/sustainable_leader_medellin.html":
+      [
+        "The inspiring transforming of Medellín: from murder capital to sustainable leader",
+        "Medellín, Colombia’s second most populous city, is considered a leading example in terms of their environmental policies and sustainable initiatives. Whilst there are other green cities around the globe, the transformation of Medellín is truly remarkable; considering just a few years ago it was a stronghold for Pablo Escobar’s drug crimes and deemed the ‘murder capital of the world’.",
+        "Cities | Medellín, Colombia",
+        "July 13, 2021",
+        "Medellin_DanielVargas_Unsplash_CoverImage.jpg",
+        "sustainable cities, cities, green policies, leading city, medellin, colombia"
       ]
     }
   ],
@@ -57,7 +77,7 @@
   "baltic": [],
   "arctic": [],
   "other": [
-    {"human_health/environment/children_health_fossil_fuels.html":
+    {"people/human_health/children_health_fossil_fuels.html":
       [
         "Children’s health is increasingly at risk due to fossil fuel combustion.",
         "Children are increasingly at risk of prematurely dying from respiratory infections. A recent study from the University of Birmingham, University of Leicester and Harvard University estimated that 7.2% of respiratory deaths in children under the age of 5 can be attributed to PM2.5-related fossil fuel burning. Children's brain, lungs and immune systems are very susceptible during their early development and can become impaired by exposure to air pollutants.",
