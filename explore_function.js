@@ -1,5 +1,4 @@
 const logBtn = document.getElementById('explore');
-console.log(logBtn)
 logBtn.addEventListener('click', fetchData);
 
 async function fetchData() {
@@ -12,16 +11,13 @@ async function fetchData() {
     Object.entries(obj).forEach(([key, values]) => {
       values.forEach(obj => {
         Object.entries(obj).forEach(([key, values]) => {
-          console.log(key, values);
           random_article_list = random_article_list.concat(key)
         });
       });
     });
   });
-  console.log(random_article_list)
   random_num = Math.floor(Math.random() * Math.floor(random_article_list.length));
   random_article = random_article_list[random_num]
-  console.log(random_article)
-  // document.location.href = random_article
+  document.location.href = random_article
 
 }
