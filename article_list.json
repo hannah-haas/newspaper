@@ -120,7 +120,18 @@
       ]
     }
   ],
-  "asia": [],
+  "asia": [
+    {"sustainable_cities/asia/singapore_cultured_meat.html":
+      [
+        "Singapore is one-bite ahead of the rest of the world for cultured meat approval",
+        "Food is a right and necessity for all living organisms. However, with the projected exponential population growth of humans and a somewhat ‘unpredictable’ changing climate, our world is facing food insecurity.",
+        "Sustainable Cities | Singapore",
+        "July 15, 2021",
+        "CulturedMeat_CoverImage_AnnieSpratt.jpg",
+        "singapore, meat, livestock, greenhhouse gas"
+      ]
+    }
+  ],
   "atlantic": [],
   "pacific": [
     {"environment/oceans/oceania/maui_dolphins.html":
@@ -157,6 +168,16 @@
         "June 28, 2021",
         "CoverImage_WildlifeTrade_DeniseChan.jpg",
         "covid, coronavirus, covid-19, zoonoviruses, market, china, diseases"
+      ]
+    },
+    {"people/communities/venezuela_indigenous_forests.html":
+      [
+        "The devastation of the Orinoco Delta and the Warao people",
+        "The Warao indigenous community in Venezuela have suffered widespread devastation on all fronts, from COVID-19 to the country’s political instability, the Warao community has also been affected by the destruction of their homeland, the Orinoco Delta river.",
+        "People | Communities",
+        "July 16, 2021",
+        "CoverImage_Venezuela.jpg",
+        "natural resources, warao, indigenous, covid-19, coronavirus, covid, natural resources, human rights, political destabilization, communities, venezuela"
       ]
     }
   ]

@@ -970,12 +970,7 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
 
   .sub_article_img {
     width: 100%;
-    height: 20vw;
-  }
-
-  .sub_article_img {
-    width: 100%;
-    height: 55vw;
+    height: 60vw;
   }
 
   #bottomBar {
