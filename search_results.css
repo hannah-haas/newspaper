@@ -12,7 +12,6 @@
   display: flex;
   width: 90%;
   flex-direction: column;
-  margin-top: 2vw;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -30,6 +29,14 @@
   margin-right: 5%;
   justify-content: space-evenly;
   font-family: "Spectral"
+}
+
+.search_results_text {
+  font-size: 20px;
+  margin-top: 5%;
+  margin-left: 5%;
+  color: rgb(5, 41, 14);
+  font-family: 'Spectral';
 }
 
 /* .sub_article {
