@@ -529,3 +529,68 @@
     }
   });
 </script>
+<script type="text/javascript" src="explore_function.js"></script>
+
+
+<script>
+  const matches = [" Zoonoviruses: you may be buying more at the market than you bargained for "]
+
+  // article_title_left
+
+
+  if (width <= 400) {
+    var ancestor = document.getElementById('results_phone'),
+      descendents = ancestor.getElementsByTagName('*');
+
+    console.log(descendents)
+    // comparing to the matches and only displaying them!
+    var i, e, d;
+    for (i = 0; i < descendents.length; ++i) {
+      e = descendents[i];
+      console.log(e.className)
+      if (e.className === 'sub_article') {
+        var kids = e.getElementsByTagName('*');
+        console.log(kids)
+        for (j = 0; j < kids.length; ++j) {
+          sub = kids[j];
+
+          if (sub.className === 'sub_article_text') {
+
+            console.log(sub)
+
+            console.log(sub.textContent)
+            console.log(matches.includes(sub.textContent))
+            if (!matches.includes(sub.textContent)) {
+              e.style.display = "none"
+            }
+          }
+        }
+      }
+    }
+
+  } else {
+    var ancestor = document.getElementById('results_screen'),
+      descendents = ancestor.getElementsByTagName('*');
+
+    // comparing to the matches and only displaying them!
+    var i, e, d;
+    for (i = 0; i < descendents.length; ++i) {
+      e = descendents[i];
+      if (e.className === 'individual_article') {
+        var kids = e.getElementsByTagName('*');
+        for (j = 0; j < kids.length; ++j) {
+          sub = kids[j];
+          if (sub.className === 'article_title_left') {
+            console.log(sub)
+
+            console.log(sub.textContent)
+            console.log(matches.includes(sub.textContent))
+            if (!matches.includes(sub.textContent)) {
+              e.style.display = "none"
+            }
+          }
+        }
+      }
+    }
+  }
+</script>
