@@ -17,11 +17,9 @@ async function fetchData() {
     });
   });
 
-  console.log(random_article_list)
   random_num = Math.floor(Math.random() * Math.floor(random_article_list.length));
   random_article = random_article_list[random_num]
   var url = "https://hannah-haas.github.io/newspaper/" + random_article
-  console.log(url)
-  // document.location.href = url
+  document.location.href = url
 
 }
