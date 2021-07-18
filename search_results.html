@@ -15,13 +15,20 @@
   <link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
 
   <meta name="viewport" content="width=device-width">
+
+  <!-- <script type="text/javascript" src="article_list.json"></script>
+  <script type="text/javascript">
+    var mydata = JSON.parse(data);
+    console.log(mydata)
+  </script> -->
+
 </head>
 
 <body>
   <div id="main">
     <div class="container">
       <div class="logo">
-        <a href="../index.html"><img src="static_images/logo.jpg" alt="logo"></a>
+        <a href="index.html"><img src="static_images/logo.jpg" alt="logo"></a>
       </div>
       <div class="navbar">
 
@@ -42,7 +49,7 @@
           <li><a href="about_us.html">About Us</a></li>
 
           <li>
-            <form class="form_class" action="">
+            <form class="form_class" action="search_results.html" method="GET">
               <input class="input_class" style="font-family: 'Spectral;'" placeholder="Search..." type="search">
               <i class="fa fa-search"></i>
             </form>
@@ -311,7 +318,7 @@
           </div>
           <div class="div_for_aligning">
             <a style="text-decoration: none; color: rgb(56, 86, 35);" href="people/human_health/children_health_fossil_fuels.html">
-              <p class="article_title_left"> Children’s health are increasingly at risk due to fossil fuel combustion. </p>
+              <p class="article_title_left"> Children’s health is increasingly at risk due to fossil fuel combustion. </p>
             </a>
             <p class="article_sub_title_left"> People | Human Health, March 18th, 2021 </p>
             <p class="about_article_text_left">
@@ -332,7 +339,7 @@
           </div>
           <div class="div_for_aligning">
             <a style="text-decoration: none; color: rgb(56, 86, 35);" href="environment/oceans/oceania/maui_dolphins.html">
-              <p class="article_title_left"> A status report on the critically endangered Māui dolphin </p>
+              <p class="article_title_left"> A status report on the critically endangered Māui dolphin. </p>
             </a>
             <p class="article_sub_title_left"> Environment | Oceans, March 18th, 2021 </p>
             <p class="about_article_text_left">
@@ -474,13 +481,15 @@
         </div>
       </div>
 
+      <div id="no_results_text"> No results found, please search again. </div>
+
 
 
     </div>
     <div id="bottomBar">
       <div id="explore"> EXPLORE </div>
-      <a href="../connect.html" id="connect"> CONNECT </a>
-      <a href="../legal.html" id="legal"> LEGAL </a>
+      <a href="connect.html" id="connect"> CONNECT </a>
+      <a href="legal.html" id="legal"> LEGAL </a>
       <div id="empty2"> </div>
       <div id="follow_us">
         <p id="ugh"> FOLLOW US: </p>
@@ -497,6 +506,7 @@
 
 <script>
   const width = document.documentElement.clientWidth
+  document.getElementById("no_results_text").style.display = "none"
 
   if (width <= 400) {
     document.getElementById("results_phone").style.display = "block"
@@ -531,8 +541,350 @@
 </script>
 <script type="text/javascript" src="explore_function.js"></script>
 
-
 <script>
+  data = [{
+    "europe": [{
+        "environment/forests/europe/swiss-wolves.html": [
+          "Should wolves be protected on Swiss soil? A referendum that divides a neutral country.",
+          "On the 27 November 2020, 51.9 per cent of Swiss voters voted ‘No’ in a referendum revising the Swiss Hunting Act of 1986. In Switzerland, wolves will continue to be a nationally protected species.",
+          "Forests | Europe",
+          "March 1, 2021",
+          "MaiMoeslund_Unsplash_Flickr.jpg",
+          "wolf, switzerland, forest, europe, hunting, farming"
+        ]
+      },
+      {
+        "sustainable_cities/europe/bath_clean_air.html": [
+          "How effective is Bath’s Clean Air Zone strategy?",
+          "Since 15 March 2021, Bath, United Kingdom, has begun to fine highly polluting vehicles driving within their ‘Clean Air Zone’ in an effort to bring the city’s atmospheric nitrogen dioxide levels below the legal limit.",
+          "Cities | Bath, Englande",
+          "July 3, 2021",
+          "CoverImage_CleanAir_AlexAtudosie.jpg",
+          "cities, sustainable cities, air zone, bath, england"
+        ]
+      },
+      {
+        "sustainable_cities/europe/city_pollinators.html": [
+          "The buzz for green cities: urban spaces for people and pollinators ",
+          "The Covid-19 pandemic has shown many city-dwellers tucked away indoors the enormous mental health benefits of spending time in nature. And as urbanisation takes over the world—with 5.2 billion people estimated to live on 1.9 million km2 of urban land by 2030—it is increasingly important to design city spaces to accommodate for the health of their inhabitants, both human and animal.",
+          "Cities",
+          "July 11, 2021",
+          "CoverImage_UrbanGreenSpace_HectorArguelloCanals.jpg",
+          "cities, sustainable cities, green cities, mental health, pollinator, insect, europe"
+        ]
+      }
+    ],
+    "north_america": [{
+        "sustainable_cities/north_america/mackinac_line5.html": [
+          "Enbridge ignores Michigan’s shutdown deadline and continues to transport propane across Line 5",
+          "In November 2020, Governor Whitmer of Michigan ordered Enbridge to shut down their operations of the Line 5 pipelines by 12 May 2021. Now in June 2021, Enbridge has defied the order and continues to transport 23 million gallons of oil daily across the Straits of Mackinac.",
+          "Cities | Mackinac, Michigan",
+          "June 2, 2021",
+          "Line5_CoverPhoto_Aaron_Burden_Unsplash.jpg",
+          "michigan, sustainable cities, cities, north america, line 5, pipelines, propane"
+        ]
+      },
+      {
+        "environment/tundra_poles/greenland_mercury.html": [
+          "Melting of the Greenland Ice Sheet: much more than just rising sea levels",
+          "An international collaborative study found that mercury levels in Greenland glacial meltwater compare to levels measured in industrial China.",
+          "Environment | Tundras and Poles",
+          "June 16, 2021",
+          "GreenlandIceSheet_CoverImage_EuropeanSpaceAgency.jpg",
+          "greenland, tundras, poles, ice, sea levels, arctic, north america"
+        ]
+      }
+    ],
+    "south_america": [{
+        "environment/forests/south_america/amazon_rainforest.html": [
+          "The Bolsonaro Administration is not taking enough action to conserve Earth’s shrinking lungs.",
+          "The Amazonian rainforest is vital to mitigating the impacts of climate change. However, findings suggest that, due to ongoing human disturbances, deforested areas of the world’s largest rainforest are not recovering at a fast-enough rate.",
+          "Forests | South America",
+          "May 12, 2021",
+          "COVERIMAGE_EduardoZmievski_Unsplash.jpg",
+          "environment, rainforest, Brazil, Bolsonaro, Netzero, amazon, deforestation"
+        ]
+      },
+      {
+        "sustainable_cities/south_america/sustainable_leader_medellin.html": [
+          "The inspiring transforming of Medellín: from murder capital to sustainable leader",
+          "Medellín, Colombia’s second most populous city, is considered a leading example in terms of their environmental policies and sustainable initiatives. Whilst there are other green cities around the globe, the transformation of Medellín is truly remarkable; considering just a few years ago it was a stronghold for Pablo Escobar’s drug crimes and deemed the ‘murder capital of the world’.",
+          "Cities | Medellín, Colombia",
+          "July 13, 2021",
+          "Medellin_DanielVargas_Unsplash_CoverImage.jpg",
+          "sustainable cities, cities, green policies, leading city, medellin, colombia"
+        ]
+      }
+    ],
+    "africa": [{
+        "sustainable_cities/africa/oceania/namibia_biotrade.html": [
+          "The Namibia bio-trade initiative increases the value of biodiversity-derived products",
+          "Under the guidance of the BioTrade Initiative, the Eudafano Women’s Cooperative, a community organization in Namibia, has provided a secure economic income for 2500 women and their indigenous communities.",
+          "Sustainable Cities | Ondangwa, Namibia",
+          "July 12, 2021",
+          "NamibiaBioTrade_CoverImage_PhilipSchuler.jpg",
+          "africa, namibia, biotrade, green economy, trade, biotrade"
+        ]
+      },
+      {
+        "environment/grasslands/africa/elephant_human_conflict.html": [
+          "Gabon and Kenya call for international support in the fight against human-elephant conflict",
+          "Two countries, opposite coasts, both calling for international aid in mitigating the never-ending clashes between wild elephants and rural communities.",
+          "Environment | Grasslands",
+          "May 8, 2021",
+          "CoverImage_LarryLi.jpg",
+          "africa, gabon, kenya, elephant, grassland"
+        ]
+      }
+    ],
+    "oceania": [{
+        "environment/oceans/oceania/maui_dolphins.html": [
+          "A status report on the critically endangered Māui dolphin.",
+          "Two of the world’s smallest dolphins have been listed as endangered and critically endangered by the International Union for Conservation of Nature (IUCN). The populations of Hector’s and Māui dolphins are dwindling, with only around 10,000 Hector’s and a mere 63 Māui dolphins, respectively.",
+          "Oceans | Oceania",
+          "March 18, 2021",
+          "MaiMoeslund_Unsplash_Flickr.jpg",
+          "dolphin, new zealand, maui, fishing, ocean, endangered, marine"
+        ]
+      },
+      {
+        "environment/oceans/oceania/sulu_sulawesi.html": [
+          "Sulu Sulawesi: a seascape approach to funding a blue economy",
+          "Currently 5% of our oceans are actively protected, by 2030 Conservation International hopes that 30% of marine areas will be under protection. The establishment of seascapes may just help shift current marine economies into sustainable ‘blue’ economies.",
+          "Environment | Oceans",
+          "June 22, 2021",
+          "CoverImage_SuluSulawesi_DorotheaOldani_Unsplash.jpg",
+          "coral, coral triangle, ocean, oceania, marine"
+        ]
+      }
+    ],
+    "asia": [{
+      "sustainable_cities/asia/singapore_cultured_meat.html": [
+        "Singapore is one-bite ahead of the rest of the world for cultured meat approval",
+        "Food is a right and necessity for all living organisms. However, with the projected exponential population growth of humans and a somewhat ‘unpredictable’ changing climate, our world is facing food insecurity.",
+        "Sustainable Cities | Singapore",
+        "July 15, 2021",
+        "CulturedMeat_CoverImage_AnnieSpratt.jpg",
+        "singapore, meat, livestock, greenhhouse gas"
+      ]
+    }],
+    "atlantic": [],
+    "pacific": [{
+      "environment/oceans/oceania/maui_dolphins.html": [
+        "A status report on the critically endangered Māui dolphin.",
+        "Two of the world’s smallest dolphins have been listed as endangered and critically endangered by the International Union for Conservation of Nature (IUCN). The populations of Hector’s and Māui dolphins are dwindling, with only around 10,000 Hector’s and a mere 63 Māui dolphins, respectively.",
+        "Oceans | Oceania",
+        "March 18, 2021",
+        "MaiMoeslund_Unsplash_Flickr.jpg",
+        "dolphin, new zealand, maui, fishing, ocean, endangered, marine"
+      ]
+    }],
+    "indian": [],
+    "mediterranean": [],
+    "baltic": [],
+    "arctic": [],
+    "other": [{
+        "people/human_health/children_health_fossil_fuels.html": [
+          "Children’s health is increasingly at risk due to fossil fuel combustion.",
+          "Children are increasingly at risk of prematurely dying from respiratory infections. A recent study from the University of Birmingham, University of Leicester and Harvard University estimated that 7.2% of respiratory deaths in children under the age of 5 can be attributed to PM2.5-related fossil fuel burning. Childrens brain, lungs and immune systems are very susceptible during their early development and can become impaired by exposure to air pollutants.",
+          "Human Health | Environment",
+          "March 18, 2021",
+          "Power_Plant_Girl.jpg",
+          "pollution, lung, air"
+        ]
+      },
+      {
+        "people/human_health/zoonoviruses_markets.html": [
+          "Zoonoviruses: you may be buying more at the market than you bargained for",
+          "Survey-based data collection has suggested that negative public perception towards wildlife trade, exotic wildlife consumption and bats has significantly increased. 46% of participants believe that disease transmission due to close contact between humans and exotic wildlife will continue to cause future pandemics.",
+          "People | Human Health",
+          "June 28, 2021",
+          "CoverImage_WildlifeTrade_DeniseChan.jpg",
+          "covid, coronavirus, covid-19, zoonoviruses, market, china, diseases"
+        ]
+      },
+      {
+        "people/communities/venezuela_indigenous_forests.html": [
+          "The devastation of the Orinoco Delta and the Warao people",
+          "The Warao indigenous community in Venezuela have suffered widespread devastation on all fronts, from COVID-19 to the country’s political instability, the Warao community has also been affected by the destruction of their homeland, the Orinoco Delta river.",
+          "People | Communities",
+          "July 16, 2021",
+          "CoverImage_Venezuela.jpg",
+          "natural resources, warao, indigenous, covid-19, coronavirus, covid, natural resources, human rights, political destabilization, communities, venezuela"
+        ]
+      }
+    ]
+  }];
+
+  var matches_final = []
+  var search_input = window.location.search;
+  console.log(search_input)
+  search_input = search_input.slice(8)
+  console.log(search_input)
+  search_words = search_input.split("+");
+  console.log(search_words)
+
+  data.forEach(obj => {
+    Object.entries(obj).forEach(([key, values]) => {
+      // console.log(key, values)
+      values.forEach(obj => {
+        // console.log(obj)
+        Object.entries(obj).forEach(([key, values]) => {
+          // console.log(key)
+          // console.log(values[0])
+          values.forEach(to_search => {
+            // console.log(to_search)
+            to_search = to_search.split(" ");
+            console.log(search_words)
+
+            console.log(to_search)
+            for (a = 0; a < search_words.length; a++) {
+              for (b = 0; b < to_search.length; ++b) {
+                // console.log(search_words[a])
+                var word = to_search[b];
+                word = word.replace(/\,/g, '');
+                // to_search[b]
+                if (search_words[a] == word) {
+                  console.log("MATCH")
+                  console.log(values[0])
+                  matches_final = matches_final.concat(values[0])
+                  return;
+                }
+              }
+            }
+          });
+        });
+      });
+    });
+  });
+
+  console.log(matches_final)
+
+
+
+  if (width <= 400) {
+    var ancestor = document.getElementById('results_phone'),
+      descendents = ancestor.getElementsByTagName('*');
+
+    console.log(descendents)
+    // comparing to the matches and only displaying them!
+    var i, e, d;
+    for (i = 0; i < descendents.length; ++i) {
+      e = descendents[i];
+      // console.log(e.className)
+      if (e.className === 'sub_article') {
+        var kids = e.getElementsByTagName('*');
+        // console.log(kids)
+        for (j = 0; j < kids.length; ++j) {
+          sub = kids[j];
+
+          if (sub.className === 'sub_article_text') {
+
+            // console.log(sub)
+            //
+            // console.log(sub.textContent)
+            // console.log(matches_final.includes(sub.textContent.trim()))
+            if (!matches_final.includes(sub.textContent.trim())) {
+              e.style.display = "none"
+            }
+          }
+        }
+      }
+    }
+
+  } else {
+    var ancestor = document.getElementById('results_screen'),
+      descendents = ancestor.getElementsByTagName('*');
+
+    // comparing to the matches and only displaying them!
+    var i, e, d;
+    for (i = 0; i < descendents.length; ++i) {
+      e = descendents[i];
+      if (e.className === 'individual_article') {
+        var kids = e.getElementsByTagName('*');
+        for (j = 0; j < kids.length; ++j) {
+          sub = kids[j];
+          if (sub.className === 'article_title_left') {
+            // console.log(sub)
+            //
+            // console.log(sub.textContent.trim())
+            // console.log(matches_final.includes(sub.textContent.trim()))
+            // console.log(matches_final)
+            if (!matches_final.includes(sub.textContent.trim())) {
+              e.style.display = "none"
+            }
+          }
+        }
+      }
+    }
+  }
+
+  if (matches_final.length == 0) {
+    console.log("NO MATCHES")
+    document.getElementById('no_results_text').style.display = "block"
+
+  }
+</script>
+
+<!-- <script>
+  var search_input = window.location.search;
+  console.log(search_input)
+  search_input = search_input.slice(8)
+  console.log(search_input)
+  search_words = search_input.split("+");
+  console.log(search_words)
+
+
+
+  matches_final = fetchData()
+
+  async function fetchData() {
+
+    const response = await fetch('https://hannah-haas.github.io/newspaper/article_list.json');
+    const data = await response.json();
+    var matches_final = []
+
+    data.forEach(obj => {
+      Object.entries(obj).forEach(([key, values]) => {
+        // console.log(key, values)
+        values.forEach(obj => {
+          // console.log(obj)
+          Object.entries(obj).forEach(([key, values]) => {
+            // console.log(key)
+            // console.log(values[0])
+            values.forEach(to_search => {
+              // console.log(to_search)
+
+
+              matches_final = matches_final.concat(values[0])
+            });
+          });
+        });
+      });
+    });
+    return matches_final
+  }
+  console.log(matches_final)
+
+  console.log(matches_final[0])
+
+  // const response = await fetch('https://hannah-haas.github.io/newspaper/article_list.json');
+  // const data = await response.json();
+  var random_article_list = []
+
+  // data.forEach(obj => {
+  //   Object.entries(obj).forEach(([key, values]) => {
+  //     values.forEach(obj => {
+  //       Object.entries(obj).forEach(([key, values]) => {
+  //         console.log(key, values)
+  //         random_article_list = random_article_list.concat(key)
+  //       });
+  //     });
+  //   });
+  // });
+
+
+
   const matches = [" Zoonoviruses: you may be buying more at the market than you bargained for "]
 
   // article_title_left
@@ -573,24 +925,24 @@
       descendents = ancestor.getElementsByTagName('*');
 
     // comparing to the matches and only displaying them!
-    var i, e, d;
-    for (i = 0; i < descendents.length; ++i) {
-      e = descendents[i];
-      if (e.className === 'individual_article') {
-        var kids = e.getElementsByTagName('*');
-        for (j = 0; j < kids.length; ++j) {
-          sub = kids[j];
-          if (sub.className === 'article_title_left') {
-            console.log(sub)
-
-            console.log(sub.textContent)
-            console.log(matches.includes(sub.textContent))
-            if (!matches.includes(sub.textContent)) {
-              e.style.display = "none"
-            }
-          }
-        }
-      }
-    }
+    // var i, e, d;
+    // for (i = 0; i < descendents.length; ++i) {
+    //   e = descendents[i];
+    //   if (e.className === 'individual_article') {
+    //     var kids = e.getElementsByTagName('*');
+    //     for (j = 0; j < kids.length; ++j) {
+    //       sub = kids[j];
+    //       if (sub.className === 'article_title_left') {
+    //         console.log(sub)
+    //
+    //         console.log(sub.textContent)
+    //         console.log(matches.includes(sub.textContent))
+    //         if (!matches.includes(sub.textContent)) {
+    //           e.style.display = "none"
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
   }
-</script>
+</script> -->

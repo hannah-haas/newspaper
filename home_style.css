@@ -464,6 +464,7 @@ body {
   text-align: center;
   font-size: 1.2em;
   transition: all 1s;
+  border-radius: 50%;
 }
 
 /* border on hover */

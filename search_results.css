@@ -39,6 +39,14 @@
   font-family: 'Spectral';
 }
 
+#no_results_text {
+  font-size: 20px;
+  margin-top: 5%;
+  margin-left: 5%;
+  color: rgb(5, 41, 14);
+  font-family: 'Spectral';
+}
+
 /* .sub_article {
   display: none;
 } */
