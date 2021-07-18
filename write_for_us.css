@@ -171,6 +171,10 @@ p {
   #guide {
     font-size: 4vw;
   }
+
+  #no_phone {
+    display: none;
+  }
 }
 
 @media (max-width: 350px) {
