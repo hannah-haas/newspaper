@@ -579,7 +579,7 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   }
 
   .contact_form_info {
-    font-size: 4vw;
+    font-size: 3.6vw;
   }
 
   #bottom_row {
@@ -594,13 +594,13 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   #top_row {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 310px 330px;
+    grid-template-rows: 330px 340px;
   }
 
   #bottom_row {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 200px 200px;
+    grid-template-rows: 220px 200px;
   }
 
   .item {
