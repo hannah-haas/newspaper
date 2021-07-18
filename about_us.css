@@ -22,13 +22,13 @@
 }
 
 .isabel {
-  grid-column: 2;
-  grid-row: 1;
+  grid-column: 1;
+  grid-row: 2;
 }
 
 .hannah {
-  grid-column: 1;
-  grid-row: 2;
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .dom {
@@ -237,7 +237,7 @@ ul {
 
 @media (max-width: 850px) {
   .desc {
-    font-size: 1.45vw;
+    font-size: 1.4vw;
   }
 
   .horizontal_line {
@@ -321,12 +321,12 @@ ul {
 
   .isabel {
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 3;
   }
 
   .hannah {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 2;
   }
 
   .dom {
