@@ -22,6 +22,10 @@
   margin-top: 5%;
 }
 
+#only_phone_line {
+  display: none;
+}
+
 hr {
   margin-top: 23px;
   border-top: 2px solid rgb(56, 86, 35);
@@ -515,6 +519,10 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 
   #connect_hannah {
     font-size: 5vw;
+  }
+
+  #only_phone_line {
+    display: block;
   }
 }
 
