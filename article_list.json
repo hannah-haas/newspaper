@@ -1,4 +1,4 @@
-data = '[{
+[{
   "europe": [
     {"environment/forests/europe/swiss-wolves.html":
       [
@@ -191,4 +191,4 @@ data = '[{
       ]
     }
   ]
-}]';
+}]
