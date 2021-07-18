@@ -359,10 +359,10 @@ body {
 }
 
 .sub_article_text {
-  font-size: 1.8vw;
+  font-size: 1.6vw;
   text-align: center;
   color: rgb(5, 41, 14);
-  font-family: "Glacial Indifference";
+  font-family: "Spectral";
 }
 
 .sub_article_text2 {
@@ -370,7 +370,7 @@ body {
   font-size: 1.4vw;
   text-align: center;
   color: rgb(5, 41, 14);
-  font-family: "Glacial Indifference";
+  font-family: "Spectral";
 }
 
 .sub_article_img {
