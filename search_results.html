@@ -781,12 +781,14 @@
                 var word = to_search[b];
                 word = word.replace(/\,/g, '');
                 // to_search[b]
-                if (search_words[a] == word) {
+
+                if (search_words[a].toLowerCase() == word.toLowerCase() || search_words[a].toLowerCase().slice(0, -1) == word.toLowerCase()) {
                   console.log("MATCH")
                   console.log(values[0])
                   matches_final = matches_final.concat(values[0])
                   return;
                 }
+
               }
             }
           });
