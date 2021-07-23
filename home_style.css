@@ -937,6 +937,22 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
   }
 }
 
+@media (max-width: 650px) {
+  #bottomBar {
+    display: grid;
+    background-color: rgb(5, 41, 14);
+    grid-template-columns: 17vw 17vw 17vw 0vw auto;
+    grid-template-rows: 7vh;
+    height: 7vh;
+    font-size: .5vw;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    padding-left: 3vw;
+    /* bottom: 0px; */
+  }
+}
+
 @media (max-width: 600px) {
   .flex-container {
     display: flex;
@@ -977,7 +993,7 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
   #bottomBar {
     display: grid;
     background-color: rgb(5, 41, 14);
-    grid-template-columns: 18vw 18vw 18vw 0vw auto;
+    grid-template-columns: 16vw 16vw 16vw 0vw auto;
     grid-template-rows: 7vh;
     height: 7vh;
     font-size: .5vw;

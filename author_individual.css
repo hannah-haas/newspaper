@@ -1,4 +1,4 @@
-#articles {
+.articles {
   display: flex;
   width: 90%;
   flex-direction: column;
@@ -74,6 +74,18 @@
   transform: translateY(-55%);
   float: left;
   width: 60%;
+}
+
+#author_results_screen {
+  display: flex;
+}
+
+#author_results_phone {
+  display: none;
+}
+
+.sub_article {
+  margin-top: 3%;
 }
 
 .article_hover {

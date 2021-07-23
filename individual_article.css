@@ -328,16 +328,29 @@ figcaption {
     padding: .6em 1em .6em 1.7em;
   }
 
+  #cover_text_two_lines {
+    position: absolute;
+    display: block;
+    width: 90%;
+    margin-top: -25%;
+    max-width: 90%;
+    font-size: 5vw;
+    font-family: "Glacial Indifference";
+    color: #FFF;
+    padding: .6em 1em .6em 1.7em;
+  }
+
   .article_text2 {
     display: block;
     margin-top: -16%;
-    font-size: 3.5vw;
+    font-size: 3vw;
     font-family: "Glacial Indifference";
     color: #FFF;
     padding: .6em .5em .6em 2.4em;
     float: left;
     /* flex: 50%; */
     z-index: 1;
+    margin-left: 2.5%;
   }
 
   .article_photos {

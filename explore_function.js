@@ -19,7 +19,7 @@ async function fetchData() {
 
   random_num = Math.floor(Math.random() * Math.floor(random_article_list.length));
   random_article = random_article_list[random_num]
-  var url = "https://hannah-haas.github.io/newspaper/" + random_article
+  var url = "http://the-kingfisher.org/" + random_article
   document.location.href = url
 
 }
