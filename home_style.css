@@ -820,7 +820,7 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
   display: none;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1173px) {
   .container {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;

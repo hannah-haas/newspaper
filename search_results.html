@@ -52,12 +52,14 @@
           <li><a href="our_mission.html">Our Mission</a></li>
           <li><a href="about_us.html">About Us</a></li>
 
-          <!-- <li>
-            <form class="form_class" action="search_results.html" method="GET">
-              <input class="input_class" style="font-family: 'Spectral;'" placeholder="Search..." type="search">
-              <i class="fa fa-search"></i>
+          <li>
+            <form class="form_class" action="search_results.html" method="GET" autocomplete="off">
+              <input class="input_class" style="font-family: 'Spectral;'" placeholder="Search..." type="search" name="search">
+              <button type="submit">
+                <i class="fa fa-search"></i>
+              </button>
             </form>
-          </li> -->
+          </li>
         </ul>
 
       </div>
@@ -70,6 +72,28 @@
       <p class="search_results_text"> Search Results </p>
 
       <div class="articles" id="results_screen">
+        <div class="individual_article" style=" order: 0; ">
+          <div class="article_hover" id="article_pic">
+            <a href="environment/deserts/north_america/mojave_desert.html">
+              <img class="individualPhoto" src="environment/deserts/north_america/images/Mojave_CoverImage_JamesMarvinPhelps.jpg">
+            </a>
+          </div>
+
+          <div class="div_for_aligning">
+            <a style="text-decoration: none; color: rgb(56, 86, 35);" href="environment/deserts/north_america/mojave_desert.html">
+              <p class="article_title_left" style="margin-top:1.5vw;"> Mammal and bird communities are collapsing in the Mojave Desert</p>
+            </a>
+            <p class="article_sub_title_left"> Environment | Deserts, July 17th 2021</p>
+            <p class="about_article_text_left">
+              Evolution has given desert animals time to equip themselves with
+              strategies to bear—even thrive—the temperatures of the barren lands.
+              Although, previously, desert communities had thousands of years to
+              adapt to their environment. Now with the rate of our current
+              warming climate, even these heat-specialists cannot keep up.
+            </p>
+          </div>
+        </div>
+
         <div class="individual_article" style=" order: 0; ">
           <div class="article_hover" id="article_pic">
             <a href="people/communities/venezuela_indigenous_forests.html">
