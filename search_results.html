@@ -668,7 +668,7 @@
       {
         "environment/oceans/north_america/coral_diseases.html": [
           "Tropical reefs under threat as tumour-like disease dysregulates coral metabolism",
-          "Samples taken from Hawaii’s coral reefs and analysed using biochemical profiling have revealed that a devastating disease linked to human activity is degrading tropical reefs by disrupting coral metabolism."
+          "Samples taken from Hawaii’s coral reefs and analysed using biochemical profiling have revealed that a devastating disease linked to human activity is degrading tropical reefs by disrupting coral metabolism.",
           "Environment | Oceans",
           "July 27, 2021",
           "Mojave_CoverImage_JamesMarvinPhelps.jpg",
@@ -799,11 +799,11 @@
 
   var matches_final = []
   var search_input = window.location.search;
-  console.log(search_input)
+  // console.log(search_input)
   search_input = search_input.slice(8)
-  console.log(search_input)
+  // console.log(search_input)
   search_words = search_input.split("+");
-  console.log(search_words)
+  // console.log(search_words)
 
   data.forEach(obj => {
     Object.entries(obj).forEach(([key, values]) => {
@@ -816,9 +816,9 @@
           values.forEach(to_search => {
             // console.log(to_search)
             to_search = to_search.split(" ");
-            console.log(search_words)
+            // console.log(search_words)
 
-            console.log(to_search)
+            // console.log(to_search)
             for (a = 0; a < search_words.length; a++) {
               for (b = 0; b < to_search.length; ++b) {
                 // console.log(search_words[a])
@@ -827,8 +827,8 @@
                 // to_search[b]
 
                 if (search_words[a].toLowerCase() == word.toLowerCase() || search_words[a].toLowerCase().slice(0, -1) == word.toLowerCase()) {
-                  console.log("MATCH")
-                  console.log(values[0])
+                  // console.log("MATCH")
+                  // console.log(values[0])
                   matches_final = matches_final.concat(values[0])
                   return;
                 }
