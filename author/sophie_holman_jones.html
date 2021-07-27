@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Sophie Holman-Jones </title>
+  <link href="../home_style.css" rel="stylesheet" />
+  <link href="../author_individual.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <link href='https://fonts.googleapis.com/css?family=Spectral' rel='stylesheet'>
+  <link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="https://hannah-haas.github.io/newspaper/static_images/Withoutbackground.png">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+</head>
+
+<body>
+  <div id="main">
+    <div class="container">
+      <div class="logo">
+        <a href="../index.html"><img src="../static_images/logo.jpg" alt="logo"></a>
+      </div>
+      <div class="navbar">
+
+        <div class="icon-bar" onclick="Show()">
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+
+        <ul id="nav-lists">
+          <li class="close"><span onclick="Hide()">×</span></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../sustainable_cities/sustainable_cities.html">Cities</a></li>
+          <li><a href="../environment/environment.html">Environment</a></li>
+          <li><a href="../people/people.html">People</a></li>
+          <li><a href="../write_for_us.html">Write For Us</a></li>
+          <li><a href="../our_mission.html">Our Mission</a></li>
+          <li><a href="../about_us.html">About Us</a></li>
+
+          <li>
+            <form class="form_class" action="../search_results.html" method="GET" autocomplete="off">
+              <input class="input_class" style="font-family: 'Spectral;'" placeholder="Search..." type="search" name="search">
+              <button type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content_wrap">
+      <p class="article_list_text"> Articles Written by Sophie Holman-Jones</p>
+
+      <div class="articles" id="author_results_screen">
+        <div class="individual_article" style=" order: 0; ">
+          <div class="article_hover" id="article_pic">
+            <a href="../environment/oceans/north_america/coral_diseases.html">
+              <img class="individualPhoto" src="../environment/oceans/north_america/images/CoralReefDisease_CoverImage_FrancescoUngaro.jpg">
+            </a>
+          </div>
+
+          <div class="div_for_aligning">
+            <a style="text-decoration: none; color: rgb(56, 86, 35);" href="../environment/oceans/north_america/coral_diseases.html">
+              <p class="article_title_left" style="margin-top:1.5vw;"> Tropical reefs under threat as tumour-like disease dysregulates coral metabolism</p>
+            </a>
+            <p class="article_sub_title_left"> Environment | Oceans, July 27th, 2021</p>
+            <p class="about_article_text_left">
+              Samples taken from Hawaii’s coral reefs and analysed using
+              biochemical profiling have revealed that a devastating disease
+              linked to human activity is degrading tropical reefs by disrupting
+              coral metabolism.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="author_results_phone">
+        <div class="sub_article">
+          <a href="../environment/oceans/north_america/coral_diseases.html" style="text-decoration:none;">
+            <img class="sub_article_img" src="../environment/oceans/north_america/images/CoralReefDisease_CoverImage_FrancescoUngaro.jpg">
+            <p class="sub_article_text"> Tropical reefs under threat as tumour-like disease dysregulates coral metabolism </p>
+            <p class="sub_article_text2"> Environment | Oceans </p>
+          </a>
+        </div>
+      </div>
+
+      <div id="bottomBar">
+        <div id="explore"> EXPLORE </div>
+        <a href="../connect.html" id="connect"> CONNECT </a>
+        <a href="../legal.html" id="legal"> LEGAL </a>
+        <div id="empty2"> </div>
+        <div id="follow_us">
+          <p id="ugh"> FOLLOW US: </p>
+          <a href="https://www.facebook.com/theKingfisher.newspaper" target="_blank"><img class="social_media_icon" id="three" src="../static_images/facebook_white.png"></a>
+          <a href="https://www.instagram.com/thekingfisher.newspaper/" target="_blank"><img class="social_media_icon" id="four" src="../static_images/instagram_white.png"></a>
+          <a href="https://www.linkedin.com/company/the-kingfisher-newspaper/" target="_blank"><img class="social_media_icon" id="five" src="../static_images/linkedin_white.png"></a>
+          <a href="https://twitter.com/kingfisher_news" target="_blank"><img class="social_media_icon" id="six" src="../static_images/twitter_new.png"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script>
+  var navList = document.getElementById("nav-lists");
+
+  function Show() {
+    navList.classList.add("_Menus-show");
+  }
+
+  function Hide() {
+    navList.classList.remove("_Menus-show");
+  }
+</script>
+
+<script>
+  const width = document.documentElement.clientWidth
+
+  if (width <= 400) {
+    document.getElementById("author_results_phone").style.display = "block"
+    document.getElementById("author_results_screen").style.display = "none"
+  } else {
+    document.getElementById("author_results_phone").style.display = "none"
+    document.getElementById("author_results_screen").style.display = "flex"
+  }
+
+  var navList = document.getElementById("nav-lists");
+
+  function Show() {
+    navList.classList.add("_Menus-show");
+  }
+
+  function Hide() {
+    navList.classList.remove("_Menus-show");
+  }
+
+  window.addEventListener('resize', function(event) {
+    var newWidth = window.innerWidth;
+    var newHeight = window.innerHeight;
+
+    if (newWidth <= 400) {
+      document.getElementById("author_results_phone").style.display = "block"
+      document.getElementById("author_results_screen").style.display = "none"
+    } else {
+      document.getElementById("author_results_phone").style.display = "none"
+      document.getElementById("author_results_screen").style.display = "flex"
+    }
+  });
+</script>
+<script type="text/javascript" src="../explore_function.js"></script>
