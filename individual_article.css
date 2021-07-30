@@ -146,7 +146,6 @@ figcaption {
   padding: .6em .5em .6em 2.6em;
   float: left;
   flex: 30%;
-  z-index: 1;
 }
 
 .article_author_photo {
@@ -349,7 +348,6 @@ figcaption {
     padding: .6em .5em .6em 2.4em;
     float: left;
     /* flex: 50%; */
-    z-index: 1;
     margin-left: 2.5%;
   }
 

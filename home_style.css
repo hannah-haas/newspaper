@@ -302,6 +302,14 @@ body {
   font-family: "Sans Serif";
 }
 
+#one_line_title {
+  margin-top: -11%;
+}
+
+#one_line_date {
+  margin-top: -13.5%;
+}
+
 .main_article_text2 {
   display: block;
   margin-top: -15%;
@@ -352,6 +360,7 @@ body {
   height: 100%;
   width: 100%;
   padding-left: 1vw;
+  padding-right: 1vw;
 }
 
 .sub_article:hover {
