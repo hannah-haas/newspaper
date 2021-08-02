@@ -18,6 +18,7 @@
 
 #results_screen {
   display: flex;
+  margin-top: .5vw;
 }
 
 .container2 {

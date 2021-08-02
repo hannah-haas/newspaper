@@ -17,8 +17,12 @@
   margin-right: 5%;
 }
 
-#north_america_screen {
+#global_screen {
   display: flex;
+}
+
+#north_america_screen {
+  display: none;
 }
 
 #south_america_screen {
@@ -140,6 +144,10 @@
 
 .content_wrap {
   padding-top: 0vh;
+}
+
+#global_phone {
+  display: none;
 }
 
 #north_america_phone {

@@ -14,20 +14,10 @@
       [
         "How effective is Bath’s Clean Air Zone strategy?",
         "Since 15 March 2021, Bath, United Kingdom, has begun to fine highly polluting vehicles driving within their ‘Clean Air Zone’ in an effort to bring the city’s atmospheric nitrogen dioxide levels below the legal limit.",
-        "Cities | Bath, Englande",
+        "Sustainable Leaders | Bath, Englande",
         "July 3, 2021",
         "CoverImage_CleanAir_AlexAtudosie.jpg",
         "cities, sustainable cities, air zone, bath, england"
-      ]
-    },
-    {"sustainable_cities/europe/city_pollinators.html":
-      [
-        "The buzz for green cities: urban spaces for people and pollinators ",
-        "The Covid-19 pandemic has shown many city-dwellers tucked away indoors the enormous mental health benefits of spending time in nature. And as urbanisation takes over the world—with 5.2 billion people estimated to live on 1.9 million km2 of urban land by 2030—it is increasingly important to design city spaces to accommodate for the health of their inhabitants, both human and animal.",
-        "Cities",
-        "July 11, 2021",
-        "CoverImage_UrbanGreenSpace_HectorArguelloCanals.jpg",
-        "cities, sustainable cities, green cities, mental health, pollinator, insect, europe"
       ]
     }
   ],
@@ -36,7 +26,7 @@
       [
         "Enbridge ignores Michigan’s shutdown deadline and continues to transport propane across Line 5",
         "In November 2020, Governor Whitmer of Michigan ordered Enbridge to shut down their operations of the Line 5 pipelines by 12 May 2021. Now in June 2021, Enbridge has defied the order and continues to transport 23 million gallons of oil daily across the Straits of Mackinac.",
-        "Cities | Mackinac, Michigan",
+        "Sustainable Leaders | Mackinac, Michigan",
         "June 2, 2021",
         "Line5_CoverPhoto_Aaron_Burden_Unsplash.jpg",
         "michigan, sustainable cities, cities, north america, line 5, pipelines, propane"
@@ -88,7 +78,7 @@
       [
         "The inspiring transforming of Medellín: from murder capital to sustainable leader",
         "Medellín, Colombia’s second most populous city, is considered a leading example in terms of their environmental policies and sustainable initiatives. Whilst there are other green cities around the globe, the transformation of Medellín is truly remarkable; considering just a few years ago it was a stronghold for Pablo Escobar’s drug crimes and deemed the ‘murder capital of the world’.",
-        "Cities | Medellín, Colombia",
+        "Sustainable Leaders | Medellín, Colombia",
         "July 13, 2021",
         "Medellin_DanielVargas_Unsplash_CoverImage.jpg",
         "sustainable cities, cities, green policies, leading city, medellin, colombia"
@@ -100,7 +90,7 @@
       [
         "The Namibia bio-trade initiative increases the value of biodiversity-derived products",
         "Under the guidance of the BioTrade Initiative, the Eudafano Women’s Cooperative, a community organization in Namibia, has provided a secure economic income for 2500 women and their indigenous communities.",
-        "Sustainable Cities | Ondangwa, Namibia",
+        "Sustainable Leaders | Ondangwa, Namibia",
         "July 12, 2021",
         "NamibiaBioTrade_CoverImage_PhilipSchuler.jpg",
         "africa, namibia, biotrade, green economy, trade, biotrade"
@@ -145,7 +135,7 @@
       [
         "Singapore is one-bite ahead of the rest of the world for cultured meat approval",
         "Food is a right and necessity for all living organisms. However, with the projected exponential population growth of humans and a somewhat ‘unpredictable’ changing climate, our world is facing food insecurity.",
-        "Sustainable Cities | Singapore",
+        "Sustainable Leaders | Singapore",
         "July 15, 2021",
         "CulturedMeat_CoverImage_AnnieSpratt.jpg",
         "singapore, meat, livestock, greenhhouse gas"
@@ -159,6 +149,28 @@
         "August 1, 2021",
         "TropicalMountainForest_CoverImage_MichelRathwell.jpg",
         "deforestation, carbon storage, sequestration, indonesia, laos, malaysia, thailand, cropland, plantation, palm oil, forest"
+      ]
+    }
+  ],
+  "global": [
+    {"sustainable_cities/global/tokyo_olympics.html":
+      [
+        "The ‘sustainable’ Tokyo 2020 Olympic games seem to lack one thing: sustainability",
+        "If you’ve tuned into the Tokyo 2020 Olympic games you may have seen that the event is being branded as the ‘greenest Olympics yet’. With the media praising the Committee’s green-orientated actions, including recycled cardboard beds for athletes and the hydrogen fueled Olympic cauldron—how come these games have also been deemed the third least sustainable Olympics since 1992?",
+        "Sustainable Leaders | Global",
+        "August 2, 2021",
+        "Tokyo2020_CoverImage_MattLee.jpg",
+        "olympic, tokyo, greenwashing, carbon credits, plastic, athlete, athletic, sport, green"
+      ]
+    },
+    {"sustainable_cities/global/city_pollinators.html":
+      [
+        "The buzz for green cities: urban spaces for people and pollinators ",
+        "The Covid-19 pandemic has shown many city-dwellers tucked away indoors the enormous mental health benefits of spending time in nature. And as urbanisation takes over the world—with 5.2 billion people estimated to live on 1.9 million km2 of urban land by 2030—it is increasingly important to design city spaces to accommodate for the health of their inhabitants, both human and animal.",
+        "Sustainable Leaders | Global",
+        "July 11, 2021",
+        "CoverImage_UrbanGreenSpace_HectorArguelloCanals.jpg",
+        "cities, sustainable cities, green cities, mental health, pollinator, insect, europe"
       ]
     }
   ],

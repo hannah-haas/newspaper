@@ -746,7 +746,7 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
   -ms-flex: 1;
   flex: 2;
   flex-direction: row-reverse;
-  padding-right: 3vw;
+  padding-right: 1.5vw;
 }
 
 #nav-lists {
@@ -769,7 +769,7 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
 .container .navbar ul li a {
   text-decoration: none;
   color: rgb(5, 41, 14);
-  font-size: .9em;
+  font-size: .8em;
   text-transform: uppercase;
   display: block;
   height: 50px;
@@ -829,7 +829,7 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
   display: none;
 }
 
-@media (max-width: 1173px) {
+@media (max-width: 1210px) {
   .container {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
