@@ -299,3 +299,31 @@
     font-size: 4vw;
   }
 }
+
+@media (min-width: 700px) and (max-width: 800px) and (min-height: 1000px) and (max-height: 1100px) {
+  .parallax {
+    min-height: 40vh;
+    background-attachment: scroll;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1100px) and (min-height: 1300px) and (max-height: 1400px) {
+  .parallax {
+    min-height: 55vh;
+    background-attachment: scroll;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 420px) and (min-height: 800px) and (max-height: 900px) {
+  .parallax {
+    min-height: 35vh;
+    background-attachment: scroll;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 300px) and (min-height: 600px) and (max-height: 700px) {
+  .parallax {
+    min-height: 30vh;
+    background-attachment: scroll;
+  }
+}
