@@ -16,13 +16,15 @@
   <meta name="viewport" content="width=device-width">
   <link rel="icon" href="https://hannah-haas.github.io/newspaper/static_images/Withoutbackground.png">
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <!-- <meta name="viewport" content="width=device-width, minimal-ui"> -->
-
+  <meta name="apple-mobile-web-app-capable" content="yes" />
   <!-- window.scrollTo(0,1) -->
   <script>
-    addEventListener("load", function() {
-      window.scrollTo(1, 0);
-    }, false);
+    window.addEventListener("load", function() {
+      setTimeout(function() {
+        // This hides the address bar:
+        window.scrollTo(0, 1);
+      }, 0);
+    });
   </script>
 
 
