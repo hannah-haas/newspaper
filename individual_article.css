@@ -264,6 +264,18 @@ figcaption {
   margin-top: -11%;
 }
 
+#cop26_title_special {
+  /* position: absolute;
+  display: block;
+  width: 90%; */
+  margin-top: -11%;
+  /* max-width: 90%;
+  font-size: 5vw;
+  font-family: "Glacial Indifference";
+  color: #FFF;
+  padding: .6em 1em .6em 1.7em; */
+}
+
 /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
 @media (max-width: 600px) {
   .parallax {
@@ -320,6 +332,18 @@ figcaption {
     display: block;
     width: 90%;
     margin-top: -30%;
+    max-width: 90%;
+    font-size: 4.5vw;
+    font-family: "Glacial Indifference";
+    color: #FFF;
+    padding: .6em 1em .6em 1.7em;
+  }
+
+  #cop26_title_special {
+    position: absolute;
+    display: block;
+    width: 90%;
+    margin-top: -25%;
     max-width: 90%;
     font-size: 5vw;
     font-family: "Glacial Indifference";

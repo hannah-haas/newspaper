@@ -318,6 +318,12 @@ body {
   margin-top: -13.5%;
 }
 
+.new_style {
+  display: flex;
+  width: 70%;
+  padding-top: 1%;
+}
+
 .main_article_text2 {
   display: block;
   margin-top: -15%;
@@ -504,6 +510,7 @@ body {
   font-size: 1em;
   border-radius: 20px;
   padding: 5px 20px;
+  font-family: 'Spectral';
 }
 
 @media screen and (max-width: 620px) {
