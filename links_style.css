@@ -1,0 +1,57 @@
+.contact_button {
+  font-size: 1.2em;
+  color: white;
+  background: rgb(56, 86, 35);
+  height: 45px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(56, 86, 35);
+  font-style: normal;
+  margin-bottom: 15px;
+}
+
+.content_wrap {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 1vh;
+}
+
+.icon_white {
+  height: 60%;
+  width: auto;
+  padding-right: 8px;
+}
+
+.icon_green {
+  height: 60%;
+  width: auto;
+  padding-right: 8px;
+  display: none;
+}
+
+.share-btn:hover .contact_button {
+  color: rgb(56, 86, 35);
+  background: white;
+}
+
+.share-btn:hover .icon_white {
+  display: none;
+}
+
+.share-btn:hover .icon_green {
+  display: inline-block;
+}
+
+@media (max-width: 350px) {
+  .contact_button {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 200px) {
+  .contact_button {
+    font-size: .8em;
+  }
+}

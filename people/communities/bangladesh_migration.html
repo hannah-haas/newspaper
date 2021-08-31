@@ -3,8 +3,8 @@
 
 <head>
   <title>The coasts of Bangladesh are moving inland, along with its people</title>
-  <link href="../../home_style.css" rel="stylesheet" />
-  <link href="../../individual_article.css" rel="stylesheet" />
+  <link href="../../home_style.css?v=3" rel="stylesheet" />
+  <link href="../../individual_article.css?v=4" rel="stylesheet" />
   <link href='https://fonts.googleapis.com/css?family=Spectral' rel='stylesheet'>
   <link href='https://fonts.cdnfonts.com/css/glacial-indifference-2' rel='stylesheet'>
   <meta name='viewport' content='width=device-width'>
@@ -66,11 +66,16 @@
   </div>
   <div id="main">
     <div class="content_wrap">
-      <div class="parallax" style="background-image: url(images/BangladeshMigration_CoverImage_Matiur.jpg)"></div>
       <div>
-        <p class="cover_text" id="cover_text_two_lines">The coasts of Bangladesh are moving inland, along with its people </p>
-        <div class="new_style">
-          <p class="article_text2"> People | Communities </p>
+        <div class="parallax" style="background-image: url('images/BangladeshMigration_CoverImage_Matiur.jpg')">
+          <div class="center_thing">
+            <div class="article_title_info">
+              <div class="meta">
+                <p class="cover_text_test"> The coasts of Bangladesh are moving inland, along with its people</p>
+                <p class="tags"> People | Communities </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -251,7 +256,7 @@
         </p>
         </br>
         <p>
-          Although in the end, nature does not discriminate, as we have been witnissing in the extreme weather events across the globe this momentous summer.
+          Although in the end, nature does not discriminate, as we have been witnessing in the extreme weather events across the globe this momentous summer.
         </p>
         </br>
         </br>
@@ -281,28 +286,27 @@
         </div>
         <hr>
         <div class="social-container">
-          <div class="twitter_share">
-            <img src="../../static_images/twitter.png" style="height:2.5vh;">
-            <a class="share-btn" href="https://twitter.com/intent/tweet?" target="_blank" style="font-family: 'Spectral'" title="Tweet"
-              onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + '%20 ' + encodeURIComponent(document.URL)); return false;"> Tweet</a>
-          </div>
+          <a class="share-btn" id="twitter_share" href="https://twitter.com/intent/tweet?" target="_blank" style="font-family: 'Spectral'" title="Tweet"
+            onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + '%20 ' + encodeURIComponent(document.URL)); return false;">
+            <img src="../../static_images/twitter.png" class="share_image_icon">
+            <p> Tweet</p>
+          </a>
+          <a class="share-btn" id="facebook_share" href="https://www.facebook.com/sharer/sharer.php?u=&t=" target="_blank" style="font-family: 'Spectral'" title="Share"
+            onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;">
+            <img src="../../static_images/facebook.png" class="share_image_icon">
+            <p> Share </p>
+          </a>
+          <a class="share-btn" id="linkedin_share" href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source=" target="_blank" style="font-family: 'Spectral'" title="Post"
+            onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' + encodeURIComponent(document.title)) ; return false;">
+            <img src="../../static_images/linkedin.png" class="share_image_icon">
+            <p> Post</p>
 
-          <div class="facebook_share">
-            <img src="../../static_images/facebook.png" style="height:2.5vh;">
-            <a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u=&t=" target="_blank" style="font-family: 'Spectral'" title="Share"
-              onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;">Share </a>
-          </div>
-
-          <div class="linkedin_share">
-            <img src="../../static_images/linkedin.png" style="height:2.5vh;">
-            <a class="share-btn" href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source=" target="_blank" style="font-family: 'Spectral'" title="Post"
-              onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' + encodeURIComponent(document.title)) ; return false;">Post</a>
-          </div>
-          <div class="email_share">
-            <img src="../../static_images/mail.png" style="height:2.5vh;">
-            <a class="share-btn" href="mailto:?subject=&body=:%20" target="_blank" style="font-family: 'Spectral'" title="Email"
-              onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' + encodeURIComponent(document.URL)); return false;">Email</a>
-          </div>
+          </a>
+          <a class="share-btn" id="email_share" href="mailto:?subject=&body=:%20" target="_blank" style="font-family: 'Spectral'" title="Email"
+            onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' + encodeURIComponent(document.URL)); return false;">
+            <img src="../../static_images/mail.png" class="share_image_icon">
+            <p> Email </p>
+          </a>
         </div>
 
         <hr class="social_line">
@@ -357,13 +361,14 @@
       </div>
     </div>
   </div>
-  </div>
 </body>
 
 </html>
+
 <script>
   var coll = document.getElementsByClassName("collapsible");
   var i;
+
   for (i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
       this.classList.toggle("active");
@@ -374,6 +379,15 @@
         content.style.maxHeight = content.scrollHeight + "px";
       }
     });
+  }
+  var navList = document.getElementById("nav-lists");
+
+  function Show() {
+    navList.classList.add("_Menus-show");
+  }
+
+  function Hide() {
+    navList.classList.remove("_Menus-show");
   }
 </script>
 <script type="text/javascript" src="../../explore_function.js"></script>

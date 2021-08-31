@@ -1,7 +1,7 @@
 #photos {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 700px 700px;
+  grid-template-rows: 700px 700px 700px;
   grid-row-gap: 20px;
   grid-column-gap: 20px;
   padding-bottom: 1vw;
@@ -34,6 +34,11 @@
 .dom {
   grid-column: 2;
   grid-row: 2;
+}
+
+.george {
+  grid-column: 1;
+  grid-row: 3;
 }
 
 .horizontal_line {
@@ -330,7 +335,7 @@ ul {
   #photos {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 700px 700px 700px 700px;
+    grid-template-rows: 700px 700px 700px 700px 700px;
     grid-row-gap: 30px;
     grid-column-gap: 10px;
     padding-bottom: 1vw;
@@ -356,6 +361,11 @@ ul {
     grid-row: 4;
   }
 
+  .george {
+    grid-column: 1;
+    grid-row: 5;
+  }
+
   .profile {
     width: 170px;
     height: 170px;
@@ -366,7 +376,7 @@ ul {
   #photos {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 650px 650px 650px 650px;
+    grid-template-rows: 650px 650px 650px 650px 630px;
     grid-row-gap: 30px;
     grid-column-gap: 10px;
     padding-bottom: 1vw;
@@ -402,7 +412,7 @@ ul {
   #photos {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 600px 600px 600px 600px;
+    grid-template-rows: 600px 600px 600px 600px 550px;
     grid-row-gap: 30px;
     grid-column-gap: 10px;
     padding-bottom: 1vw;
@@ -427,7 +437,7 @@ ul {
   #photos {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 650px 650px 620px 650px;
+    grid-template-rows: 650px 650px 620px 650px 620px;
     grid-row-gap: 30px;
     grid-column-gap: 10px;
     padding-bottom: 1vw;
@@ -438,7 +448,7 @@ ul {
   #photos {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 580px 580px;
+    grid-template-rows: 580px 580px 550px;
     grid-row-gap: 30px;
     grid-column-gap: 10px;
     padding-bottom: 1vw;
