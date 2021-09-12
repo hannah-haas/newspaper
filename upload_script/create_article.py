@@ -5,7 +5,7 @@ import pandas as pd
 from oauth2client.service_account import ServiceAccountCredentials
 
 
-if len(sys.argv) < 8:
+if len(sys.argv) < 9:
     print("make sure to include arguments: path to article, related article num 1, related article num 2, cover image, image 1, image 2 etc")
     sys.exit()
 
@@ -31,7 +31,8 @@ article_path = str(sys.argv[1])
 related_article1 = str(sys.argv[2])
 related_article2 = str(sys.argv[3])
 cover_image = str(sys.argv[4])
-images = sys.argv[5:]
+article_filename = sys.argv[5]
+images = sys.argv[6:]
 
 document = Document('article_to_upload.docx')
 
@@ -40,22 +41,16 @@ paragraphs = document.paragraphs
 article_title = paragraphs[0].text
 article_genre = paragraphs[1].text
 
-print("HERE UGH2")
 if paragraphs[2].text[0:2] == "By":
-    print("HERE3")
-    author = paragraphs[2].runs[1].text
-
-    author = author[:-2] # removing the comma
-    author_role = paragraphs[3].runs[2].text
+    splits = paragraphs[2].text.split(',')
+    author = splits[0][3:]
+    author_role = splits[1][1:]
 
 elif paragraphs[3].text[0:2] == "By":
-    author = paragraphs[3].runs[1].text
-    print("RUNSSSSS")
-    print(paragraphs[3].runs[1].text)
-    author = author[:-2] # removing the comma
-    print("TRYING TO FIX")
-    print(author)
-    author_role = paragraphs[3].runs[2].text
+    splits = paragraphs[3].text.split(',')
+    author = splits[0][3:]
+    print(splits)
+    author_role = splits[1][1:]
 
 counter = 0
 after_published = False
@@ -178,11 +173,10 @@ newHTMLFile.write(content)
 
 at_references = False
 
-for para in paragraphs[9:]:
-    print(para)
 
-for para in paragraphs[9:]:
+for para in paragraphs[counter:]:
     text = para.text
+
     print(text)
     # url = para.url
     # print(url)
@@ -190,6 +184,8 @@ for para in paragraphs[9:]:
     if at_references:
         print("TIME TO DO REFERENCES")
         final = ""
+        if len(text.strip()) == 0:
+            continue;
         for run in para.runs:
             print(run.text)
             if run.italic:
@@ -205,8 +201,8 @@ for para in paragraphs[9:]:
                     final = final + run.text
         content ='\n          <p class="reference_item">\n          %s\n        </p>' % final
         newHTMLFile.write(content)
-    elif text:
-        # print(text)
+    elif len(text.strip()) != 0:
+        print(text)
         if text[0] == "[": # image
             print("UGHH")
             image_num = text[7]
@@ -260,7 +256,7 @@ for para in paragraphs[9:]:
 content ='\n        </div>\n        <hr>'
 newHTMLFile.write(content)
 
-content = '\n        <div class="social-container">\n          <a class="share-btn" id="twitter_share" href="https://twitter.com/intent/tweet?" target="_blank" style="font-family: %s" title="Tweet" onclick="window.open(%s + encodeURIComponent(document.title) + %s + encodeURIComponent(document.URL)); return false;">' %  ("'Spectral'", "'https://twitter.com/intent/tweet?text='", "%20")
+content = '\n        <div class="social-container">\n          <a class="share-btn" id="twitter_share" href="https://twitter.com/intent/tweet?" target="_blank" style="font-family: %s" title="Tweet" onclick="window.open(%s + encodeURIComponent(document.title) + %s + encodeURIComponent(document.URL)); return false;">' %  ("'Spectral'", "'https://twitter.com/intent/tweet?text='", "'%20'")
 newHTMLFile.write(content)
 
 content = '\n            <img src="%sstatic_images/twitter.png" class="share_image_icon">' % navigating
@@ -269,7 +265,7 @@ newHTMLFile.write(content)
 content = '\n            <p> Tweet</p>\n          </a>'
 newHTMLFile.write(content)
 
-content = '\n          <a class="share-btn" id="facebook_share" href="https://www.facebook.com/sharer/sharer.php?u=&t=" target="_blank" style="font-family: %s" title="Share" onclick="window.open("https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(document.URL) + &t= + encodeURIComponent(document.URL)); return false;">' % "'Spectral'"
+content = '\n          <a class="share-btn" id="facebook_share" href="https://www.facebook.com/sharer/sharer.php?u=&t=" target="_blank" style="font-family: %s" title="Share" onclick="window.open(%s + encodeURIComponent(document.URL) + %s + encodeURIComponent(document.URL)); return false;">' % ("'Spectral'", "'https://www.facebook.com/sharer/sharer.php?u='", "'&t='")
 newHTMLFile.write(content)
 
 content = '\n            <img src="%sstatic_images/facebook.png" class="share_image_icon">\n            <p> Share </p>\n          </a>' % navigating
@@ -317,18 +313,18 @@ related_article_1_title = sheet_instance.cell(int(related_article1), 2).value
 related_article_1_cover = sheet_instance.cell(int(related_article1), 5).value
 related_article_1_path = sheet_instance.cell(int(related_article1), 6).value
 related_article_1_genre = sheet_instance.cell(int(related_article1), 3).value + " | " + sheet_instance.cell(int(related_article1), 4).value
-related_article_1_html = sheet_instance.cell(int(related_article1), 14).value
+related_article_1_html = sheet_instance.cell(int(related_article1), 11).value
 
 related_article_2_title = sheet_instance.cell(int(related_article2), 2).value
 related_article_2_cover = sheet_instance.cell(int(related_article2), 5).value
 related_article_2_path = sheet_instance.cell(int(related_article2), 6).value
 related_article_2_genre = sheet_instance.cell(int(related_article2), 3).value + " | " + sheet_instance.cell(int(related_article2), 4).value
-related_article_2_html = sheet_instance.cell(int(related_article2), 14).value
+related_article_2_html = sheet_instance.cell(int(related_article2), 11).value
 
 
 
-print(related_article_1_title, related_article_1_cover, related_article_1_path)
-print(related_article_2_title, related_article_2_cover, related_article_2_path)
+print(related_article_1_title, related_article_1_cover, related_article_1_path, related_article_1_html)
+print(related_article_2_title, related_article_2_cover, related_article_2_path, related_article_2_html)
 
 content = '\n        <h3 class="related_articles_and_author"> Related Articles </h3>\n        <div class="related_article_flex_container">'
 newHTMLFile.write(content)
@@ -409,3 +405,101 @@ content = '\n<script type="text/javascript" src="%sexplore_function.js"></script
 newHTMLFile.write(content)
 
 newHTMLFile.close()
+
+# FOR UPDATING AUTHOR PAGE
+author_html = "../author/" + author_path + ".html"
+relative_path_to_article = "../" + article_path[27:] + article_filename
+relative_path_to_image =  "../" + article_path[27:] + "images/" + cover_image
+subtitle = article_genre + ", " + date
+a_file = open(author_html, "r")
+list_of_lines = a_file.readlines()
+print("line 56", list_of_lines[56])
+print(len(list_of_lines))
+
+new_article_text = "\n        <div class='individual_article' style='order: 0;'>\n          <div class='article_hover' id='article_pic'>\n            <a href=%s>\n              <img class='individualPhoto' src=%s>\n            </a>\n          </div>\n          <div class='div_for_aligning'>\n            <a style='text-decoration: none; color: rgb(56, 86, 35);' href=%s>\n              <p class='article_title_left' style='margin-top:1.5vw;'> %s</p>\n            </a>\n            <p class='article_sub_title_left'> %s</p>\n            <p class='about_article_text_left'>\n %s \n            </p>\n          </div>\n        </div>\n\n" % (relative_path_to_article, relative_path_to_image, relative_path_to_article, article_title, subtitle, prelude)
+
+new_article_text_phone = "\n        <div class='sub_article' id='main_article_phone' style=%s>\n          <a href=%s style='text-decoration:none;'>\n            <img class='sub_article_img' src=%s>\n            <p class='sub_article_text'> %s</p>\n            <p class='sub_article_text2'> %s </p>\n          </a>\n        </div>\n" % ('margin-top:0%', relative_path_to_article, relative_path_to_image, article_title, article_genre)
+
+print(list_of_lines)
+counter = 0
+order_counter = 0
+
+for line in list_of_lines:
+    if ' <div class="articles" id="author_results_screen">' in line:
+        list_of_lines[counter + 1] = new_article_text
+        order_counter += 1
+    elif '<div class="individual_article"' in line:
+        list_of_lines[counter] = '        <div class="individual_article" style=" order:' + str(order_counter) + '; ">\n'
+        if (order_counter % 2) == 0: # even
+            print(order_counter)
+            offset = 1
+            curr_line = list_of_lines[counter + offset]
+
+            while '<div class="article_hover" id="article_pic">' not in curr_line:
+                offset += 1
+                curr_line = list_of_lines[counter + offset]
+
+            print("OFFSET = ", offset)
+            print("CURR LINE", curr_line)
+            placeholder_text = list_of_lines[counter + 1: counter + offset]
+            print(placeholder_text)
+
+            placeholder_img = list_of_lines[counter + offset: counter + offset + 5]
+            print(placeholder_img)
+
+            img_string = ''.join([str(item) for item in placeholder_img])
+            print(img_string)
+            text_string = ''.join([str(item) for item in placeholder_text])
+            print(text_string)
+
+            text_string = text_string.replace("right", "left")
+
+            final_string = img_string + text_string
+
+            num = counter + 5 + offset - counter - 1
+
+
+            print(final_string)
+            print("NUMBER ugh", counter + offset + 6)
+            list_of_lines[counter + 1 : counter + offset + 5] = final_string
+
+            # list_of_lines[counter + 1: counter + 5] = img_string
+            # list_of_lines[counter + 5: counter + 5 + offset] = text_string
+
+        else: #odd
+            placeholder_img = list_of_lines[counter + 1: counter + 6]
+
+            offset = 1
+            curr_line = list_of_lines[counter + 5 + offset]
+
+            while '<div class="individual_article"' not in curr_line and '<div id="author_results_phone">' not in curr_line:
+                offset += 1
+                curr_line = list_of_lines[counter + 5 + offset]
+
+            placeholder_text = list_of_lines[counter + 6: counter + 5 + offset - 2]
+
+            img_string = ''.join([str(item) for item in placeholder_img])
+            text_string = ''.join([str(item) for item in placeholder_text])
+
+            text_string = text_string.replace("left", "right")
+
+            final_string = text_string + img_string
+            print("final string", final_string)
+
+            num = counter + 5 + offset - 2 - counter - 6
+            print(num)
+            print(counter)
+
+            list_of_lines[counter + 1 : counter + num + 5 + 1] = final_string
+
+
+        order_counter += 1
+    if '<div id="author_results_phone">' in line:
+        print("WAHOOO there")
+        list_of_lines[counter + 1] = new_article_text_phone
+    counter += 1
+
+
+a_file = open(author_html, "w")
+a_file.writelines(list_of_lines)
+a_file.close()

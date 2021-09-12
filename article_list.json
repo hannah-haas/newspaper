@@ -19,6 +19,16 @@
         "CoverImage_CleanAir_AlexAtudosie.jpg",
         "cities, sustainable cities, air zone, bath, england"
       ]
+    },
+    {
+      "sustainable_cities/europe/environmental_influencers.html": [
+        "Environmental influencers: climate justice activism",
+        "More and more young people are demonstrating their talents in communication, research and leadership through social media, utilising the power of activism to educate the public about climate change.",
+        "Sustainable Leaders | Europe",
+        "September 9, 2021",
+        "EnvironmentalInfluencers_CoverImage_TheKingfisher.png",
+        "climate activism, North Sea Oil, COP25, COP26, instagram, twitter, social media"
+      ]
     }
   ],
   "north_america": [
@@ -104,6 +114,16 @@
         "May 8, 2021",
         "CoverImage_LarryLi.jpg",
         "africa, gabon, kenya, elephant, grassland"
+      ]
+    },
+    {
+      "sustainable_cities/africa/oceania/namibia_biotrade.html": [
+        "Unspoken victims of warfare: the destructive impacts of armed conflict on local biodiversity",
+        "In the last 50 years, over 80% of human conflicts have overlapped with a biodiversity hotspot, despite these areas only taking up 3% of the Earth’s land surface. Currently, 64 of 195 countries that have biodiversity hotspots, have been listed as areas of priority for conservation efforts.",
+        "Environment | Forests",
+        "September 4, 2021",
+        "BiodiversityWarfare_CoverImage_DaweiDing.jpg",
+        "biodiversity, warfare, wildlife trade, militias, resourse-based wars, warlord, africa, asia, middle east, afghanistan, deforestation, resource exploitation"
       ]
     }
   ],
@@ -219,7 +239,18 @@
   "indian": [],
   "mediterranean": [],
   "baltic": [],
-  "arctic": [],
+  "arctic": [
+    {
+      "environment/tundra_poles/fish_distributions.html": [
+        "Rising ocean temperatures are set to drive fundamental shifts in Arctic communities",
+        "Rising ocean temperatures, sea ice decline, and the geographic re-distribution of Atlantic species are threatening vulnerable Arctic marine communities. Unless warming abates, Arctic species are likely to be replaced by boreal (Atlantic) generalists.",
+        "Environment | Tundras and Poles",
+        "September 2, 2021",
+        "FishDistribution_CoverImage_SebastianPenaLambarri.jpg",
+        "arctic, fish, marine communities, boreal fish, ranae, global warming"
+      ]
+    }
+  ],
   "other": [
     {"people/human_health/children_health_fossil_fuels.html":
       [
