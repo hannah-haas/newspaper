@@ -10,7 +10,7 @@
         "wolf, switzerland, forest, europe, hunting, farming"
       ]
     },
-    {"sustainable_cities/europe/bath_clean_air.html":
+    {"sustainable_leaders/europe/bath_clean_air.html":
       [
         "How effective is Bath’s Clean Air Zone strategy?",
         "Since 15 March 2021, Bath, United Kingdom, has begun to fine highly polluting vehicles driving within their ‘Clean Air Zone’ in an effort to bring the city’s atmospheric nitrogen dioxide levels below the legal limit.",
@@ -21,7 +21,7 @@
       ]
     },
     {
-      "sustainable_cities/europe/environmental_influencers.html": [
+      "sustainable_leaders/europe/environmental_influencers.html": [
         "Environmental influencers: climate justice activism",
         "More and more young people are demonstrating their talents in communication, research and leadership through social media, utilising the power of activism to educate the public about climate change.",
         "Sustainable Leaders | Europe",
@@ -29,10 +29,30 @@
         "EnvironmentalInfluencers_CoverImage_TheKingfisher.png",
         "climate activism, North Sea Oil, COP25, COP26, instagram, twitter, social media"
       ]
+    },
+    {
+      "environment/forests/europe/mediterranean_wildfires.html": [
+        "Wildfires in the Mediterranean: a little too wild",
+        "There is growing evidence that higher temperatures associated with global warming are increasing the number of summer wildfires across the Mediterranean region.",
+        "Forests | Europe",
+        "September 16, 2021",
+        "Wildfires_CoverImage_Andrey-2.jpg",
+        "fire, firefighter, ash, europe, hot, heat, soil fertility, combustion, climate change, turkey, greece"
+      ]
+    },
+    {
+      "environment/glasslands/europe/peatlands.html": [
+        "How peatland restoration is helping the UK’s ospreys to bounce back",
+        "Restoring peatlands is vital in the fight against climate change. The Foulshaw Moss Nature Reserve in Cumbria was once a threatened habitat due to heavy grazing and years of conifer tree planting, which severely dried up the landscape. However, the reserve is now leading in peatland restoration, helping to prevent the release of carbon dioxide into the atmosphere. Additionally, the reserve has become a successful nesting site for one of the UK’s most treasured birds of prey: the osprey.",
+        "Environment | Grasslands",
+        "September 19, 2021",
+        "Peatlands_coverimage_IsabelRowbotham.jpg",
+        "reservation, peat, global warming, carbon emissions"
+      ]
     }
   ],
   "north_america": [
-    {"sustainable_cities/north_america/mackinac_line5.html":
+    {"sustainable_leaders/north_america/mackinac_line5.html":
       [
         "Enbridge ignores Michigan’s shutdown deadline and continues to transport propane across Line 5",
         "In November 2020, Governor Whitmer of Michigan ordered Enbridge to shut down their operations of the Line 5 pipelines by 12 May 2021. Now in June 2021, Enbridge has defied the order and continues to transport 23 million gallons of oil daily across the Straits of Mackinac.",
@@ -84,7 +104,7 @@
         "environment, rainforest, Brazil, Bolsonaro, Netzero, amazon, deforestation"
       ]
     },
-    {"sustainable_cities/south_america/sustainable_leader_medellin.html":
+    {"sustainable_leaders/south_america/sustainable_leader_medellin.html":
       [
         "The inspiring transforming of Medellín: from murder capital to sustainable leader",
         "Medellín, Colombia’s second most populous city, is considered a leading example in terms of their environmental policies and sustainable initiatives. Whilst there are other green cities around the globe, the transformation of Medellín is truly remarkable; considering just a few years ago it was a stronghold for Pablo Escobar’s drug crimes and deemed the ‘murder capital of the world’.",
@@ -93,10 +113,20 @@
         "Medellin_DanielVargas_Unsplash_CoverImage.jpg",
         "sustainable cities, cities, green policies, leading city, medellin, colombia"
       ]
+    },
+    {
+      "sustainable_leaders/south_america/conservation_agriculture.html": [
+        "The limitations of conservation agriculture in Latin America facing an ever-changing global environmental crisis",
+        "Even though conservation agriculture seems to be the solution to the adverse environmental effects of agroecosystems, socio-economic and political factors impede its successful adoption. This is most evident in developing countries, where access to financial capital and human resources is limited, depriving farmers of converting their systems into more sustainable ones.",
+        "Sustainable Leaders | South America",
+        "September 22, 2021",
+        "Conservation_coverimage_USAIDBiodiversityandForestry_Flickr.jpg",
+        "agriculture, latin america, sustainable, food, crops, soil"
+      ]
     }
   ],
   "africa": [
-    {"sustainable_cities/africa/namibia_biotrade.html":
+    {"sustainable_leaders/africa/namibia_biotrade.html":
       [
         "The Namibia bio-trade initiative increases the value of biodiversity-derived products",
         "Under the guidance of the BioTrade Initiative, the Eudafano Women’s Cooperative, a community organization in Namibia, has provided a secure economic income for 2500 women and their indigenous communities.",
@@ -117,7 +147,7 @@
       ]
     },
     {
-      "sustainable_cities/africa/oceania/namibia_biotrade.html": [
+      "sustainable_leaders/africa/oceania/namibia_biotrade.html": [
         "Unspoken victims of warfare: the destructive impacts of armed conflict on local biodiversity",
         "In the last 50 years, over 80% of human conflicts have overlapped with a biodiversity hotspot, despite these areas only taking up 3% of the Earth’s land surface. Currently, 64 of 195 countries that have biodiversity hotspots, have been listed as areas of priority for conservation efforts.",
         "Environment | Forests",
@@ -150,7 +180,7 @@
       ]
     },
     {
-      "sustainable_cities/oceania/canberra.html": [
+      "sustainable_leaders/oceania/canberra.html": [
         "How Canberra is keeping cool within a sea of wildfires",
         "Australia’s capital, Canberra, is regarded as one of the world’s leading sustainable cities. Whilst 88.9% of Canberra’s public transport is run on green energy, the capital is striving for a zero-emission transport fleet by 2040.",
         "Sustainable Leaders | Oceania",
@@ -161,7 +191,7 @@
     }
   ],
   "asia": [
-    {"sustainable_cities/asia/singapore_cultured_meat.html":
+    {"sustainable_leaders/asia/singapore_cultured_meat.html":
       [
         "Singapore is one-bite ahead of the rest of the world for cultured meat approval",
         "Food is a right and necessity for all living organisms. However, with the projected exponential population growth of humans and a somewhat ‘unpredictable’ changing climate, our world is facing food insecurity.",
@@ -190,10 +220,20 @@
         "MangroveForests_CoverImage_AldinoPutra.jpg",
         "forest, proboscis, monkey, carbon sequestering, logging, above ground biomass, AGB"
       ]
+    },
+    {
+      "sustainable_leaders/asia/taliban_conservation.html": [
+        "What will environmental conservation look like under Taliban rule?",
+        "‘Plant one or several fruit or non-fruit trees for the beautification of earth and the benefit of almighty Allah's creations.’",
+        "Sustainable Leaders | Asia",
+        "September 25, 2021",
+        "TalibanConservation_CoverImage_UnitedNationsPhoto.jpg",
+        "afghanistan, taliban, insurgent, the US, united states, climate change, timber, opium, biodiesel, lithium, mining, biodiversity, human rights, violation, education, sharia law, logging, illegal, forests, poppy seeds"
+      ]
     }
   ],
   "global": [
-    {"sustainable_cities/global/tokyo_olympics.html":
+    {"sustainable_leaders/global/tokyo_olympics.html":
       [
         "The ‘sustainable’ Tokyo 2020 Olympic games seem to lack one thing: sustainability",
         "If you’ve tuned into the Tokyo 2020 Olympic games you may have seen that the event is being branded as the ‘greenest Olympics yet’. With the media praising the Committee’s green-orientated actions, including recycled cardboard beds for athletes and the hydrogen fueled Olympic cauldron—how come these games have also been deemed the third least sustainable Olympics since 1992?",
@@ -203,7 +243,7 @@
         "olympic, tokyo, greenwashing, carbon credits, plastic, athlete, athletic, sport, green"
       ]
     },
-    {"sustainable_cities/global/city_pollinators.html":
+    {"sustainable_leaders/global/city_pollinators.html":
       [
         "The buzz for green cities: urban spaces for people and pollinators ",
         "The Covid-19 pandemic has shown many city-dwellers tucked away indoors the enormous mental health benefits of spending time in nature. And as urbanisation takes over the world—with 5.2 billion people estimated to live on 1.9 million km2 of urban land by 2030—it is increasingly important to design city spaces to accommodate for the health of their inhabitants, both human and animal.",
@@ -214,7 +254,7 @@
       ]
     },
     {
-      "sustainable_cities/global/COP26.html": [
+      "sustainable_leaders/global/COP26.html": [
         "COP26: Last Change to Save the World?",
         "COP26 could be a turning point in the fight to curb climate change or simply an excuse for flag-waving and greenwashing. It has to be the former, and even then this will be only one step in the direction of climate justice.",
         "Sustainable Leaders | Global",
@@ -224,7 +264,7 @@
       ]
     },
     {
-      "sustainable_cities/global/livestock_husbandry.html": [
+      "sustainable_leaders/global/livestock_husbandry.html": [
         "Why intensive livestock farming has no place in a greener future",
         "Livestock husbandry is amongst the largest growing subsectors of the agricultural industry. This is particularly evident in developing countries, where the increase for the demand of livestock products is closely linked to rapid population growth, income growth and infrastructural development.",
         "Sustainable Leaders | Global",
@@ -320,6 +360,26 @@
         "August 15, 2021",
         "BangladeshMigration_CoverImage_Matiur.jpg",
         "climate change, Bangladesh, flooding, migration, agriculture, salinization, climate migrants"
+      ]
+    },
+    {
+      "people/human_health/zoonoviruses_markets.html": [
+        "Danger is not always loud and visible: the importance of controlling the spread of Antimicrobial Resistance",
+        "Microorganisms such as bacteria, fungi and viruses are so tiny that they can only be seen under the microscope, yet once they spread, they are incredibly difficult to completely eradicate. To date, society has been using antimicrobials to treat many microbe-induced infections in humans, animals and plants. Soon, however, this economic impact will become a difficult reality.",
+        "People | Human Health",
+        "September 13, 2021",
+        "AntimicrobialResistance_CoverImage_UnitedNations.jpg",
+        "microorganisms, antimicrobial resistance, SDGs, antibiotic resistance, antibiotics, clean water, infections, GW4 AMR, AMR, bacteria, bacterial infections, horizontal gene transfer, antibiotics, farms, livestock, food security, global health"
+      ]
+    },
+    {
+      "people/human_health/zoonoviruses_markets.html": [
+        "Idiopathic Pulmonary Fibrosis: yet another lung disease made worse by air pollution",
+        "Air pollution can lead to a plethora of respiratory illnesses. Recent research shows that it contributes to the progression of Idiopathic Pulmonary Fibrosis (IPF)—a chronic and irreversible lung disease.",
+        "People | Human Health",
+        "September 27, 2021",
+        "AntimicrobialResistance_CoverImage_UnitedNations.jpg",
+        "air pollution, lung disease, emissions"
       ]
     }
   ]

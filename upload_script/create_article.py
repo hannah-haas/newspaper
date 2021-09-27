@@ -32,7 +32,8 @@ related_article1 = str(sys.argv[2])
 related_article2 = str(sys.argv[3])
 cover_image = str(sys.argv[4])
 article_filename = sys.argv[5]
-images = sys.argv[6:]
+location = sys.argv[6]
+images = sys.argv[7:]
 
 document = Document('article_to_upload.docx')
 
@@ -150,7 +151,7 @@ newHTMLFile.write(content)
 content = '\n      <ul id="nav-lists">\n        <li class="close"><span onclick="Hide()">×</span></li>'
 newHTMLFile.write(content)
 
-content = '\n        <li><a href="%sindex.html">Home</a></li>\n        <li><a href="%ssustainable_cities/sustainable_leaders.html">Sustainable Leaders</a></li>\n        <li><a href="%senvironment/environment.html">Environment</a></li>\n        <li><a href="%speople/people.html">People</a></li>\n        <li><a href="%swrite_for_us.html">Write For Us</a></li>\n        <li><a href="%sour_mission.html">Our Mission</a></li>\n        <li><a href="%sabout_us.html">About Us</a></li>' % (navigating, navigating, navigating, navigating, navigating, navigating, navigating)
+content = '\n        <li><a href="%sindex.html">Home</a></li>\n        <li><a href="%ssustainable_leaders/sustainable_leaders.html">Sustainable Leaders</a></li>\n        <li><a href="%senvironment/environment.html">Environment</a></li>\n        <li><a href="%speople/people.html">People</a></li>\n        <li><a href="%swrite_for_us.html">Write For Us</a></li>\n        <li><a href="%sour_mission.html">Our Mission</a></li>\n        <li><a href="%sabout_us.html">About Us</a></li>' % (navigating, navigating, navigating, navigating, navigating, navigating, navigating)
 newHTMLFile.write(content)
 
 content = '\n        <li>\n          <form class="form_class" action="%ssearch_results.html" method="GET" autocomplete="off">\n            <input class="searchInput" placeholder="Search..." type="search" name="search">\n            <button style="border:none" type="submit" class="searchButton">\n              <img class="material_icons" src="%sstatic_images/search_icon.png" />\n            </button>\n          </form>\n        </li>\n      </ul>\n    </div>\n  </div>' % (navigating, navigating)
@@ -216,7 +217,7 @@ for para in paragraphs[counter:]:
                 content = '\n        <figure>\n          <img class="article_photos" src="images/%s">\n          <figcaption>\n            %s\n      </figcaption>\n    </figure>\n    </br>' % (images[int(image_num)-1], text[10:-1])
                 newHTMLFile.write(content)
 
-        elif text[0] == "‘": # highlighted_info_right
+        elif text[0] == "‘" or text[0] == "'": # highlighted_info_right
             print("highlighted_info_right")
             content = "\n        <p class='highlighted_info_right'>\n          %s\n        </p>\n      </br>" % text
             newHTMLFile.write(content)
@@ -407,99 +408,169 @@ newHTMLFile.write(content)
 newHTMLFile.close()
 
 # FOR UPDATING AUTHOR PAGE
-author_html = "../author/" + author_path + ".html"
-relative_path_to_article = "../" + article_path[27:] + article_filename
-relative_path_to_image =  "../" + article_path[27:] + "images/" + cover_image
-subtitle = article_genre + ", " + date
-a_file = open(author_html, "r")
-list_of_lines = a_file.readlines()
-print("line 56", list_of_lines[56])
-print(len(list_of_lines))
+# author_html = "../author/" + author_path + ".html"
+# relative_path_to_article = "'../" + article_path[27:] + article_filename + "'"
+#
+# relative_path_to_image =  "'../" + article_path[27:] + "images/" + cover_image + "'"
+# subtitle = article_genre + ", " + date
+# a_file = open(author_html, "r")
+# list_of_lines = a_file.readlines()
+# print("line 56", list_of_lines[56])
+# print(len(list_of_lines))
+#
+# new_article_text = '\n        <div class="individual_article" style="order: 0;">\n          <div class="article_hover" id="article_pic">\n            <a href=%s>\n              <img class="individualPhoto" src=%s>\n            </a>\n          </div>\n          <div class="div_for_aligning">\n            <a style="text-decoration: none; color: rgb(56, 86, 35);" href=%s>\n              <p class="article_title_left" style="margin-top:1.5vw;"> %s</p>\n            </a>\n            <p class="article_sub_title_left"> %s</p>\n            <p class="about_article_text_left">\n %s \n            </p>\n          </div>\n        </div>\n' % (relative_path_to_article, relative_path_to_image, relative_path_to_article, article_title, subtitle, prelude)
+#
+# new_article_text_phone = '\n        <div class="sub_article" id="main_article_phone" style=%s>\n          <a href=%s style="text-decoration:none;">\n            <img class="sub_article_img" src=%s>\n            <p class="sub_article_text"> %s</p>\n            <p class="sub_article_text2"> %s </p>\n          </a>\n        </div>\n' % ("margin-top:0%", relative_path_to_article, relative_path_to_image, article_title, article_genre)
+#
+# print(list_of_lines)
+# counter = 0
+# order_counter = 0
+# skip_first_one = True
+#
+# for line in list_of_lines:
+#     if '<div class="articles" id="author_results_screen">' in line:
+#         print("HERE WTF")
+#         list_of_lines[counter + 1] = new_article_text
+#         order_counter += 1
+#
+#     elif '<div class="individual_article"' in line:
+#         if skip_first_one:
+#             print("okay fixing the issue hopefully")
+#             print(line)
+#             skip_first_one = False
+#             counter+=1
+#             continue
+#         print("WHY IS IT HERE")
+#         print(line)
+#         list_of_lines[counter] = '        <div class="individual_article" style="order: ' + str(order_counter) + ';">\n'
+#         if (order_counter % 2) == 0: # even
+#             print("ITS EVEN")
+#             print(order_counter)
+#             offset = 1
+#             curr_line = list_of_lines[counter + offset]
+#
+#             while '<div class="article_hover" id="article_pic">' not in curr_line:
+#                 offset += 1
+#                 curr_line = list_of_lines[counter + offset]
+#
+#             print("OFFSET = ", offset)
+#             print("CURR LINE", curr_line)
+#             placeholder_text = list_of_lines[counter + 1: counter + offset]
+#             print(placeholder_text)
+#
+#             placeholder_img = list_of_lines[counter + offset: counter + offset + 5]
+#             print(placeholder_img)
+#
+#             img_string = ''.join([str(item) for item in placeholder_img])
+#             print(img_string)
+#             text_string = ''.join([str(item) for item in placeholder_text])
+#             print(text_string)
+#
+#             text_string = text_string.replace("right", "left")
+#
+#             final_string = img_string + text_string
+#
+#             num = counter + 5 + offset - counter - 1
+#
+#
+#             print(final_string)
+#             print("NUMBER ugh", counter + offset + 6)
+#             list_of_lines[counter + 1 : counter + offset + 5] = final_string
+#
+#             # list_of_lines[counter + 1: counter + 5] = img_string
+#             # list_of_lines[counter + 5: counter + 5 + offset] = text_string
+#
+#         else: #odd
+#             print("ITS ODD")
+#             placeholder_img = list_of_lines[counter + 1: counter + 6]
+#             print(placeholder_img)
+#
+#             offset = 1
+#             curr_line = list_of_lines[counter + 5 + offset]
+#
+#             while '<div class="individual_article"' not in curr_line and '<div id="author_results_phone">' not in curr_line:
+#                 offset += 1
+#                 curr_line = list_of_lines[counter + 5 + offset]
+#
+#             placeholder_text = list_of_lines[counter + 6: counter + 5 + offset - 2]
+#
+#             img_string = ''.join([str(item) for item in placeholder_img])
+#             text_string = ''.join([str(item) for item in placeholder_text])
+#
+#             text_string = text_string.replace("left", "right")
+#
+#             final_string = text_string + img_string
+#             print("final string", final_string)
+#
+#             num = counter + 5 + offset - 2 - counter - 6
+#             print(num)
+#             print(counter)
+#
+#             list_of_lines[counter + 1 : counter + num + 5 + 1] = final_string
+#
+#
+#         order_counter += 1
+#     if '<div id="author_results_phone">' in line:
+#         list_of_lines[counter + 1] = new_article_text_phone
+#     counter += 1
+#
+# print(author_html)
+# a_file = open(author_html, "w")
+# a_file.writelines(list_of_lines)
+# a_file.close()
 
-new_article_text = "\n        <div class='individual_article' style='order: 0;'>\n          <div class='article_hover' id='article_pic'>\n            <a href=%s>\n              <img class='individualPhoto' src=%s>\n            </a>\n          </div>\n          <div class='div_for_aligning'>\n            <a style='text-decoration: none; color: rgb(56, 86, 35);' href=%s>\n              <p class='article_title_left' style='margin-top:1.5vw;'> %s</p>\n            </a>\n            <p class='article_sub_title_left'> %s</p>\n            <p class='about_article_text_left'>\n %s \n            </p>\n          </div>\n        </div>\n\n" % (relative_path_to_article, relative_path_to_image, relative_path_to_article, article_title, subtitle, prelude)
 
-new_article_text_phone = "\n        <div class='sub_article' id='main_article_phone' style=%s>\n          <a href=%s style='text-decoration:none;'>\n            <img class='sub_article_img' src=%s>\n            <p class='sub_article_text'> %s</p>\n            <p class='sub_article_text2'> %s </p>\n          </a>\n        </div>\n" % ('margin-top:0%', relative_path_to_article, relative_path_to_image, article_title, article_genre)
-
-print(list_of_lines)
-counter = 0
-order_counter = 0
-
-for line in list_of_lines:
-    if ' <div class="articles" id="author_results_screen">' in line:
-        list_of_lines[counter + 1] = new_article_text
-        order_counter += 1
-    elif '<div class="individual_article"' in line:
-        list_of_lines[counter] = '        <div class="individual_article" style=" order:' + str(order_counter) + '; ">\n'
-        if (order_counter % 2) == 0: # even
-            print(order_counter)
-            offset = 1
-            curr_line = list_of_lines[counter + offset]
-
-            while '<div class="article_hover" id="article_pic">' not in curr_line:
-                offset += 1
-                curr_line = list_of_lines[counter + offset]
-
-            print("OFFSET = ", offset)
-            print("CURR LINE", curr_line)
-            placeholder_text = list_of_lines[counter + 1: counter + offset]
-            print(placeholder_text)
-
-            placeholder_img = list_of_lines[counter + offset: counter + offset + 5]
-            print(placeholder_img)
-
-            img_string = ''.join([str(item) for item in placeholder_img])
-            print(img_string)
-            text_string = ''.join([str(item) for item in placeholder_text])
-            print(text_string)
-
-            text_string = text_string.replace("right", "left")
-
-            final_string = img_string + text_string
-
-            num = counter + 5 + offset - counter - 1
-
-
-            print(final_string)
-            print("NUMBER ugh", counter + offset + 6)
-            list_of_lines[counter + 1 : counter + offset + 5] = final_string
-
-            # list_of_lines[counter + 1: counter + 5] = img_string
-            # list_of_lines[counter + 5: counter + 5 + offset] = text_string
-
-        else: #odd
-            placeholder_img = list_of_lines[counter + 1: counter + 6]
-
-            offset = 1
-            curr_line = list_of_lines[counter + 5 + offset]
-
-            while '<div class="individual_article"' not in curr_line and '<div id="author_results_phone">' not in curr_line:
-                offset += 1
-                curr_line = list_of_lines[counter + 5 + offset]
-
-            placeholder_text = list_of_lines[counter + 6: counter + 5 + offset - 2]
-
-            img_string = ''.join([str(item) for item in placeholder_img])
-            text_string = ''.join([str(item) for item in placeholder_text])
-
-            text_string = text_string.replace("left", "right")
-
-            final_string = text_string + img_string
-            print("final string", final_string)
-
-            num = counter + 5 + offset - 2 - counter - 6
-            print(num)
-            print(counter)
-
-            list_of_lines[counter + 1 : counter + num + 5 + 1] = final_string
+# UPDATING SEARCH RESULTS
+# a_file = open("../search_results.html", "r")
+# list_of_lines = a_file.readlines()
+#
+# relative_path_to_article = "'" + article_path[27:] + article_filename + "'"
+# relative_path_to_image =  "'" + article_path[27:] + "images/" + cover_image + "'"
+#
+# new_article_text = '\n        <div class="individual_article" style="order: 0;">\n          <div class="article_hover" id="article_pic">\n            <a href=%s>\n              <img class="individualPhoto" src=%s>\n            </a>\n          </div>\n          <div class="div_for_aligning">\n            <a style="text-decoration: none; color: rgb(56, 86, 35);" href=%s>\n              <p class="article_title_left" style="margin-top:1.5vw;"> %s</p>\n            </a>\n            <p class="article_sub_title_left"> %s</p>\n            <p class="about_article_text_left">\n %s \n            </p>\n          </div>\n        </div>\n' % (relative_path_to_article, relative_path_to_image, relative_path_to_article, article_title, subtitle, prelude)
+#
+# new_article_text_phone = '\n        <div class="sub_article" id="main_article_phone" style=%s>\n          <a href=%s style="text-decoration:none;">\n            <img class="sub_article_img" src=%s>\n            <p class="sub_article_text"> %s</p>\n            <p class="sub_article_text2"> %s </p>\n          </a>\n        </div>\n' % ("margin-top:0%", relative_path_to_article, relative_path_to_image, article_title, article_genre)
+#
+#
+# location_line = '"' + location + '": ['
+# location_has_existing = '"' + location + '": [{'
+# counter = 0
+# order_counter = 0
+# skip_first_one = True
+# for line in list_of_lines:
+#     if '<div class="articles" id="results_screen">' in line:
+#         list_of_lines[counter + 1] = new_article_text
+#         order_counter += 1
+#     elif '<div class="individual_article"' in line:
+#         if skip_first_one:
+#             print("okay fixing the issue hopefully")
+#             print(line)
+#             skip_first_one = False
+#             counter+=1
+#             continue
+#         list_of_lines[counter] = '        <div class="individual_article" style="order: ' + str(order_counter) + '; ">\n'
+#         order_counter += 1
+#     elif '<div id="results_phone">' in line:
+#         list_of_lines[counter + 1] = new_article_text_phone
+#     # elif location_line in line:
+#     #     if location_has_existing in line:
+#     #         list_of_lines[counter + ]
+#
+#     counter += 1
+#
+#
+# print(relative_path_to_article)
+#
+# a_file = open("../search_results.html", "w")
+# a_file.writelines(list_of_lines)
+# a_file.close()
 
 
-        order_counter += 1
-    if '<div id="author_results_phone">' in line:
-        print("WAHOOO there")
-        list_of_lines[counter + 1] = new_article_text_phone
-    counter += 1
-
-
-a_file = open(author_html, "w")
-a_file.writelines(list_of_lines)
-a_file.close()
+# UPDATING GENRE PAGE
+print(article_genre)
+genre = article_genre.split(" | ")[0].lower()
+print(genre)
+if ' ' in genre:
+    genre = genre.replace(" ", "_")
+genre = genre + ".html"
+print(genre)

@@ -3,7 +3,7 @@ logBtn.addEventListener('click', fetchData);
 
 async function fetchData() {
 
-  const response = await fetch('https://hannah-haas.github.io/newspaper/article_list.json');
+  const response = await fetch('https://www.the-kingfisher.org/article_list.json');
   const data = await response.json();
   var random_article_list = []
 
